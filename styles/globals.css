@@ -1,8 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+@font-face {
+  font-family: Montserrat-light;
+  src: url("../public/assets/font/MontserratAlt1-Light.otf");
+}
+@font-face {
+  font-family: Montserrat-extra-light;
+  src: url("../public/assets/font/MontserratAlt1-ExtraLight.otf");
+}
+@font-face {
+  font-family: Montserrat-regular;
+  src: url("../public/assets/font/MontserratAlt1-Regular.otf");
+}
+@font-face {
+  font-family: Montserrat-semi-bold;
+  src: url("../public/assets/font/Montserrat-Alt1-semi-bold.otf");
+}
+
+* {
   margin: 0;
   padding: 0;
+}
+
+.header-font-regular {
+  font-family: "Montserrat-regular";
+}
+.header-font-light {
+  font-family: "Montserrat-light";
+}
+.header-font-extra-light {
+  font-family: "Montserrat-extra-light";
+}
+.header-font-semi-bold {
+  font-family: "Montserrat-semi-bold";
+}
+.ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
+.barlow {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.header-bg {
+  background-image: url("../public/assets/background-image/oziel-gomez-L8-0SAy-aoQ-unsplash.jpg");
+  min-height: 65vh;
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
 }
