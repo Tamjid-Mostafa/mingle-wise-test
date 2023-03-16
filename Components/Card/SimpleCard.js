@@ -4,7 +4,7 @@ import React from "react";
 const SimpleCard = ({ data }) => {
   return (
     <div
-      className={`min-w-[303px] max-w-[400px] mx-auto relative shadow hover:shadow-md`}
+      className={`md:min-w-[303px] max-w-[400px] mx-auto relative shadow hover:shadow-md`}
     >
       <Image src={data?.image} alt="Card Image" />
       <div className="roboto card-hover min-h-[110px] px-2 pt-3">
