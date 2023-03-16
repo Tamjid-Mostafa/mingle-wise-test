@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
-import React, { lazy, Suspense, useEffect, useState } from "react";
+import React from "react";
 import Header from "../Components/Home/Header";
 import Loader from "@/Components/Shared/Loader";
 import WhyMingleWise from "@/Components/Home/WhyMingleWise";
@@ -10,15 +10,6 @@ import Counter from "@/Components/Home/Counter";
 import SignUpForNewsLetter from "@/Components/Home/SignUpForNewsLetter";
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(true);
-      console.log("Loading");
-    }, 1000);
-  }, []);
-
   return (
     <>
       <Head>
@@ -39,19 +30,13 @@ export default function Home() {
         />
       </Head>
       <main>
-        {!loading ? (
-          <>
-            <Loader />
-          </>
-        ) : (
-          <>
-            <Header />
-            <WhyMingleWise />
-            <Reviews />
-            <Counter />
-            <SignUpForNewsLetter />
-          </>
-        )}
+        <>
+          <Header />
+          <WhyMingleWise />
+          <Reviews />
+          <Counter />
+          <SignUpForNewsLetter />
+        </>
       </main>
     </>
   );
