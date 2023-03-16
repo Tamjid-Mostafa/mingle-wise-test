@@ -1,0 +1,31 @@
+firebase login
+
+You need to login from the same company id that has access to the firebase project
+
+firebase init
+
+1 - select hosting - press space and then enter
+2 - yes to next js
+3 - no to  automatic builds
+
+2  New files will be generated =>
+    1 - firebase.json
+    2 - .firebaserc
+
+
+In firebase.json ===>>>>>
+
+{
+  "hosting": {
+    "site": "minglewise",
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
+
+
+firebase deploy

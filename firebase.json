@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "minglewise.web.app",
+    "site": "minglewise",
     "source": ".",
     "ignore": [
       "firebase.json",
