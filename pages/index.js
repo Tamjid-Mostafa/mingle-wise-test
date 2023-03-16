@@ -6,6 +6,7 @@ import Header from "../Components/Home/Header";
 import Loader from "@/Components/Shared/Loader";
 import WhyMingleWise from "@/Components/Home/WhyMingleWise";
 import Reviews from "@/Components/Home/Reviews";
+import Counter from "@/Components/Home/Counter";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -46,6 +47,7 @@ export default function Home() {
             <Header />
             <WhyMingleWise />
             <Reviews />
+            <Counter />
           </>
         )}
       </main>
