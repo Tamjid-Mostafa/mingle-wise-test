@@ -59,3 +59,184 @@
   background-position: center;
   background-blend-mode: darken;
 }
+
+.card-hover {
+  position: relative;
+  background-image: linear-gradient(
+    111.22deg,
+    rgba(136, 0, 225, 0.05) -2.13%,
+    rgba(249, 90, 99, 0.05) 58.54%
+  );
+  z-index: 1;
+}
+
+.card-hover::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    111.22deg,
+    rgba(129, 1, 214, 0.1) -2.13%,
+    rgba(228, 83, 91, 0.1) 58.54%
+  );
+  z-index: -1;
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+.card-hover:hover::before {
+  opacity: 1;
+}
+
+/* Review Carousel */
+.client-reviews {
+  background: linear-gradient(
+    111.22deg,
+    rgba(136, 0, 225, 0.1) -2.13%,
+    rgba(249, 90, 99, 0.1) 58.54%
+  );
+}
+.client-reviews .slick-next {
+  right: -115px !important;
+  top: 150px !important;
+  z-index: 100;
+}
+.client-reviews .slick-prev {
+  left: -130px !important;
+  top: 150px !important;
+  z-index: 100;
+}
+.client-reviews .slick-prev::before {
+  content: url("../public/assets/icons/chevron-left-arrow.svg") !important;
+}
+
+.client-reviews .slick-next::before {
+  content: url("../public/assets/icons/chevron-right-arrow.svg") !important;
+}
+
+.client-reviews .slick-prev::before,
+.client-reviews .slick-next::before {
+  display: inline-block;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.client-reviews .slick-dots {
+  /* bottom: 5px !important; */
+  /* right: -10px !important; */
+}
+
+.client-reviews .slick-dots li {
+  width: 2.5rem !important;
+  height: 2px;
+}
+
+.client-reviews .slick-dots li button::before {
+  content: "" !important;
+  background: rgb(73, 73, 73) !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100%;
+}
+@media only screen and (max-width: 1400px) {
+  .client-reviews .slick-next {
+    right: -50px !important;
+    top: 170px !important;
+    z-index: 100;
+  }
+  .client-reviews .slick-prev {
+    left: -70px !important;
+    top: 170px !important;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .client-reviews .slick-next {
+    visibility: hidden;
+  }
+  .client-reviews .slick-prev {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .client-reviews .slick-dots li {
+    width: 0.6rem !important;
+    height: 2px;
+  }
+  .client-reviews .slick-dots li button::before {
+    content: "" !important;
+    background: rgb(73, 73, 73) !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100%;
+  }
+  .client-reviews .slick-next {
+    right: 0px !important;
+    top: 160px !important;
+    z-index: 100;
+  }
+  .client-reviews .slick-prev {
+    left: -20px !important;
+    top: 160px !important;
+    z-index: 100;
+  }
+  .client-reviews .slick-dots {
+    /* bottom: 5px !important; */
+    right: 0px !important;
+  }
+}
+
+@media screen and (max-width: 417px) {
+  .client-reviews .slick-next {
+    right: 60px !important;
+    top: 390px !important;
+    z-index: 100;
+  }
+  .client-reviews .slick-prev {
+    left: 50px !important;
+    top: 390px !important;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .client-reviews .slick-dots li {
+    width: 0.3rem !important;
+    height: 2px;
+  }
+  .client-reviews .slick-dots li button::before {
+    content: "" !important;
+    background: rgb(53, 53, 53) !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 999px;
+  }
+  .client-reviews .slick-next {
+    right: 60px !important;
+    top: 30px !important;
+    z-index: 100;
+  }
+  .client-reviews .slick-prev {
+    left: 50px !important;
+    top: 30px !important;
+    z-index: 100;
+  }
+  .client-reviews .slick-dots {
+    /* bottom: 5px !important; */
+    right: 0px !important;
+  }
+}
+
+/* Review panel End */
+
+.newsletter-background{
+  background-image: url('../public/assets/background-image/newsletter.jpg');
+  min-height: 100vh;
+  max-height: 100%;
+
+  max-width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
