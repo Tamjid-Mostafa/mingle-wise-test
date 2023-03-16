@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "minglewise.web.app",
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
