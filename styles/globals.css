@@ -6,19 +6,19 @@
 
 @font-face {
   font-family: Montserrat-light;
-  src: url("../public/assets/font/MontserratAlt1-Light.otf");
+  src: url("/assets/font/MontserratAlt1-Light.otf");
 }
 @font-face {
   font-family: Montserrat-extra-light;
-  src: url("../public/assets/font/MontserratAlt1-ExtraLight.otf");
+  src: url("/assets/font/MontserratAlt1-ExtraLight.otf");
 }
 @font-face {
   font-family: Montserrat-regular;
-  src: url("../public/assets/font/MontserratAlt1-Regular.otf");
+  src: url("/assets/font/MontserratAlt1-Regular.otf");
 }
 @font-face {
   font-family: Montserrat-semi-bold;
-  src: url("../public/assets/font/Montserrat-Alt1-semi-bold.otf");
+  src: url("/assets/font/Montserrat-Alt1-semi-bold.otf");
 }
 
 * {
@@ -52,7 +52,7 @@
 }
 
 .header-bg {
-  background-image: url("../public/assets/background-image/oziel-gomez-L8-0SAy-aoQ-unsplash.jpg");
+  background-image: url("/assets/background-image/oziel-gomez-L8-0SAy-aoQ-unsplash.jpg");
   min-height: 65vh;
   min-width: 100%;
   background-size: cover;
@@ -109,11 +109,11 @@
   z-index: 100;
 }
 .client-reviews .slick-prev::before {
-  content: url("../public/assets/icons/chevron-left-arrow.svg") !important;
+  content: url("/assets/icons/chevron-left-arrow.svg") !important;
 }
 
 .client-reviews .slick-next::before {
-  content: url("../public/assets/icons/chevron-right-arrow.svg") !important;
+  content: url("/assets/icons/chevron-right-arrow.svg") !important;
 }
 
 .client-reviews .slick-prev::before,
@@ -230,13 +230,3 @@
 }
 
 /* Review panel End */
-
-.newsletter-background{
-  background-image: url('../public/assets/background-image/newsletter.jpg');
-  min-height: 100vh;
-  max-height: 100%;
-
-  max-width: 100vw;
-  background-position: center;
-  background-size: cover;
-}
