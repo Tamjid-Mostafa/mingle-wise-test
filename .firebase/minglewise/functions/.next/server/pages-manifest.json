@@ -1,8 +1,20 @@
 {
+  "/QuickLinks/Careers": "pages/QuickLinks/Careers.html",
   "/_app": "pages/_app.js",
+  "/QuickLinks/CookiePolicy": "pages/QuickLinks/CookiePolicy.html",
+  "/QuickLinks/CommunityBlog": "pages/QuickLinks/CommunityBlog.html",
+  "/QuickLinks/CommunityRules": "pages/QuickLinks/CommunityRules.html",
+  "/QuickLinks/AboutUs": "pages/QuickLinks/AboutUs.html",
+  "/QuickLinks/Features": "pages/QuickLinks/Features.html",
+  "/QuickLinks/IntellectualProperty": "pages/QuickLinks/IntellectualProperty.html",
+  "/QuickLinks/SubscriptionTires": "pages/QuickLinks/SubscriptionTires.html",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/api/hello": "pages/api/hello.js",
+  "/QuickLinks/PromoCodes": "pages/QuickLinks/PromoCodes.html",
+  "/QuickLinks/Support": "pages/QuickLinks/Support.html",
+  "/QuickLinks/PrivacyPolicy": "pages/QuickLinks/PrivacyPolicy.html",
+  "/QuickLinks/TermsOfUse": "pages/QuickLinks/TermsOfUse.html",
   "/": "pages/index.html",
+  "/api/hello": "pages/api/hello.js",
   "/404": "pages/404.html"
 }
