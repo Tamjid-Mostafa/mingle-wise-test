@@ -2,6 +2,7 @@ import React from "react";
 import { REVIEW_DATA } from "@/Data/Home";
 import Slider from "react-slick";
 import { AiFillStar } from "react-icons/ai";
+import { motion as m } from "framer-motion";
 
 export default function Reviews() {
   const settings = {
@@ -46,11 +47,25 @@ export default function Reviews() {
   };
   return (
     <div className="client-reviews py-10 min-h-[500px] overflow-hidden">
-      <div className="container mx-auto">
+      <div
+        data-aos="zoom-out-down"
+        data-aos-duration="800"
+        className="container mx-auto"
+      >
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
           See what users say about our app!
         </p>
-        <div className="w-[95%] md:w-[80%] sm:w-[90%] mx-auto">
+        <m.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            type: "tween",
+            damping: 150,
+            stiffness: 400,
+          }}
+          className="w-[95%] md:w-[80%] sm:w-[90%] mx-auto"
+        >
           <Slider {...settings}>
             {REVIEW_DATA.map((data, index) => (
               <div
@@ -70,7 +85,7 @@ export default function Reviews() {
               </div>
             ))}
           </Slider>
-        </div>
+        </m.div>
       </div>
     </div>
   );

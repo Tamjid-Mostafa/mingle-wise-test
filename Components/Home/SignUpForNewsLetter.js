@@ -3,6 +3,7 @@ import React from "react";
 import AppleStore from "../../public/assets/icons/apple.svg";
 import GooglePlay from "../../public/assets/icons/google-play-icon.svg";
 import Background from "../../public/assets/background-image/newsletter.jpg";
+import { motion as m } from "framer-motion";
 
 const SignUpForNewsLetter = () => {
   const country = [
@@ -199,8 +200,18 @@ const SignUpForNewsLetter = () => {
     "Zimbabwe",
   ];
   return (
-    <div className="relative">
-      <div className="min-h-[100vh] ">
+    <div className="relative overflow-hidden">
+      <m.div
+        initial={{ opacity: 0, scale: 1.2 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          type: "tween",
+          damping: 100,
+          stiffness: 400,
+        }}
+        className="min-h-[100vh]"
+      >
         <Image
           style={{ objectFit: "cover", minHeight: 900, maxHeight: 1080 }}
           height={1080}
@@ -211,8 +222,19 @@ const SignUpForNewsLetter = () => {
           alt="Background"
           placeholder="blur"
         />
-      </div>
-      <div className="flex justify-center items-center absolute inset-0">
+      </m.div>
+      <m.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          delay: 0.3,
+          duration: 1,
+          type: "tween",
+          damping: 150,
+          stiffness: 400,
+        }}
+        className="flex justify-center items-center absolute inset-0"
+      >
         <div className="xl:min-h-[70vh] max-h-[95%] w-[90%] sm:min-w-[80%] md:min-w-[80%] lg:min-w-[80%] xl:min-w-[70%] xl:max-w-[70%] bg-white rounded flex flex-col items-center p-2 sm:p-3 md:p-5 font-medium">
           <p className="ubuntu text-2xl md:text-4xl md:mt-8">DOWNLOAD APP!</p>
           <p className="roboto md:text-xl mt-3 md:mt-10 mb-7 text-gray-700 px-1 text-center">
@@ -220,14 +242,36 @@ const SignUpForNewsLetter = () => {
             below links
           </p>
           <div className="md:flex gap-8 ">
-            <div className="bg-gray-200 hover:bg-[#C57962] duration-200 ease-in flex px-5 py-2 rounded-full items-center gap-2 shadow-md mb-3 md:mb-auto">
+            <m.div
+              initial={{ opacity: 0.8, x: -55 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "anticipate",
+                type: "tween",
+                damping: 100,
+                stiffness: 400,
+              }}
+              className="bg-gray-200 hover:bg-[#C57962] duration-200 ease-in flex px-5 py-2 rounded-full items-center gap-2 shadow-md mb-3 md:mb-auto"
+            >
               <Image src={AppleStore} alt="Icon" className="w-10 h-10" />
               <p>Get MingleWise</p>
-            </div>
-            <div className="bg-gray-200 hover:bg-[#C57962] duration-200 ease-in flex px-5 py-2 rounded-full items-center gap-2 shadow-md">
+            </m.div>
+            <m.div
+              initial={{ opacity: 0.8, x: 55 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "anticipate",
+                type: "tween",
+                damping: 100,
+                stiffness: 400,
+              }}
+              className="bg-gray-200 hover:bg-[#C57962] duration-200 ease-in flex px-5 py-2 rounded-full items-center gap-2 shadow-md"
+            >
               <Image src={GooglePlay} alt="Icon" className="w-10 h-10" />
               <p>Get MingleWise</p>
-            </div>
+            </m.div>
           </div>
           <p className="roboto  text-xl md:text-2xl text-gray-700 my-3 md:my-8 text-center">
             Signup for the Newsletter
@@ -271,7 +315,7 @@ const SignUpForNewsLetter = () => {
             the way.”
           </p>
         </div>
-      </div>
+      </m.div>
     </div>
   );
 };
