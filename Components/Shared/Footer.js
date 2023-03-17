@@ -19,8 +19,8 @@ import { motion as m } from "framer-motion";
 const Footer = () => {
   return (
     <div className="bg-[#2A2D3B]">
-      <div className="bg-[#2A2D3B] min-h-[35vh] flex items-center justify-center p-5">
-        <div className="flex-wrap lg:flex justify-between items-center gap-14">
+      <div className="bg-[#2A2D3B] min-h-[35vh] flex items-center justify-start md:justify-center p-5">
+        <div className="flex-wrap md:flex justify-between items-center gap-14">
           <div className="flex flex-col items-center ">
             <m.div
               className="flex flex-col items-center"
@@ -196,7 +196,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="lg:flex justify-between items-center w-[60%] mx-auto border-t border-gray-600 pt-2 pb-5">
-        <p className="text-gray-300">
+        <p className="text-gray-300 text-center md:text-left">
           Copyright © 2021
           <a
             className="hover:text-orange-500 duration-200 ease-out"
