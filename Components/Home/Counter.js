@@ -7,7 +7,10 @@ const Counter = () => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <ScrollTrigger onEnter={() => setCounterOn(true)}>
+    <ScrollTrigger
+      onEnter={() => setCounterOn(true)}
+      onExit={() => setCounterOn(false)}
+    >
       <div className="md:flex md:gap-2 lg:gap-5 xl:gap-10 justify-center items-center py-10 xl:py-16">
         <div className="flex flex-col items-center gap-1">
           <h1 className="text-5xl lg:text-6xl xl:text-6xl font-bold barlow flex">

@@ -10,6 +10,7 @@ import {
   FaPinterest,
   FaTwitter,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -49,24 +50,50 @@ const Footer = () => {
 
           <ul className="roboto flex flex-col gap-3 mt-10 lg:mt-auto">
             <li className="text-lg text-white mb-2">Company</li>
-            <li className="text-gray-400 font-medium">About Us</li>
-            <li className="text-gray-400 font-medium">Features</li>
-            <li className="text-gray-400 font-medium">Careers</li>
-            <li className="text-gray-400 font-medium">Subscription Tires</li>
+            <Link href="/QuickLinks/AboutUs">
+              <li className="text-gray-400 font-medium">About Us</li>
+            </Link>
+            <Link href="/QuickLinks/Features">
+              <li className="text-gray-400 font-medium">Features</li>
+            </Link>
+            <Link href="/QuickLinks/Careers">
+              <li className="text-gray-400 font-medium">Careers</li>
+            </Link>
+            <Link href="/QuickLinks/SubscriptionTires">
+              <li className="text-gray-400 font-medium">Subscription Tires</li>
+            </Link>
           </ul>
           <ul className="roboto flex flex-col gap-3 mt-5 lg:mt-auto">
             <li className="text-lg text-white mb-2">Community</li>
-            <li className="text-gray-400 font-medium">Community Blog</li>
-            <li className="text-gray-400 font-medium">Promo Codes</li>
-            <li className="text-gray-400 font-medium">Support</li>
-            <li className="text-gray-400 font-medium">Community Rules</li>
+            <Link href="/QuickLinks/CommunityBlog">
+              <li className="text-gray-400 font-medium">Community Blog</li>
+            </Link>
+            <Link href="/QuickLinks/PromoCodes">
+              <li className="text-gray-400 font-medium">Promo Codes</li>
+            </Link>
+            <Link href="/QuickLinks/Support">
+              <li className="text-gray-400 font-medium">Support</li>
+            </Link>
+            <Link href="/QuickLinks/CommunityRules">
+              <li className="text-gray-400 font-medium">Community Rules</li>
+            </Link>
           </ul>
           <ul className="roboto flex flex-col gap-3 mt-5 lg:mt-auto">
             <li className="text-lg text-white mb-2">Legal</li>
-            <li className="text-gray-400 font-medium">Terms of Use</li>
-            <li className="text-gray-400 font-medium">Privacy Policy</li>
-            <li className="text-gray-400 font-medium">Cookie Policy</li>
-            <li className="text-gray-400 font-medium">Intellectual Property</li>
+            <Link href="/QuickLinks/TermsOfUse">
+              <li className="text-gray-400 font-medium">Terms of Use</li>
+            </Link>
+            <Link href="/QuickLinks/PrivacyPolicy">
+              <li className="text-gray-400 font-medium">Privacy Policy</li>
+            </Link>
+            <Link href="/QuickLinks/CookiePolicy">
+              <li className="text-gray-400 font-medium">Cookie Policy</li>
+            </Link>
+            <Link href="/QuickLinks/IntellectualProperty">
+              <li className="text-gray-400 font-medium">
+                Intellectual Property
+              </li>
+            </Link>
           </ul>
           <ul className="roboto flex flex-col gap-3 mt-5 lg:mt-auto">
             <li className="text-lg text-white mb-2">CONTACT</li>
