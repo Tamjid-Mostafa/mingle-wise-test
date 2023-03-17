@@ -9,6 +9,8 @@ export default function App({ Component, pageProps }) {
   const Router = useRouter();
   const [loading, setLoading] = useState(false);
 
+  console.log(Router.pathname);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
@@ -23,7 +25,7 @@ export default function App({ Component, pageProps }) {
         </>
       ) : (
         <>
-          <NavBar />
+          {Router.pathname === "/" ? <></> : <NavBar />}
           <Component {...pageProps} />
           <Footer />
         </>

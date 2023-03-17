@@ -5,6 +5,7 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import GooglePlayStore from "../../public/assets/icons/google-play-icon.svg";
 import AppleIcon from "../../public/assets/icons/apple.svg";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -34,10 +35,21 @@ const Header = () => {
         </button>
         <div className="w-[60vw] mx-5 mt-10 mb-5">
           <div className="flex gap-4 text-4xl">
-            <BsTwitter />
-            <BsInstagram />
-            <FaLinkedinIn />
-            <FaFacebookF />
+            <Link href="https://twitter.com/minglewise" target="_blank">
+              <BsTwitter className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
+            <Link href="https://www.instagram.com/mingle.wise/" target="_blank">
+              <BsInstagram className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/minglewise/"
+              target="_blank"
+            >
+              <FaLinkedinIn className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
+            <Link href="https://www.facebook.com/minglewise/" target="_blank">
+              <FaFacebookF className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
           </div>
         </div>
       </div>
