@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 import React from "react";
 import Header from "../Components/Home/Header";
-import Loader from "@/Components/Shared/Loader";
 import WhyMingleWise from "@/Components/Home/WhyMingleWise";
 import Reviews from "@/Components/Home/Reviews";
 import Counter from "@/Components/Home/Counter";

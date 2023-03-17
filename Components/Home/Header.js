@@ -5,10 +5,17 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import GooglePlayStore from "../../public/assets/icons/google-play-icon.svg";
 import AppleIcon from "../../public/assets/icons/apple.svg";
+import Link from "next/link";
+import { motion as m } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="header-bg flex flex-col items-center relative">
+    <m.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      className="header-bg flex flex-col items-center relative"
+    >
       <Image src={Logo} alt="Logo" className="w-28 h-28" />
       <div className="text-center text-white">
         <p className="text-white relative">
@@ -34,10 +41,38 @@ const Header = () => {
         </button>
         <div className="w-[60vw] mx-5 mt-10 mb-5">
           <div className="flex gap-4 text-4xl">
-            <BsTwitter />
-            <BsInstagram />
-            <FaLinkedinIn />
-            <FaFacebookF />
+            <Link
+              data-aos="fade-right"
+              data-aos-duration="600"
+              href="https://twitter.com/minglewise"
+              target="_blank"
+            >
+              <BsTwitter className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
+            <Link
+              data-aos="fade-right"
+              data-aos-duration="500"
+              href="https://www.instagram.com/mingle.wise/"
+              target="_blank"
+            >
+              <BsInstagram className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
+            <Link
+              data-aos="fade-right"
+              data-aos-duration="400"
+              href="https://www.linkedin.com/company/minglewise/"
+              target="_blank"
+            >
+              <FaLinkedinIn className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
+            <Link
+              data-aos="fade-right"
+              data-aos-duration="300"
+              href="https://www.facebook.com/minglewise/"
+              target="_blank"
+            >
+              <FaFacebookF className="hover:text-[#C57962] ease-in duration-75" />
+            </Link>
           </div>
         </div>
       </div>
@@ -55,7 +90,7 @@ const Header = () => {
           />
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 

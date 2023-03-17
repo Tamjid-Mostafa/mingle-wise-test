@@ -4,6 +4,8 @@ import React from "react";
 const SimpleCard = ({ data }) => {
   return (
     <div
+      data-aos="zoom-right"
+      data-aos-duration="1500"
       className={`md:min-w-[303px] max-w-[400px] mx-auto relative shadow hover:shadow-md`}
     >
       <div className="w-full overflow-hidden">
