@@ -1,11 +1,20 @@
 import Image from "next/image";
 import React from "react";
+import { motion as m } from "framer-motion";
 
-const SimpleCard = ({ data }) => {
+const SimpleCard = ({ data, index }) => {
   return (
-    <div
-      data-aos="zoom-right"
-      data-aos-duration="1500"
+    <m.div
+      initial={{ x: "50%", opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      transition={{
+        delay: index * 0.1,
+        ease: "easeIn",
+        duration: 1,
+        type: "tween",
+        damping: 100,
+        stiffness: 400,
+      }}
       className={`md:min-w-[303px] max-w-[400px] mx-auto relative shadow hover:shadow-md`}
     >
       <div className="w-full overflow-hidden">
@@ -26,7 +35,7 @@ const SimpleCard = ({ data }) => {
           </button>
         </div>
       </div>
-    </div>
+    </m.div>
   );
 };
 
