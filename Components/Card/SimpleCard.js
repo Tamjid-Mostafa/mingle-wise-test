@@ -6,7 +6,13 @@ const SimpleCard = ({ data }) => {
     <div
       className={`md:min-w-[303px] max-w-[400px] mx-auto relative shadow hover:shadow-md`}
     >
-      <Image src={data?.image} alt="Card Image" />
+      <div className="w-full overflow-hidden">
+        <Image
+          src={data?.image}
+          alt="Card Image"
+          className="hover:scale-105 transition-all ease-linear duration-700"
+        />
+      </div>
       <div className="roboto card-hover min-h-[110px] px-2 pt-3">
         <div className="min-h-[120px] max-h-[120px]">
           <p className="text-xl font-semibold text-[#333333]">{data?.type}</p>
