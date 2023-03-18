@@ -4,37 +4,37 @@ exports.id = 888;
 exports.ids = [888];
 exports.modules = {
 
-/***/ 9482:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 4126:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _public_assets_logo_mingle_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7745);
+/* harmony import */ var _public_assets_icons_apple_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(1212);
+/* harmony import */ var _public_assets_icons_google_play_icon_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7098);
+/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4041);
+/* harmony import */ var react_icons_md__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_icons_md__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_icons_io__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(4751);
+/* harmony import */ var react_icons_io__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_icons_io__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6290);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6197);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([framer_motion__WEBPACK_IMPORTED_MODULE_10__]);
+framer_motion__WEBPACK_IMPORTED_MODULE_10__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ App)
-});
 
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
-var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(6689);
-// EXTERNAL MODULE: ./public/assets/logo/mingle.png
-var mingle = __webpack_require__(7745);
-// EXTERNAL MODULE: ./public/assets/icons/apple.svg
-var apple = __webpack_require__(1212);
-// EXTERNAL MODULE: ./public/assets/icons/google-play-icon.svg
-var google_play_icon = __webpack_require__(7098);
-// EXTERNAL MODULE: external "react-icons/fa"
-var fa_ = __webpack_require__(6290);
-// EXTERNAL MODULE: ./node_modules/next/link.js
-var next_link = __webpack_require__(1664);
-var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-;// CONCATENATED MODULE: ./Components/Shared/Footer.js
+
 
 
 
@@ -44,58 +44,100 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
 
 const Footer = ()=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "bg-[#2A2D3B]",
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "bg-[#2A2D3B] min-h-[35vh] flex items-center justify-center p-5",
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "flex-wrap lg:flex items-center gap-14",
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                className: "bg-[#2A2D3B] min-h-[35vh] flex items-center justify-start md:justify-center p-5",
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "flex-wrap md:flex justify-between items-center gap-14",
                     children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "flex flex-col items-center ",
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                    className: "w-14 h-14",
-                                    src: mingle/* default */.Z,
-                                    alt: "Logo"
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                    className: "text-white relative",
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_10__.motion.div, {
+                                    className: "flex flex-col items-center",
+                                    initial: {
+                                        opacity: 0,
+                                        y: -30
+                                    },
+                                    whileInView: {
+                                        opacity: 1,
+                                        y: 0
+                                    },
+                                    transition: {
+                                        duration: 0.8,
+                                        type: "tween",
+                                        damping: 150,
+                                        stiffness: 400
+                                    },
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                            className: "text-4xl header-font-extra-light tracking-widest",
-                                            children: "MingleWise"
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
+                                            href: "/",
+                                            children: [
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
+                                                    className: "w-14 h-14",
+                                                    src: _public_assets_logo_mingle_png__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z,
+                                                    alt: "Logo"
+                                                }),
+                                                " "
+                                            ]
                                         }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx("span", {
-                                            className: "absolute text-[10px] xl:text-xs min-w-[16px] min-h-[16px] xl:min-w-[18px] xl:min-h-[18px] text-center",
-                                            children: "TM"
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
+                                            href: "/",
+                                            children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                                                className: "text-white relative",
+                                                children: [
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        className: "text-4xl header-font-extra-light tracking-widest",
+                                                        children: "MingleWise"
+                                                    }),
+                                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                                                        className: "absolute text-[10px] xl:text-xs min-w-[16px] min-h-[16px] xl:min-w-[18px] xl:min-h-[18px] text-center",
+                                                        children: "TM"
+                                                    })
+                                                ]
+                                            })
+                                        }),
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                                            className: "text-white header-font-regular text-[10px] sm:tracking-widest mt-1",
+                                            children: "Dating | Networking | Events"
                                         })
                                     ]
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                                    className: "text-white header-font-regular text-[10px] sm:tracking-widest mt-1",
-                                    children: "Dating | Networking | Events"
-                                }),
-                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                     className: "md:flex gap-4 mt-6",
                                     children: [
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_10__.motion.div, {
+                                            initial: {
+                                                opacity: 0,
+                                                x: -20
+                                            },
+                                            whileInView: {
+                                                opacity: 1,
+                                                x: 0
+                                            },
+                                            transition: {
+                                                duration: 0.5,
+                                                type: "tween",
+                                                damping: 150,
+                                                stiffness: 400
+                                            },
                                             className: "flex gap-1 items-center bg-black px-4 py-1 rounded-xl",
                                             children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
                                                     className: "w-8 h-8",
-                                                    src: apple/* default */.Z,
+                                                    src: _public_assets_icons_apple_svg__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z,
                                                     alt: "Apple logo"
                                                 }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                     className: "flex flex-col text-white",
                                                     children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                             className: "text-xs -mb-1",
                                                             children: "Download on the"
                                                         }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                                             className: "text-sm",
                                                             children: "App Store"
                                                         })
@@ -103,22 +145,38 @@ const Footer = ()=>{
                                                 })
                                             ]
                                         }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(framer_motion__WEBPACK_IMPORTED_MODULE_10__.motion.div, {
+                                            initial: {
+                                                opacity: 0,
+                                                x: 20,
+                                                scaleX: 1.1
+                                            },
+                                            whileInView: {
+                                                opacity: 1,
+                                                x: 0,
+                                                scaleX: 1
+                                            },
+                                            transition: {
+                                                duration: 0.5,
+                                                type: "tween",
+                                                damping: 150,
+                                                stiffness: 400
+                                            },
                                             className: "flex gap-1 items-center bg-black px-4 py-1 rounded-xl mt-2 md:mt-auto",
                                             children: [
-                                                /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {
                                                     className: "w-8 h-8",
-                                                    src: google_play_icon/* default */.Z,
+                                                    src: _public_assets_icons_google_play_icon_svg__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z,
                                                     alt: "Apple logo"
                                                 }),
-                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                     className: "flex flex-col text-white",
                                                     children: [
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("p", {
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                                             className: "text-xs -mb-1",
                                                             children: "Download on the"
                                                         }),
-                                                        /*#__PURE__*/ jsx_runtime_.jsx("h5", {
+                                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
                                                             className: "text-sm",
                                                             children: "Google Play"
                                                         })
@@ -130,154 +188,144 @@ const Footer = ()=>{
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "roboto flex flex-col gap-3 mt-10 lg:mt-auto",
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-lg text-white mb-2",
                                     children: "Company"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/AboutUs",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "About Us"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "About Us"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/Features",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Features"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Features"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/Careers",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Careers"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Careers"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/SubscriptionTires",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Subscription Tires"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Subscription Tires"
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "roboto flex flex-col gap-3 mt-5 lg:mt-auto",
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-lg text-white mb-2",
                                     children: "Community"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/CommunityBlog",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Community Blog"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Community Blog"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/PromoCodes",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Promo Codes"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Promo Codes"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/Support",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Support"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Support"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/CommunityRules",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Community Rules"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Community Rules"
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "roboto flex flex-col gap-3 mt-5 lg:mt-auto",
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-lg text-white mb-2",
                                     children: "Legal"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/TermsOfUse",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Terms of Use"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Terms of Use"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/PrivacyPolicy",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Privacy Policy"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Privacy Policy"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/CookiePolicy",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Cookie Policy"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Cookie Policy"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
                                     href: "/QuickLinks/IntellectualProperty",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                        className: "text-gray-400 font-medium",
-                                        children: "Intellectual Property"
-                                    })
+                                    className: "text-gray-400 font-medium hover:text-white duration-75 ease-in",
+                                    children: "Intellectual Property"
                                 })
                             ]
                         }),
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("ul", {
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             className: "roboto flex flex-col gap-3 mt-5 lg:mt-auto",
                             children: [
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
                                     className: "text-lg text-white mb-2",
                                     children: "CONTACT"
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    className: "text-gray-400 font-medium",
-                                    children: "+44 7544802677"
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                    href: "tel:+44 7544802677",
+                                    className: "text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__.FaPhoneAlt, {}),
+                                        " +44 7544802677"
+                                    ]
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    className: "text-gray-400 font-medium",
-                                    children: "info@minglewise.com"
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                    href: "mailto: info@minglewise.com",
+                                    className: "text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_md__WEBPACK_IMPORTED_MODULE_6__.MdEmail, {}),
+                                        " info@minglewise.com"
+                                    ]
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    className: "text-gray-400 font-medium",
-                                    children: "London, UK"
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                    className: "text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_md__WEBPACK_IMPORTED_MODULE_6__.MdLocationPin, {}),
+                                        " London, UK"
+                                    ]
                                 }),
-                                /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    className: "text-gray-400 font-medium",
-                                    children: "+91 9967067419"
+                                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("a", {
+                                    href: "whatsapp://send?text=Hello World!&phone=+91 9967067419",
+                                    className: "text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in",
+                                    children: [
+                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_io__WEBPACK_IMPORTED_MODULE_7__.IoLogoWhatsapp, {}),
+                                        " +91 9967067419"
+                                    ]
                                 })
                             ]
                         })
                     ]
                 })
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                 className: "lg:flex justify-between items-center w-[60%] mx-auto border-t border-gray-600 pt-2 pb-5",
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                        className: "text-gray-300",
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("p", {
+                        className: "text-gray-300 text-center md:text-left",
                         children: [
                             "Copyright \xa9 2021",
-                            " ",
-                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                 className: "hover:text-orange-500 duration-200 ease-out",
                                 href: "https://appsynergies.com/",
                                 target: "_blank",
@@ -286,14 +334,39 @@ const Footer = ()=>{
                             "All Rights Reserved."
                         ]
                     }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                         className: "flex text-gray-500 gap-6 mt-2 lg:mt-auto",
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaFacebookF, {}),
-                            /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaTwitter, {}),
-                            /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaInstagram, {}),
-                            /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaLinkedinIn, {}),
-                            /*#__PURE__*/ jsx_runtime_.jsx(fa_.FaPinterest, {})
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
+                                className: "hover:text-[#C57962] duration-75 ease-in",
+                                href: "https://www.facebook.com/minglewise/",
+                                target: "_blank",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__.FaFacebookF, {})
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
+                                className: "hover:text-[#C57962] duration-75 ease-in",
+                                href: "https://twitter.com/minglewise",
+                                target: "_blank",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__.FaTwitter, {})
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
+                                className: "hover:text-[#C57962] duration-75 ease-in",
+                                href: "https://www.instagram.com/mingle.wise/",
+                                target: "_blank",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__.FaInstagram, {})
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
+                                className: "hover:text-[#C57962] duration-75 ease-in",
+                                href: "https://www.linkedin.com/company/minglewise/",
+                                target: "_blank",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__.FaLinkedinIn, {})
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_9___default()), {
+                                className: "hover:text-[#C57962] duration-75 ease-in",
+                                href: "https://www.pinterest.com/minglewise/",
+                                target: "_blank",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_8__.FaPinterest, {})
+                            })
                         ]
                     })
                 ]
@@ -301,15 +374,131 @@ const Footer = ()=>{
         ]
     });
 };
-/* harmony default export */ const Shared_Footer = (Footer);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
-// EXTERNAL MODULE: ./Components/Shared/Loader.js
-var Loader = __webpack_require__(7490);
-// EXTERNAL MODULE: ./styles/globals.css
-var globals = __webpack_require__(6764);
-;// CONCATENATED MODULE: external "next/router"
-const router_namespaceObject = require("next/router");
-;// CONCATENATED MODULE: ./pages/_app.js
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 6064:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ Shared_Loader)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: external "react-loader-spinner"
+const external_react_loader_spinner_namespaceObject = require("react-loader-spinner");
+;// CONCATENATED MODULE: ./Components/Shared/Loader.js
+
+
+
+const Loader = ()=>{
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        className: "min-h-[100vh] flex justify-center items-center",
+        children: /*#__PURE__*/ jsx_runtime_.jsx(external_react_loader_spinner_namespaceObject.MutatingDots, {
+            height: "100",
+            width: "100",
+            color: "#F95A62",
+            secondaryColor: "#6D04D1",
+            radius: "12.5",
+            ariaLabel: "mutating-dots-loading",
+            wrapperStyle: {},
+            wrapperClass: "",
+            visible: true
+        })
+    });
+};
+/* harmony default export */ const Shared_Loader = (Loader);
+
+
+/***/ }),
+
+/***/ 9648:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ Shared_NavBar)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+;// CONCATENATED MODULE: ./Hooks/useScroll.js
+
+const useScrollPosition = ()=>{
+    const [scrollPosition, setScrollPosition] = (0,external_react_.useState)(0);
+    (0,external_react_.useEffect)(()=>{
+        const updatePosition = ()=>{
+            setScrollPosition(window.pageYOffset);
+        };
+        window.addEventListener("scroll", updatePosition);
+        updatePosition();
+        return ()=>window.removeEventListener("scroll", updatePosition);
+    }, []);
+    return scrollPosition;
+};
+/* harmony default export */ const useScroll = (useScrollPosition);
+
+;// CONCATENATED MODULE: ./Components/Shared/NavBar.js
+
+
+
+const NavBar = ()=>{
+    const scroll = useScroll(50);
+    console.log(scroll);
+    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+        children: /*#__PURE__*/ jsx_runtime_.jsx("p", {
+            children: "This Navbar"
+        })
+    });
+};
+/* harmony default export */ const Shared_NavBar = (NavBar);
+
+
+/***/ }),
+
+/***/ 6004:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ App)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Components_Shared_Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4126);
+/* harmony import */ var _Components_Shared_Loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6064);
+/* harmony import */ var _Components_Shared_NavBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9648);
+/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6764);
+/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9783);
+/* harmony import */ var aos__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(aos__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1759);
+/* harmony import */ var aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(aos_dist_aos_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Components_Shared_Footer__WEBPACK_IMPORTED_MODULE_1__]);
+_Components_Shared_Footer__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
 
 
 
@@ -317,27 +506,39 @@ const router_namespaceObject = require("next/router");
 
 
 function App({ Component , pageProps  }) {
-    const Router = (0,router_namespaceObject.useRouter)();
-    const [loading, setLoading] = (0,external_react_.useState)(false);
-    (0,external_react_.useEffect)(()=>{
+    if (false) {}
+    const Router = (0,next_router__WEBPACK_IMPORTED_MODULE_7__.useRouter)();
+    const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_8__.useState)(false);
+    console.log(Router.pathname);
+    (0,react__WEBPACK_IMPORTED_MODULE_8__.useEffect)(()=>{
         setTimeout(()=>{
             setLoading(true);
             console.log("Loading");
         }, 1000);
     }, []);
-    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-        children: !loading ? /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
-            children: /*#__PURE__*/ jsx_runtime_.jsx(Loader/* default */.Z, {})
-        }) : /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: !loading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Components_Shared_Loader__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {})
+        }) : /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(Component, {
+                Router.pathname === "/" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {}) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Components_Shared_NavBar__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {}),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
                     ...pageProps
                 }),
-                /*#__PURE__*/ jsx_runtime_.jsx(Shared_Footer, {})
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Components_Shared_Footer__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {})
             ]
         })
     });
 }
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 1759:
+/***/ (() => {
+
 
 
 /***/ }),
@@ -346,6 +547,14 @@ function App({ Component , pageProps  }) {
 /***/ (() => {
 
 
+
+/***/ }),
+
+/***/ 9783:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("aos");
 
 /***/ }),
 
@@ -493,6 +702,14 @@ module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
+/***/ 1853:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/router");
+
+/***/ }),
+
 /***/ 6689:
 /***/ ((module) => {
 
@@ -509,11 +726,19 @@ module.exports = require("react-icons/fa");
 
 /***/ }),
 
-/***/ 1223:
+/***/ 4751:
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react-loader-spinner");
+module.exports = require("react-icons/io");
+
+/***/ }),
+
+/***/ 4041:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-icons/md");
 
 /***/ }),
 
@@ -522,6 +747,14 @@ module.exports = require("react-loader-spinner");
 
 "use strict";
 module.exports = require("react/jsx-runtime");
+
+/***/ }),
+
+/***/ 6197:
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("framer-motion");;
 
 /***/ })
 
@@ -532,7 +765,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [636,675,664,216], () => (__webpack_exec__(9482)));
+var __webpack_exports__ = __webpack_require__.X(0, [636,61,151], () => (__webpack_exec__(6004)));
 module.exports = __webpack_exports__;
 
 })();
