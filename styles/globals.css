@@ -24,6 +24,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
 }
 
 .header-font-regular {
@@ -50,7 +54,15 @@
 .barlow {
   font-family: "Barlow Condensed", sans-serif;
 }
-
+.background-cover{
+  background-image: url('/assets/background-image/final.jpg');
+  background-attachment: fixed;
+  min-height: 50vh;
+  z-index: -100;
+}
+.clipping-div{
+  clip-path: polygon(100% 20%, 0% 100%, 100% 100%);
+}
 .header-bg {
   background-image: url("/assets/background-image/oziel-gomez-L8-0SAy-aoQ-unsplash.jpg");
   min-height: 65vh;

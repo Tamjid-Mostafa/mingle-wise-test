@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useScrollPosition = () => {
+const useScrollPosition = (abcd) => {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ const useScrollPosition = () => {
     window.addEventListener("scroll", updatePosition);
     updatePosition();
     return () => window.removeEventListener("scroll", updatePosition);
-  }, []);
+  }, [abcd]);
 
   return scrollPosition;
 };

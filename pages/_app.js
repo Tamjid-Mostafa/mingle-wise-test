@@ -1,13 +1,17 @@
 import Footer from "@/Components/Shared/Footer";
+import ImageContainer from "@/Components/Shared/ImageContainer";
 import Loader from "@/Components/Shared/Loader";
 import NavBar from "@/Components/Shared/NavBar";
 import "@/styles/globals.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+
+export const StateContext = createContext();
 
 export default function App({ Component, pageProps }) {
+  const [pageName, setPageName] = useState("");
   if (typeof window !== "undefined") {
     AOS.init({
       offset: 100,
@@ -29,6 +33,12 @@ export default function App({ Component, pageProps }) {
       console.log("Loading");
     }, 1000);
   }, []);
+
+  const stateInfo = {
+    pageName,
+    setPageName,
+  };
+
   return (
     <>
       {!loading ? (
@@ -37,9 +47,12 @@ export default function App({ Component, pageProps }) {
         </>
       ) : (
         <>
-          {Router.pathname === "/" ? <></> : <NavBar />}
-          <Component {...pageProps} />
-          <Footer />
+          <StateContext.Provider value={stateInfo}>
+            {Router.pathname === "/" ? <></> : <NavBar />}
+            {Router.pathname === "/" ? <></> : <ImageContainer />}
+            <Component {...pageProps} />
+            <Footer />
+          </StateContext.Provider>
         </>
       )}
     </>
