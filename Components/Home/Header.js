@@ -1,97 +1,58 @@
+import { HOME_CAROUSEL_DATA } from "@/Data/Home";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import React from "react";
-import Logo from "../../public/assets/logo/mingle.png";
-import { BsInstagram, BsTwitter } from "react-icons/bs";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import GooglePlayStore from "../../public/assets/icons/google-play-icon.svg";
-import AppleIcon from "../../public/assets/icons/apple.svg";
-import Link from "next/link";
-import { motion as m } from "framer-motion";
+import Slider from "react-slick";
 
-const Header = () => {
+export default function HomeCarousel() {
+  const router = useRouter();
+  const settings = {
+    dots: true,
+    fade: true,
+    speed: 800,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
   return (
-    <m.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5, ease: "easeIn" }}
-      className="header-bg flex flex-col items-center relative"
-    >
-      <Image src={Logo} alt="Logo" className="w-28 h-28" />
-      <div className="text-center text-white">
-        <p className="text-white relative">
-          <span className="text-4xl md:text-5xl xl:text-7xl header-font-extra-light tracking-widest">
-            MingleWise
-          </span>
-          <span className="absolute text-[10px] xl:text-xs rounded-full border min-w-[16px] min-h-[16px] xl:min-w-[18px] xl:min-h-[18px] text-center">
-            R
-          </span>
-        </p>
-        <p className="text-white header-font-regular text-base md:text-xl sm:tracking-widest mt-4">
-          Dating | Networking | Events
-        </p>
-        <p className="uppercase ubuntu text-base sm:text-xl md:text-2xl xl:text-3xl mt-8">
-          Find, Meet, & Develop Meaningful Connection
-        </p>
-        <p className="text-base md:text-xl xl:text-2xl mt-14 ubuntu">
-          World&#39;s first all-in-one AI driven app for dating, networking &
-          events
-        </p>
-        <button className="ubuntu md:text-xl bg-white rounded-full px-6 py-2 text-black mt-14 hover:bg-[#804d40] hover:text-white duration-200 ease-out active:bg-[#693f34]">
-          Download
-        </button>
-        <div className="w-[60vw] mx-5 mt-10 mb-5">
-          <div className="flex gap-4 text-4xl">
-            <Link
-              data-aos="fade-right"
-              data-aos-duration="600"
-              href="https://twitter.com/minglewise"
-              target="_blank"
-            >
-              <BsTwitter className="hover:text-[#C57962] ease-in duration-75" />
-            </Link>
-            <Link
-              data-aos="fade-right"
-              data-aos-duration="500"
-              href="https://www.instagram.com/mingle.wise/"
-              target="_blank"
-            >
-              <BsInstagram className="hover:text-[#C57962] ease-in duration-75" />
-            </Link>
-            <Link
-              data-aos="fade-right"
-              data-aos-duration="400"
-              href="https://www.linkedin.com/company/minglewise/"
-              target="_blank"
-            >
-              <FaLinkedinIn className="hover:text-[#C57962] ease-in duration-75" />
-            </Link>
-            <Link
-              data-aos="fade-right"
-              data-aos-duration="300"
-              href="https://www.facebook.com/minglewise/"
-              target="_blank"
-            >
-              <FaFacebookF className="hover:text-[#C57962] ease-in duration-75" />
-            </Link>
+    <div className="home">
+      <Slider
+        pauseOnHover={false}
+        pauseOnFocus={false}
+        pauseOnDotsHover={false}
+        {...settings}
+      >
+        {HOME_CAROUSEL_DATA?.map((data, index) => (
+          <div key={index} className="relative w-screen h-screen">
+            <span className="bg-black/60 absolute top-0 bottom-0 right-0 left-0 z-[1]">
+              <div className="h-full grid justify-start items-center p-6 md:p-40">
+                <div className="flex flex-col gap-6 text-white">
+                  <h1 className="md:max-w-[80%] text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] font-bold leading-tight">
+                    {data.heading}
+                  </h1>
+                  <p className="md:max-w-[700px] md:text-[22px] font-normal">
+                    {data.subHeading}
+                  </p>
+                  <button
+                    onClick={() => router.push("?estimate=true")}
+                    className="bg-transparent text-white font-bold w-44 h-10 relative
+                    before:w-full before:h-full before:scale-x-[1.04] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
+                    before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
+                    before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
+                    before:rounded-md
+                    hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2  hover:bg-primary hover:border-primary transition-two"
+                  >
+                    Download Now
+                  </button>
+                </div>
+              </div>
+            </span>
+            <Image layout="fill" src={data.src} alt="hero" objectFit="cover" />
           </div>
-        </div>
-      </div>
-      <div className="absolute right-4 sm:right-12 md:right-24 lg:right-48 xl:right-60 top-5">
-        <div className="flex gap-5">
-          <Image
-            className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10"
-            src={GooglePlayStore}
-            alt="Google Play Store"
-          />
-          <Image
-            className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10"
-            src={AppleIcon}
-            alt="Apple Icon"
-          />
-        </div>
-      </div>
-    </m.div>
+        ))}
+      </Slider>
+    </div>
   );
-};
-
-export default Header;
+}

@@ -39,10 +39,10 @@ export default function NavBar() {
             <div className={`text-xl font-semibold cursor-pointer`}>
               {windowHeight >= 100 ? <Logo /> : <WhiteBackgroundLogo />}
             </div>
-            <div>
-              <p className="header-font-extra-light text-2xl tracking-[5px] relative">
+            <div className="hidden sm:block">
+              <p className="header-font-extra-light md:text-2xl tracking-[5px] relative">
                 MingleWise
-                <span className="text-[8px] roboto tracking-tight absolute top-[-12px]">
+                <span className="text-[8px] roboto tracking-tight absolute top-[-5px] md:top-[-12px]">
                   TM
                 </span>
               </p>
