@@ -5,10 +5,10 @@ import React from "react";
 import Header from "../Components/Home/Header";
 import WhyMingleWise from "@/Components/Home/WhyMingleWise";
 import Reviews from "@/Components/Home/Reviews";
-import Counter from "@/Components/Home/Counter";
 import SignUpForNewsLetter from "@/Components/Home/SignUpForNewsLetter";
 import DatingProfile from "@/Components/Home/DatingProfile";
 import ProfessionalNetworking from "@/Components/Home/ProfessionalNetworking";
+import WhatMakesUsLove from "@/Components/Home/WhatMakesUsLove";
 
 export default function Home() {
   return (
@@ -36,8 +36,8 @@ export default function Home() {
           <WhyMingleWise />
           <DatingProfile />
           <ProfessionalNetworking />
+          <WhatMakesUsLove />
           <Reviews />
-          <Counter />
           <SignUpForNewsLetter />
         </>
       </main>
