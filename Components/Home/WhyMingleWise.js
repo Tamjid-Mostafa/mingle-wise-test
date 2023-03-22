@@ -4,7 +4,7 @@ import React from "react";
 const WhyMingleWise = () => {
   return (
     <div className="py-24">
-      <p className="text-2xl font-bold text-center pb-24">
+      <p className="text-2xl md:text-[36px] font-semibold text-center pb-24">
         Why Create a profile on MingleWise ?
       </p>
       <div className="md:flex items-center container mx-auto gap-14">
