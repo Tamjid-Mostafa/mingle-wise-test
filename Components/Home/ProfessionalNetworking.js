@@ -1,14 +1,13 @@
-import { DATING_PROFILE } from "@/Data/Home";
+import { PROFESSIONAL_NETWORKING } from "@/Data/Home";
 import Image from "next/image";
 import React from "react";
 
-const DatingProfile = () => {
+const ProfessionalNetworking = () => {
   return (
     <div className="py-20">
       <div className="text-center w-[90%] md:w-[70%] mx-auto">
-        <p className="text-2xl md:text-[36px] font-semibold">
-          DATING PROFILE FEATURES
-        </p>
+        <p className="text-2xl md:text-[36px] font-semibold">PROFESSIONAL</p>
+        <p className="text-2xl md:text-[36px] font-semibold mt-2">NETWORKING</p>
         <p className="mt-5 mb-7 text-xl">
           Lorem ipsum dolor sit amet consectetur. Ac gravida vulputate malesuada
           nec tellus. Nibh sit proin egestas metus condimentum blandit. Elit sed
@@ -17,7 +16,7 @@ const DatingProfile = () => {
         </p>
       </div>
       <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[65%] mx-auto">
-        {DATING_PROFILE.map((profile, index) => (
+        {PROFESSIONAL_NETWORKING.map((profile, index) => (
           <div key={index} className="p-10 mb-5">
             <Image
               className="w-20 h-20"
@@ -49,4 +48,4 @@ const DatingProfile = () => {
   );
 };
 
-export default DatingProfile;
+export default ProfessionalNetworking;

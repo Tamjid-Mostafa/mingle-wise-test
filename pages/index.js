@@ -8,6 +8,7 @@ import Reviews from "@/Components/Home/Reviews";
 import Counter from "@/Components/Home/Counter";
 import SignUpForNewsLetter from "@/Components/Home/SignUpForNewsLetter";
 import DatingProfile from "@/Components/Home/DatingProfile";
+import ProfessionalNetworking from "@/Components/Home/ProfessionalNetworking";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
           <Header />
           <WhyMingleWise />
           <DatingProfile />
+          <ProfessionalNetworking />
           <Reviews />
           <Counter />
           <SignUpForNewsLetter />

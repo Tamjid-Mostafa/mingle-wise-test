@@ -89,6 +89,48 @@ export const DATING_PROFILE = [
     info: "Buy some M coins to access popular features like Mingle Match, Mingle Meet & Mingle Speed",
   },
 ];
+export const PROFESSIONAL_NETWORKING = [
+  {
+    logo: "/assets/professional-networking/schedule 1.svg",
+    title: "Events",
+    info: "Get a detailed summary of how you match up with the other user.",
+  },
+  {
+    logo: "/assets/professional-networking/explore.svg",
+    title: "Explore",
+    info: "Choose what you want to share with more privacy control.",
+  },
+  {
+    logo: "/assets/professional-networking/mingle-instant.svg",
+    title: "Mingle Instant",
+    info: "Participate in an exciting on the spot blind date video-calls with other users. Connect just by selecting the gender and location.",
+  },
+  {
+    logo: "/assets/professional-networking/Mask group.svg",
+    title: "Feed",
+    info: "Undo accidental swipes. See the profiles again you want to see.",
+  },
+  {
+    logo: "/assets/professional-networking/globe.svg",
+    title: "Speed Networking",
+    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+  },
+  {
+    logo: "/assets/professional-networking/paper-plane 1.svg",
+    title: "Chats",
+    info: "Teleport your profile to a different location to find potential matches.",
+  },
+  {
+    logo: "/assets/professional-networking/briefcase 1.svg",
+    title: "Jobs",
+    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+  },
+  {
+    logo: "/assets/professional-networking/freelance-work.svg",
+    title: "Freelance Work",
+    info: "Teleport your profile to a different location to find potential matches.",
+  },
+];
 
 export const REVIEW_DATA = [
   {
