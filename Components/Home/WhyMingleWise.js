@@ -1,22 +1,41 @@
-import { WHY_MINGLE_WISE } from "@/Data/Home";
-import { AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import React from "react";
-import SimpleCard from "../Card/SimpleCard";
 
 const WhyMingleWise = () => {
   return (
-    <AnimatePresence>
-      <div className="container mx-auto mb-28">
-        <p className="text-2xl lg:text-3xl xl:text-4xl text-center my-20">
-          WHY MINGLEWISE?
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 justify-center overflow-hidden">
-          {WHY_MINGLE_WISE.map((data, index) => (
-            <SimpleCard key={index} index={index} data={data} />
-          ))}
+    <div className="py-24">
+      <p className="text-2xl font-bold text-center pb-24">
+        Why Create a profile on MingleWise ?
+      </p>
+      <div className="md:flex items-center container mx-auto gap-14">
+        <div className="flex md:w-[60%]">
+          <Image
+            src="/assets/why-minglewise/phonegroup.png"
+            alt="Image"
+            width={1000}
+            height={500}
+          />
+        </div>
+        <div className="md:w-[40%] mt-10 md:mt-0">
+          <div className="text-center md:text-left lg:w-[80%]">
+            <p className="text-xl font-semibold">DATING PROFILE</p>
+            <p className="text-lg">
+              Find exciting people, meet in real or video dates & try your luck
+              with speed dating!
+            </p>
+          </div>
+          <div className="text-center md:text-left lg:w-[80%]">
+            <p className="text-xl font-semibold mt-10">
+              PROFESSIONAL NETWORKING PROFILE
+            </p>
+            <p className="text-lg">
+              Find exciting people, meet in real or video dates & try your luck
+              with speed dating!
+            </p>
+          </div>
         </div>
       </div>
-    </AnimatePresence>
+    </div>
   );
 };
 
