@@ -8,18 +8,7 @@ const ImageContainer = () => {
   const { pageName } = useContext(StateContext);
   return (
     <div className="overflow-hidden">
-      <div className="fixed inset-0 z-[-50]">
-        <Image
-          height={1080}
-          width={1920}
-          quality={85}
-          priority
-          src={FixedBackground}
-          alt="Background"
-          placeholder="blur"
-          className="h-[52%] sm:h-auto"
-        />
-      </div>
+      <div className="fixed inset-0 z-[-50] quick-cover"></div>
       <div className="min-h-[35vh] flex justify-start items-center"></div>
       <div className="text-white container mx-auto px-4 md:px-auto pb-5 md:pb-0">
         <p className="md:text-xl xl:text-3xl font-bold lato tracking-widest">

@@ -37,3 +37,31 @@ export const ABOUT_US = [
     info: "We acknowledge the benefit of having a range of perspectives in decision-making and our workforce being representative of our users. We encourage inclusion by valuing our people's differences and enable everyone to thrive at work.",
   },
 ];
+
+import Dating from "../public/assets/features-card/dating.jpg";
+import Networking from "../public/assets/features-card/professioanl.jpg";
+import Event from "../public/assets/features-card/event.jpg";
+import Secured from "../public/assets/features-card/secured.jpg";
+
+export const FEATURE_DATA = [
+  {
+    img: Dating,
+    title: "Dating",
+    info: "Find interesting & compatible people using AI. Participate in exciting speed dating sessions. Meet your matches in real or video dates. Book venues & plan your date.",
+  },
+  {
+    img: Networking,
+    title: "Professional Networking",
+    info: "Grow your network by connecting & meeting like minded professionals. Find exciting job opportunities. Find co-founders, skilled employees & build your team.",
+  },
+  {
+    img: Event,
+    title: "Events",
+    info: "Participate in interesting events or host & live stream your events to your network. Easily connect with fellow participants during or after the event.",
+  },
+  {
+    img: Secured,
+    title: "Verified & Compatible Matches",
+    info: "Profiles are verified by social media accounts, mobile numbers & photo verification using AI technology. Compatibility tests to match with people that are truly tailored to you.",
+  },
+];
