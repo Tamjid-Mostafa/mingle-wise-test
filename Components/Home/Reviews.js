@@ -47,11 +47,7 @@ export default function Reviews() {
   };
   return (
     <div className="client-reviews py-10 min-h-[500px] overflow-hidden">
-      <div
-        data-aos="zoom-out-down"
-        data-aos-duration="800"
-        className="container mx-auto"
-      >
+      <div className="container mx-auto">
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">
           See what users say about our app!
         </p>
