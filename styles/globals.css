@@ -54,14 +54,60 @@ body {
 .barlow {
   font-family: "Barlow Condensed", sans-serif;
 }
-.header-bg {
-  background-image: url("/assets/background-image/oziel-gomez-L8-0SAy-aoQ-unsplash.jpg");
-  min-height: 65vh;
-  min-width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: darken;
+/* Home carousel started*/
+.home .slick-next {
+  right: 100px !important;
 }
+.home .slick-prev {
+  left: 60px !important;
+  z-index: 100;
+}
+
+.home .slick-prev::before {
+  content: url("/assets/icons/left-arrow.svg") !important;
+}
+
+.home .slick-next::before {
+  content: url("/assets/icons/right-arrow.svg") !important;
+}
+
+.home .slick-prev::before,
+.slick-next::before {
+  display: block;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.home .slick-dots {
+  bottom: 50px !important;
+}
+
+.home .slick-dots li {
+  width: 3rem !important;
+  height: 2px;
+}
+
+.home .slick-dots li button::before {
+  content: "" !important;
+  background: white !important;
+  width: 17px !important;
+  height: 17px !important;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 750px) {
+  .home .slick-next {
+    display: none !important;
+  }
+  .home .slick-prev {
+    display: none !important;
+  }
+  .home .slick-dots li {
+    width: 2rem !important;
+    height: 2px;
+  }
+  
+}
+/* Home carousel ended */
 .quick-cover {
   background-image: url("/assets/background-image/final.jpg");
   min-height: 50vh;
@@ -122,13 +168,13 @@ body {
   top: 150px !important;
   z-index: 100;
 }
-.client-reviews .slick-prev::before {
+/* .client-reviews .slick-prev::before {
   content: url("/assets/icons/chevron-left-arrow.svg") !important;
 }
 
 .client-reviews .slick-next::before {
   content: url("/assets/icons/chevron-right-arrow.svg") !important;
-}
+} */
 
 .client-reviews .slick-prev::before,
 .client-reviews .slick-next::before {

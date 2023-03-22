@@ -3,6 +3,27 @@ import Networking from "../public/assets/card-image/image (2).png";
 import Events from "../public/assets/card-image/image (3).png";
 import Matches from "../public/assets/card-image/image (4).png";
 
+export const HOME_CAROUSEL_DATA = [
+  {
+    src: "/assets/carousel_images/giorgio-trovato-6rKkr2fh2-I-unsplash (1).jpg",
+    heading: "Find, meet similar people and develop meaningful connections",
+    subHeading:
+      "World’s first all-in-one AI driven app for dating, networking and events",
+  },
+  {
+    src: "/assets/carousel_images/jonathan-borba-aC5_EFhq7Fs-unsplash.jpg",
+    heading: "Find, meet similar people and develop meaningful connections",
+    subHeading:
+      "World’s first all-in-one AI driven app for dating, networking and events",
+  },
+  {
+    src: "/assets/carousel_images/priscilla-du-preez-g86airJZ4Gs-unsplash.jpg",
+    heading: "Find, meet similar people and develop meaningful connections",
+    subHeading:
+      "World’s first all-in-one AI driven app for dating, networking and events",
+  },
+];
+
 export const WHY_MINGLE_WISE = [
   {
     image: Dating,
