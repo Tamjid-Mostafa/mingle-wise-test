@@ -1,5 +1,4 @@
 import Footer from "@/Components/Shared/Footer";
-import ImageContainer from "@/Components/Shared/ImageContainer";
 import Loader from "@/Components/Shared/Loader";
 import NavBar from "@/Components/Shared/NavBar";
 import "@/styles/globals.css";
@@ -31,7 +30,7 @@ export default function App({ Component, pageProps }) {
     setTimeout(() => {
       setLoading(true);
       console.log("Loading");
-    }, 1000);
+    }, 2000);
   }, []);
 
   const stateInfo = {
@@ -48,8 +47,7 @@ export default function App({ Component, pageProps }) {
       ) : (
         <>
           <StateContext.Provider value={stateInfo}>
-            {Router.pathname === "/" ? <></> : <NavBar />}
-            {Router.pathname === "/" ? <></> : <ImageContainer />}
+            <NavBar />
             <Component {...pageProps} />
             <Footer />
           </StateContext.Provider>
