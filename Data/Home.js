@@ -47,6 +47,49 @@ export const WHY_MINGLE_WISE = [
   },
 ];
 
+export const DATING_PROFILE = [
+  {
+    logo: "/assets/dating-profile/schedule 1.svg",
+    title: "Events",
+    info: "Get a detailed summary of how you match up with the other user.",
+  },
+  {
+    logo: "/assets/dating-profile/explore.svg",
+    title: "Explore",
+    info: "Choose what you want to share with more privacy control.",
+  },
+  {
+    logo: "/assets/dating-profile/mingle-instant.svg",
+    title: "Mingle Instant",
+    info: "Participate in an exciting on the spot blind date video-calls with other users. Connect just by selecting the gender and location.",
+  },
+  {
+    logo: "/assets/dating-profile/feed.svg",
+    title: "Feed",
+    info: "Undo accidental swipes. See the profiles again you want to see.",
+  },
+  {
+    logo: "/assets/dating-profile/Games.svg",
+    title: "Games",
+    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+  },
+  {
+    logo: "/assets/dating-profile/chats.svg",
+    title: "Chats",
+    info: "Teleport your profile to a different location to find potential matches.",
+  },
+  {
+    logo: "/assets/dating-profile/speed-dating.svg",
+    title: "Speed Dating",
+    info: "Get discounts on in-app purchases like meet, speed, gift and lime light.",
+  },
+  {
+    logo: "/assets/dating-profile/m-coins.svg",
+    title: "M Coins",
+    info: "Buy some M coins to access popular features like Mingle Match, Mingle Meet & Mingle Speed",
+  },
+];
+
 export const REVIEW_DATA = [
   {
     name: "Diksha Valecha",
