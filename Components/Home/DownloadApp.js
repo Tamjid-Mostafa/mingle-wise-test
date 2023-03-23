@@ -7,8 +7,10 @@ const DownloadApp = () => {
       <div className="flex md:flex-row flex-col-reverse items-center container mx-auto gap-14">
         <div className="md:w-[40%] mt-2 md:mt-0">
           <div className="text-center md:text-left">
-            <p className="text-6xl font-semibold mt-10">Download the App</p>
-            <p className="text-lg mt-5">
+            <p className="text-6xl font-semibold mt-10 poppins-text">
+              Download the App
+            </p>
+            <p className="text-lg mt-5 poppins-text">
               Lorem ipsum dolor sit amet consectetur. Imperdiet elementum mattis
               tristique velit enim parturient. Morbi leo mi at amet tempus. Leo
               ante lorem cursus tristique. Nulla urna faucibus mauris tristique

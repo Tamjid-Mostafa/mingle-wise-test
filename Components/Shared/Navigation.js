@@ -10,17 +10,21 @@ export default function Navigation({ windowHeight }) {
     { name: "About", href: "/" },
   ];
 
+  // ${
+  //   router.pathname == nav.href ? "border-b-2 border-[#7300D5]" : ""
+  // }
+
   return (
     <nav className="hidden lg:flex lg:flex-[.6] xl:flex-[.5] 2xl:flex-[.4]">
       <ul className="flex flex-1 gap-2 items-center justify-between">
         {navigation?.map((nav) => (
           <li
-            className={`hover:border-b-2 hover:border-b-primary transition-one ${
-              router.pathname == nav.href ? "border-b-2 border-[#7300D5]" : ""
-            }`}
+            className={`hover:border-b-2 hover:border-b-primary transition-one `}
             key={nav.name}
           >
-            <Link href={nav.href}>{nav.name}</Link>
+            <Link href={nav.href}>
+              <span className="poppins-text"> {nav.name}</span>
+            </Link>
           </li>
         ))}
         <li>
@@ -31,7 +35,7 @@ export default function Navigation({ windowHeight }) {
             before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
             before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
             before:rounded-md
-            hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2  hover:bg-primary hover:border-primary transition-two`}
+            hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2 poppins-text`}
           >
             Download
           </button>

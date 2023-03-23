@@ -31,7 +31,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center poppins-text"
           >
             {counterOn && (
               <CountUp start={0} end={176} duration={5} delay={0} />
@@ -46,7 +46,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
           >
             Countries Live In
           </m.p>
@@ -68,7 +68,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center poppins-text"
           >
             {counterOn && (
               <CountUp start={0} end={39576} duration={5} delay={0} />
@@ -83,7 +83,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
           >
             Number of followers on Social Media
           </m.p>
@@ -105,7 +105,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center poppins-text"
           >
             {counterOn && (
               <CountUp start={0} end={4526} duration={5} delay={0} />
@@ -120,7 +120,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
           >
             5 star reviews
           </m.p>
@@ -142,7 +142,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center poppins-text"
           >
             {counterOn && (
               <CountUp start={0} end={130957} duration={5} delay={0} />
@@ -157,7 +157,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
           >
             Number of app downloads
           </m.p>

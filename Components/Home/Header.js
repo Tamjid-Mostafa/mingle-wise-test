@@ -29,10 +29,10 @@ export default function HomeCarousel() {
             <span className="bg-black/60 absolute top-0 bottom-0 right-0 left-0 z-[1]">
               <div className="h-full grid justify-start items-center p-6 md:p-40">
                 <div className="flex flex-col gap-6 text-white">
-                  <h1 className="md:max-w-[80%] text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] font-bold leading-tight">
+                  <h1 className="md:max-w-[80%] text-[30px] lg:text-[40px] xl:text-[50px] 2xl:text-[60px] font-bold leading-tight poppins-text">
                     {data.heading}
                   </h1>
-                  <p className="md:max-w-[700px] md:text-[22px] font-normal">
+                  <p className="md:max-w-[700px] md:text-[22px] font-normal poppins-text">
                     {data.subHeading}
                   </p>
                   <button
@@ -42,7 +42,7 @@ export default function HomeCarousel() {
                     before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
                     before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
                     before:rounded-md
-                    hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2  hover:bg-primary hover:border-primary transition-two"
+                    hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2 poppins-text"
                   >
                     Download Now
                   </button>

@@ -78,11 +78,11 @@ export default function FolksLovesUs() {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <p className="text-xl roboto text-[#4F4F4F] mt-5 text-justify">
+                  <p className="text-xl roboto text-[#4F4F4F] mt-5 text-justify poppins-text">
                     {data?.info}
                   </p>
                 </div>
-                <p className="text-base font-medium roboto text-right mt-5">
+                <p className="text-base font-medium roboto text-right mt-5 poppins-text">
                   {data?.name}
                 </p>
               </div>

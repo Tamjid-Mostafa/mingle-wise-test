@@ -6,7 +6,7 @@ const InAppFeatures = () => {
   return (
     <div className="py-20">
       <div className="text-center w-[90%] md:w-[70%] mx-auto">
-        <p className="text-2xl md:text-[36px] font-semibold mb-14">
+        <p className="text-2xl md:text-[36px] font-semibold mb-14 poppins-text">
           In-app Features
         </p>
       </div>
@@ -21,8 +21,10 @@ const InAppFeatures = () => {
               alt={profile?.title}
             />
             <div className="mt-3">
-              <p className="text-xl font-semibold">{profile?.title}</p>
-              <p className="text-justify mt-1">{profile?.info}</p>
+              <p className="text-xl font-semibold poppins-text">
+                {profile?.title}
+              </p>
+              <p className="text-justify mt-1 lato">{profile?.info}</p>
             </div>
           </div>
         ))}
@@ -34,7 +36,7 @@ const InAppFeatures = () => {
             before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
             before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
             before:rounded-full
-            hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-full py-2  hover:bg-primary hover:border-primary"
+            hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-full py-2 poppins-text"
         >
           See All
         </button>

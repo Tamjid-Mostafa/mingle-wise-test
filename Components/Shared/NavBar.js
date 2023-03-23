@@ -95,7 +95,9 @@ export default function NavBar() {
                     }`}
                     key={nav.name}
                   >
-                    <Link href={nav.href}>{nav.name}</Link>
+                    <Link href={nav.href}>
+                      <span className="poppins-text">{nav.name}</span>
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -17,25 +17,25 @@ const Footer = () => {
                 <p className="text-lg text-white mb-2">Company</p>
                 <Link
                   href="/QuickLinks/AboutUs"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   About Us
                 </Link>
                 <Link
                   href="/QuickLinks/Features"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Features
                 </Link>
                 <Link
                   href="/QuickLinks/Careers"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Careers
                 </Link>
                 <Link
                   href="/QuickLinks/SubscriptionTires"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Subscription Tires
                 </Link>
@@ -44,25 +44,25 @@ const Footer = () => {
                 <p className="text-lg text-white mb-2">Community</p>
                 <Link
                   href="/QuickLinks/CommunityBlog"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Community Blog
                 </Link>
                 <Link
                   href="/QuickLinks/PromoCodes"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Promo Codes
                 </Link>
                 <Link
                   href="/QuickLinks/Support"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Support
                 </Link>
                 <Link
                   href="/QuickLinks/CommunityRules"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Community Rules
                 </Link>
@@ -71,49 +71,49 @@ const Footer = () => {
                 <p className="text-lg text-white mb-2">Legal</p>
                 <Link
                   href="/QuickLinks/TermsOfUse"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Terms of Use
                 </Link>
                 <Link
                   href="/QuickLinks/PrivacyPolicy"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   href="/QuickLinks/CookiePolicy"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Cookie Policy
                 </Link>
                 <Link
                   href="/QuickLinks/IntellectualProperty"
-                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in"
+                  className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                 >
                   Intellectual Property
                 </Link>
               </div>
               <div className="roboto flex flex-col gap-3 mt-5 lg:mt-auto">
-                <p className="text-lg text-white mb-2">CONTACT</p>
+                <p className="text-lg text-white mb-2 poppins-text">CONTACT</p>
                 <a
                   href="tel:+44 7544802677"
-                  className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in"
+                  className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in poppins-text"
                 >
                   <FaPhoneAlt /> +44 7544802677
                 </a>
                 <a
                   href="mailto: info@minglewise.com"
-                  className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in"
+                  className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in poppins-text"
                 >
                   <MdEmail /> info@minglewise.com
                 </a>
-                <a className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in">
+                <a className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in poppins-text">
                   <MdLocationPin /> London, UK
                 </a>
                 <a
                   href="whatsapp://send?text=Hello World!&phone=+91 9967067419"
-                  className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in"
+                  className="text-gray-400 font-medium flex gap-2 items-center hover:text-[#A77962] duration-75 ease-in poppins-text"
                 >
                   <IoLogoWhatsapp /> +91 9967067419
                 </a>
@@ -122,7 +122,7 @@ const Footer = () => {
           </div>
           <div className="lg:flex justify-between items-center border-t border-gray-600 pt-2 pb-5">
             <div className="lg:flex gap-8 items-center px-5 md:px-1">
-              <p className="text-2xl font-semibold text-white">
+              <p className="text-2xl font-semibold text-white poppins-text">
                 Download the app{" "}
               </p>
               <div className="flex gap-2">
