@@ -9,6 +9,7 @@ import ProfessionalNetworking from "@/Components/Home/ProfessionalNetworking";
 import WhatMakesUsLove from "@/Components/Home/WhatMakesUsLove";
 import InAppFeatures from "@/Components/Home/InAppFeatures";
 import FolksLovesUs from "@/Components/Home/FolksLovesUs";
+import DownloadApp from "@/Components/Home/DownloadApp";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
           <WhatMakesUsLove />
           <InAppFeatures />
           <FolksLovesUs />
+          <DownloadApp />
         </>
       </main>
     </>
