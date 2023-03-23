@@ -131,6 +131,48 @@ export const PROFESSIONAL_NETWORKING = [
     info: "Teleport your profile to a different location to find potential matches.",
   },
 ];
+export const IN_APP_FEATURES = [
+  {
+    logo: "/assets/in-app-features/ICON.svg",
+    title: "Compatibility",
+    info: "Get a detailed summary of how you match up with the other user.",
+  },
+  {
+    logo: "/assets/in-app-features/privacy.svg",
+    title: "Profile Privacy",
+    info: "Choose what you want to share with more privacy control.",
+  },
+  {
+    logo: "/assets/in-app-features/mic.svg",
+    title: "Mingle Instant",
+    info: "Participate in an exciting on the spot blind date video-calls with other users. Connect just by selecting the gender and location.",
+  },
+  {
+    logo: "/assets/in-app-features/badge.svg",
+    title: "Elite Badge",
+    info: "Here, by using this feature you can get discounts on in-app purchases like meet, speed, gift and lime light.",
+  },
+  {
+    logo: "/assets/in-app-features/limelight.svg",
+    title: "Limelight",
+    info: "By using this feature, top profiles will be visible to you. By using this, you explore top profiles.",
+  },
+  {
+    logo: "/assets/in-app-features/stories.svg",
+    title: "Stories",
+    info: "Post your story in the form photos or videos. Also, to make your stories more fun and interactive, you can use features like stickers, hashtags, gifs, music, etc.",
+  },
+  {
+    logo: "/assets/in-app-features/location.svg",
+    title: "Mingle Mixer",
+    info: "See mutual connections with your matches.",
+  },
+  {
+    logo: "/assets/in-app-features/coupons.svg",
+    title: "Coupons",
+    info: "See mutual connections with your matches.",
+  },
+];
 
 export const REVIEW_DATA = [
   {

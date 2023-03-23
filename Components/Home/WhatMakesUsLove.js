@@ -13,8 +13,8 @@ const WhatMakesUsLove = () => {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:w-[70%] lg:w-auto xl:w-[85%] 2xl:w-[90%] mx-auto justify-center items-center py-10 xl:py-16">
-        <div className="flex flex-col items-center gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:w-[80%] lg:w-[90%] xl:w-[85%] 2xl:w-[90%] mx-auto justify-center items-center py-10 xl:py-16">
+        <div className="flex flex-col items-center gap-1 justify-center min-h-[200px]">
           <Image
             className="w-40 mt-10 lg:mt-5 lg:w-52"
             width={100}
@@ -31,7 +31,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-6xl xl:text-6xl font-bold flex mt-5 mb-2"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
           >
             {counterOn && (
               <CountUp start={0} end={176} duration={5} delay={0} />
@@ -46,12 +46,12 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
           >
             Countries Live In
           </m.p>
         </div>
-        <div className="flex flex-col items-center gap-1 mt-4 md:mt-auto">
+        <div className="flex flex-col items-center gap-1 justify-center min-h-[200px] mt-4 md:mt-auto">
           <Image
             className="w-40 mt-10 lg:mt-5 lg:w-52"
             width={100}
@@ -68,7 +68,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-6xl xl:text-6xl font-bold flex mt-5 mb-2"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
           >
             {counterOn && (
               <CountUp start={0} end={39576} duration={5} delay={0} />
@@ -83,12 +83,12 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
           >
             Number of followers on Social Media
           </m.p>
         </div>
-        <div className="flex flex-col items-center gap-1 mt-4 md:mt-auto">
+        <div className="flex flex-col items-center gap-1 justify-center min-h-[200px] mt-4 md:mt-auto">
           <Image
             className="w-40 mt-10 lg:mt-5 lg:w-52"
             width={100}
@@ -105,7 +105,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-6xl xl:text-6xl font-bold flex mt-5 mb-2"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
           >
             {counterOn && (
               <CountUp start={0} end={4526} duration={5} delay={0} />
@@ -120,12 +120,12 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
           >
             5 star reviews
           </m.p>
         </div>
-        <div className="flex flex-col items-center gap-1 mt-4 md:mt-auto">
+        <div className="flex flex-col items-center gap-1 justify-center min-h-[200px] mt-4 md:mt-auto">
           <Image
             className="w-40 mt-10 lg:mt-5 lg:w-52"
             width={100}
@@ -142,7 +142,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-5xl lg:text-6xl xl:text-6xl font-bold flex mt-5 mb-2"
+            className="text-5xl lg:text-5xl xl:text-5xl font-bold flex h-[70px] items-center justify-center"
           >
             {counterOn && (
               <CountUp start={0} end={130957} duration={5} delay={0} />
@@ -157,7 +157,7 @@ const WhatMakesUsLove = () => {
               damping: 150,
               stiffness: 400,
             }}
-            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500"
+            className="text-center w-[95%] text-xl sm:text-2xl font-semibold text-gray-500 h-[40px] flex justify-center"
           >
             Number of app downloads
           </m.p>
