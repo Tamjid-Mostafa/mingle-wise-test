@@ -249,8 +249,3 @@ body {
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
-
-.v-text {
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: vertical-lr;
-}

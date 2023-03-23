@@ -1,7 +1,6 @@
 import React from "react";
 import { REVIEW_DATA } from "@/Data/Home";
 import Slider from "react-slick";
-import { AiFillStar } from "react-icons/ai";
 import { motion as m } from "framer-motion";
 import Image from "next/image";
 

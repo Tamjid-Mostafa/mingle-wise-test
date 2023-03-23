@@ -2,7 +2,6 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import Logo from "./Logo";
 import WhiteBackgroundLogo from "./WhiteBackgroundLogo";
 import { GiHamburgerMenu } from "react-icons/gi";

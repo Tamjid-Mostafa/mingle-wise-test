@@ -1,8 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Logo from "../../public/assets/logo/mingle.png";
-import AppleLogo from "../../public/assets/icons/apple.svg";
-import GooglePlay from "../../public/assets/icons/google-play-icon.svg";
 import { MdEmail, MdLocationPin, MdWhatsapp } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
