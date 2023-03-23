@@ -3,7 +3,7 @@ import React from "react";
 
 const DownloadApp = () => {
   return (
-    <div className="py-24">
+    <div className="py-24 px-2">
       <div className="flex md:flex-row flex-col-reverse items-center container mx-auto gap-14">
         <div className="md:w-[40%] mt-2 md:mt-0">
           <div className="text-center md:text-left">

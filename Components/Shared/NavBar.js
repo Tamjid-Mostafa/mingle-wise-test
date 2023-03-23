@@ -2,9 +2,10 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import Logo from "./Logo";
 import WhiteBackgroundLogo from "./WhiteBackgroundLogo";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 export default function NavBar() {
   const [windowHeight, setWindowHeight] = useState("");
@@ -60,16 +61,11 @@ export default function NavBar() {
             onClick={() => setMenu(true)}
             className="cursor-pointer flex lg:hidden"
           >
-            <Image
-              src={
-                windowHeight >= 100
-                  ? "/icons/menu-black.svg"
-                  : "/icons/menu.svg"
-              }
-              width="34"
-              height="34"
-              alt="close"
-            />
+            {windowHeight >= 100 ? (
+              <GiHamburgerMenu className="text-3xl" />
+            ) : (
+              <GiHamburgerMenu className="text-3xl" />
+            )}
           </span>
         )}
       </header>
@@ -86,12 +82,7 @@ export default function NavBar() {
                 onClick={() => setMenu(false)}
                 className="pt-1 cursor-pointer"
               >
-                <Image
-                  src="/icons/cut.svg"
-                  width="34"
-                  height="34"
-                  alt="close"
-                />
+                <IoMdClose className="text-3xl" />
               </span>
             </div>
             <div className="text-container items-center">
