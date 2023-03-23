@@ -13,8 +13,8 @@ const WhatMakesUsLove = () => {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:w-[80%] lg:w-[90%] xl:w-[85%] 2xl:w-[90%] mx-auto justify-center items-center py-10 xl:py-16">
-        <div className="flex flex-col items-center gap-1 justify-center min-h-[200px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:w-[80%] lg:w-[90%] xl:w-[85%] 2xl:w-[90%] mx-auto justify-center items-center py-10 xl:py-16 overflow-hidden">
+        <div className="flex flex-col items-center gap-1 justify-center min-h-[200px] max-h-[400px]">
           <Image
             className="w-40 mt-10 lg:mt-5 lg:w-52"
             width={100}

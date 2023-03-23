@@ -176,33 +176,33 @@ export const IN_APP_FEATURES = [
 
 export const REVIEW_DATA = [
   {
+    image: "/assets/review-iamge/char-1 (1).jpg",
     name: "Diksha Valecha",
     info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
-    platform: "Play store review",
   },
   {
+    image: "/assets/review-iamge/char-1 (2).jpg",
     name: "Diksha Valecha",
     info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
-    platform: "Play store review",
   },
   {
+    image: "/assets/review-iamge/char-1 (3).jpg",
     name: "Diksha Valecha",
     info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
-    platform: "Play store review",
   },
   {
+    image: "/assets/review-iamge/char-1 (4).jpg",
     name: "Diksha Valecha",
     info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
-    platform: "Play store review",
   },
   {
+    image: "/assets/review-iamge/char-1 (5).jpg",
     name: "Diksha Valecha",
     info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
-    platform: "Play store review",
   },
   {
+    image: "/assets/review-iamge/char-1 (3).jpg",
     name: "Diksha Valecha",
     info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
-    platform: "Play store review",
   },
 ];
