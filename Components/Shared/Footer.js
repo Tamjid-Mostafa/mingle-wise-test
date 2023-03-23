@@ -122,7 +122,7 @@ const Footer = () => {
           </div>
           <div className="lg:flex justify-between items-center border-t border-gray-600 pt-2 pb-5">
             <div className="lg:flex gap-8 items-center px-5 md:px-1">
-              <p className="text-2xl font-semibold text-white poppins-text">
+              <p className="text-[22px] font-semibold text-white poppins-text">
                 Download the app{" "}
               </p>
               <div className="flex gap-2">

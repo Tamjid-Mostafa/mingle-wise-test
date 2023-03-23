@@ -6,13 +6,13 @@ const ProfessionalNetworking = () => {
   return (
     <div className="py-20">
       <div className="text-center w-[90%] md:w-[70%] mx-auto">
-        <p className="text-2xl md:text-[36px] font-semibold poppins-text">
+        <p className="text-2xl md:text-3xl font-semibold poppins-text">
           PROFESSIONAL
         </p>
-        <p className="text-2xl md:text-[36px] font-semibold mt-2 poppins-text">
+        <p className="text-2xl md:text-3xl font-semibold mt-2 poppins-text">
           NETWORKING
         </p>
-        <p className="mt-5 mb-7 text-xl poppins-text">
+        <p className="mt-5 mb-7 poppins-text">
           Lorem ipsum dolor sit amet consectetur. Ac gravida vulputate malesuada
           nec tellus. Nibh sit proin egestas metus condimentum blandit. Elit sed
           interdum id egestas. At fringilla eleifend molestie nunc at lacus
@@ -30,7 +30,7 @@ const ProfessionalNetworking = () => {
               alt={profile?.title}
             />
             <div className="mt-3">
-              <p className="text-xl font-semibold poppins-text">
+              <p className="text-[18px] font-semibold poppins-text">
                 {profile?.title}
               </p>
               <p className="text-justify mt-1 lato">{profile?.info}</p>
@@ -40,7 +40,7 @@ const ProfessionalNetworking = () => {
       </div>
       <div className="text-center">
         <button
-          className="bg-transparent text-white font-bold w-28 h-12 relative
+          className="bg-transparent text-white font-semibold w-28 h-12 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
             before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
             before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br

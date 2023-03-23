@@ -6,7 +6,7 @@ const InAppFeatures = () => {
   return (
     <div className="py-20">
       <div className="text-center w-[90%] md:w-[70%] mx-auto">
-        <p className="text-2xl md:text-[36px] font-semibold mb-14 poppins-text">
+        <p className="text-2xl md:text-3xl font-semibold mb-14 poppins-text">
           In-app Features
         </p>
       </div>
@@ -21,7 +21,7 @@ const InAppFeatures = () => {
               alt={profile?.title}
             />
             <div className="mt-3">
-              <p className="text-xl font-semibold poppins-text">
+              <p className="text-[18px] font-semibold poppins-text">
                 {profile?.title}
               </p>
               <p className="text-justify mt-1 lato">{profile?.info}</p>
@@ -31,7 +31,7 @@ const InAppFeatures = () => {
       </div>
       <div className="text-center">
         <button
-          className="bg-transparent text-white font-bold w-28 h-12 relative
+          className="bg-transparent text-white font-semibold w-28 h-12 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
             before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
             before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br

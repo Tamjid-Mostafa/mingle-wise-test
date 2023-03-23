@@ -47,8 +47,8 @@ export default function FolksLovesUs() {
   return (
     <div className="client-reviews py-10 min-h-[500px] overflow-hidden">
       <div className="container mx-auto">
-        <p className="text-2xl sm:text-[36px] text-center font-semibold">
-          Folks love us
+        <p className="text-2xl sm:text-3xl text-center font-semibold poppins-text mb-5">
+          Folks Love Us
         </p>
         <m.div
           initial={{ opacity: 1, scale: 1 }}
@@ -78,11 +78,9 @@ export default function FolksLovesUs() {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <p className="text-xl roboto text-[#4F4F4F] mt-5 text-justify poppins-text">
-                    {data?.info}
-                  </p>
+                  <p className="mt-5 text-justify poppins-text">{data?.info}</p>
                 </div>
-                <p className="text-base font-medium roboto text-right mt-5 poppins-text">
+                <p className="text-[15px] font-medium text-right mt-5 poppins-text">
                   {data?.name}
                 </p>
               </div>
