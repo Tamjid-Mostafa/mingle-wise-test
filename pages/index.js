@@ -9,6 +9,7 @@ import SignUpForNewsLetter from "@/Components/Home/SignUpForNewsLetter";
 import DatingProfile from "@/Components/Home/DatingProfile";
 import ProfessionalNetworking from "@/Components/Home/ProfessionalNetworking";
 import WhatMakesUsLove from "@/Components/Home/WhatMakesUsLove";
+import InAppFeatures from "@/Components/Home/InAppFeatures";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
           <DatingProfile />
           <ProfessionalNetworking />
           <WhatMakesUsLove />
+          <InAppFeatures />
           <Reviews />
           <SignUpForNewsLetter />
         </>
