@@ -5,7 +5,6 @@ import React from "react";
 import Header from "../Components/Home/Header";
 import WhyMingleWise from "@/Components/Home/WhyMingleWise";
 import Reviews from "@/Components/Home/Reviews";
-import SignUpForNewsLetter from "@/Components/Home/SignUpForNewsLetter";
 import DatingProfile from "@/Components/Home/DatingProfile";
 import ProfessionalNetworking from "@/Components/Home/ProfessionalNetworking";
 import WhatMakesUsLove from "@/Components/Home/WhatMakesUsLove";
@@ -40,7 +39,6 @@ export default function Home() {
           <WhatMakesUsLove />
           <InAppFeatures />
           <Reviews />
-          <SignUpForNewsLetter />
         </>
       </main>
     </>
