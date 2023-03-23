@@ -4,11 +4,11 @@ const inter = Inter({ subsets: ["latin"] });
 import React from "react";
 import Header from "../Components/Home/Header";
 import WhyMingleWise from "@/Components/Home/WhyMingleWise";
-import Reviews from "@/Components/Home/Reviews";
 import DatingProfile from "@/Components/Home/DatingProfile";
 import ProfessionalNetworking from "@/Components/Home/ProfessionalNetworking";
 import WhatMakesUsLove from "@/Components/Home/WhatMakesUsLove";
 import InAppFeatures from "@/Components/Home/InAppFeatures";
+import FolksLovesUs from "@/Components/Home/FolksLovesUs";
 
 export default function Home() {
   return (
@@ -38,7 +38,7 @@ export default function Home() {
           <ProfessionalNetworking />
           <WhatMakesUsLove />
           <InAppFeatures />
-          <Reviews />
+          <FolksLovesUs />
         </>
       </main>
     </>
