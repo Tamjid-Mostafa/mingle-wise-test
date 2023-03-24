@@ -93,14 +93,28 @@ const DownloadApp = () => {
               </motion.div>
             </div>
           </div>
-          <div className="flex md:w-[60%]">
+          <motion.div
+            initial={{ scale: 0.5, x: "40%", opacity: 0 }}
+            whileInView={{ scale: 1, x: 0, opacity: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: "spring",
+                damping: 15,
+                stiffness: 70,
+                restDelta: 0.001,
+              },
+            }}
+            className="flex md:w-[60%]"
+          >
             <Image
               src="/assets/why-minglewise/phone-group-2.png"
               alt="Image"
               width={1000}
               height={500}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     </AnimatePresence>
