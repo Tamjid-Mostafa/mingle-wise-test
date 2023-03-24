@@ -15,6 +15,23 @@ const WhatMakesUsLove = () => {
       onExit={() => setCounterOn(false)}
     >
       <AnimatePresence>
+        <motion.p
+          initial={{ scale: 0.6, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{
+            duration: 1.5,
+            ease: [0, 0.71, 0.2, 1.01],
+            scale: {
+              type: "spring",
+              damping: 15,
+              stiffness: 70,
+              restDelta: 0.001,
+            },
+          }}
+          className="text-2xl md:text-3xl font-semibold poppins-text text-center"
+        >
+          What makes us loved
+        </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:w-[80%] lg:w-[90%] xl:w-[85%] 2xl:w-[90%] mx-auto justify-center items-center py-10 xl:py-16 overflow-hidden">
           <div className="flex flex-col items-center gap-1 justify-center min-h-[200px] max-h-[400px]">
             <motion.div
