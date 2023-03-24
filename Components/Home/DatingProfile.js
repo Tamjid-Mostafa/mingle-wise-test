@@ -65,10 +65,12 @@ const DatingProfile = () => {
               className="p-10 mb-5"
             >
               <motion.div
-                initial={{ scale: 1, opacity: 1 }}
-                whileHover={{ scale: 1.03, opacity: 1 }}
+                initial={{ scale: 1, opacity: 1, rotate: 90 }}
+                whileInView={{ rotate: 0 }}
+                whileHover={{ scale: 1.03, opacity: 1, rotate: 5 }}
+                whileTap={{ scale: 1.2 }}
                 transition={{
-                  duration: 0.2,
+                  duration: 0.7,
                   ease: [0, 0.71, 0.2, 1.01],
                   scale: {
                     type: "spring",
