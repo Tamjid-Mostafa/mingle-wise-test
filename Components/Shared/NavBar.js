@@ -6,16 +6,16 @@ import Logo from "./Logo";
 import WhiteBackgroundLogo from "./WhiteBackgroundLogo";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function NavBar() {
   const [windowHeight, setWindowHeight] = useState("");
   const router = useRouter();
   const navigation = [
-    { name: "Services", href: "" },
-    { name: "Our Apps", href: "" },
-    { name: "Industries", href: "" },
+    { name: "Features", href: "" },
+    { name: "Subscription", href: "" },
     { name: "About", href: "" },
-    { name: "Careers", href: "" },
   ];
   const handleScroll = () => {
     setWindowHeight(window.scrollY);
@@ -28,7 +28,19 @@ export default function NavBar() {
 
   return (
     <>
-      <header
+      <motion.header
+        initial={{ y: "-100%" }}
+        whileInView={{ y: 0 }}
+        transition={{
+          duration: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 10,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
         className={`flex w-full justify-between items-center px-5 lg:px-10 py-5 top-0 z-[101] fixed font-medium drop-shadow ${
           windowHeight >= 100
             ? "bg-white text-black"
@@ -43,7 +55,7 @@ export default function NavBar() {
             <div className="hidden sm:block">
               <p className="header-font-extra-light md:text-2xl tracking-[5px] relative">
                 MingleWise
-                <span className="text-[8px] roboto tracking-tight absolute top-[-5px] md:top-[-12px]">
+                <span className="text-[8px] tracking-tight absolute top-[-5px] md:top-[-12px] poppins-text">
                   TM
                 </span>
               </p>
@@ -68,14 +80,25 @@ export default function NavBar() {
             )}
           </span>
         )}
-      </header>
+      </motion.header>
       {menu ? (
         <main
           className={`fixed z-[9999] top-0 bottom-0 right-0 left-0 flex items-center justify-end lg:hidden `}
         >
-          <main
-            data-aos="fade-left"
-            className="relative bg-white z-20 w-[85vw] h-[100vh] flex flex-col"
+          <motion.div
+            initial={{ x: "100%" }}
+            whileInView={{ x: 0 }}
+            transition={{
+              duration: 0.5,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: "spring",
+                damping: 10,
+                stiffness: 100,
+                restDelta: 0.001,
+              },
+            }}
+            className="relative bg-white z-20 w-[100vw] h-[100vh] flex flex-col"
           >
             <div className="flex p-10 justify-between w-full">
               <span
@@ -86,14 +109,21 @@ export default function NavBar() {
               </span>
             </div>
             <div className="text-container items-center">
-              <h2 className="sub_heading">Menu</h2>
-              <ul className="text-base font-semibold flex flex-col gap-10">
-                {navigation?.map((nav) => (
+              <div className="flex flex-col items-center mb-5">
+                <Image
+                  height={90}
+                  width={90}
+                  src="/assets/logo/mingle.png"
+                  alt="Company logo"
+                />
+              </div>
+              <ul className="text-base font-semibold flex flex-col items-center gap-10">
+                {navigation?.map((nav, index) => (
                   <li
                     className={`hover:bg-[#F3FAFF] w-[200px] flex items-center justify-center ${
                       router.pathname == nav.href ? "bg-[#F3FAFF]" : ""
                     }`}
-                    key={nav.name}
+                    key={index}
                   >
                     <Link href={nav.href}>
                       <span className="poppins-text">{nav.name}</span>
@@ -102,10 +132,10 @@ export default function NavBar() {
                 ))}
               </ul>
             </div>
-            <p className="text text-center m-5">
+            <p className="text text-center mt-8">
               All Rights Reserved AppSynergies © Copyright2022
             </p>
-          </main>
+          </motion.div>
           <span
             onClick={() => setMenu(false)}
             className={`absolute z-10 top-0 bottom-0  right-0 left-0 bg-black/70 cursor-pointer`}

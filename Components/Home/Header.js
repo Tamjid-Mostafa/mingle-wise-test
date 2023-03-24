@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 
 export default function HomeCarousel() {
   const router = useRouter();
@@ -17,7 +18,7 @@ export default function HomeCarousel() {
     autoplaySpeed: 5000,
   };
   return (
-    <div className="home">
+    <div className="home overflow-hidden">
       <Slider
         pauseOnHover={false}
         pauseOnFocus={false}
@@ -29,20 +30,47 @@ export default function HomeCarousel() {
             <span className="bg-black/60 absolute top-0 bottom-0 right-0 left-0 z-[1]">
               <div className="h-full grid justify-start items-center p-6 md:p-40">
                 <div className="flex flex-col gap-6 text-white">
-                  <h1 className="md:max-w-[80%] text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[50px] font-bold leading-tight poppins-text">
+                  <motion.h1
+                    initial={{ x: "50%", opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{
+                      duration: 1,
+                      ease: [0, 0.71, 0.2, 1.01],
+                      scale: {
+                        type: "spring",
+                        damping: 10,
+                        stiffness: 100,
+                        restDelta: 0.001,
+                      },
+                    }}
+                    className="md:max-w-[80%] text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[50px] font-bold leading-tight poppins-text"
+                  >
                     {data.heading}
-                  </h1>
-                  <p className="md:max-w-[700px] md:text-lg font-normal poppins-text">
+                  </motion.h1>
+                  <motion.p
+                    initial={{ x: "50%", scale: 0.8, opacity: 0 }}
+                    whileInView={{ x: 0, scale: 1, opacity: 1 }}
+                    transition={{
+                      duration: 1,
+                      ease: [0, 0.71, 0.2, 1.01],
+                      scale: {
+                        type: "spring",
+                        damping: 10,
+                        stiffness: 100,
+                        restDelta: 0.001,
+                      },
+                    }}
+                    className="md:max-w-[700px] md:text-lg font-normal poppins-text"
+                  >
                     {data.subHeading}
-                  </p>
+                  </motion.p>
                   <button
-                    onClick={() => router.push("?estimate=true")}
                     className="bg-transparent text-white font-semibold w-44 h-10 relative
                     before:w-full before:h-full before:scale-x-[1.04] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
                     before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
                     before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
                     before:rounded-md
-                    hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2 poppins-text"
+                    hover:bg-white hover:text-black duration-300 px-4 rounded py-2 poppins-text"
                   >
                     Download Now
                   </button>
