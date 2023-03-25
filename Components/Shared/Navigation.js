@@ -6,14 +6,10 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function Navigation({ windowHeight }) {
   const router = useRouter();
   const navigation = [
-    { name: "Features", href: "/" },
-    { name: "Subscription", href: "/" },
-    { name: "About", href: "/" },
+    { name: "Features", href: "/QuickLinks/Features" },
+    { name: "Subscription", href: "/QuickLinks/SubscriptionTires" },
+    { name: "About", href: "/QuickLinks/AboutUs" },
   ];
-
-  // ${
-  //   router.pathname == nav.href ? "border-b-2 border-[#7300D5]" : ""
-  // }
 
   return (
     <AnimatePresence>
@@ -33,7 +29,9 @@ export default function Navigation({ windowHeight }) {
                   restDelta: 0.001,
                 },
               }}
-              className={``}
+              className={`${
+                router.pathname == nav.href ? "border-b-2 border-[#7300D5]" : ""
+              }`}
               key={nav.name}
             >
               <Link href={nav.href}>

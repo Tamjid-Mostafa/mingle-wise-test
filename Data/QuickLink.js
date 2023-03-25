@@ -38,30 +38,152 @@ export const ABOUT_US = [
   },
 ];
 
-import Dating from "../public/assets/features-card/dating.jpg";
-import Networking from "../public/assets/features-card/professioanl.jpg";
-import Event from "../public/assets/features-card/event.jpg";
-import Secured from "../public/assets/features-card/secured.jpg";
+export const FEATURES_DATA = [
+  {
+    img: "/assets/features/compatibility.svg",
+    title: "Compatibility",
+    info: "Get a detailed summary of how you match up with the other user.",
+  },
+  {
+    img: "/assets/features/profile-privacy.svg",
+    title: "Profile Privacy",
+    info: "Choose what you want to share with more privacy control.",
+  },
+  {
+    img: "/assets/features/mingle-instant.svg",
+    title: "Mingle Instant",
+    info: "Participate in an exciting on the spot blind date video-calls with other users. Connect just by selecting the gender and location.",
+  },
+  {
+    img: "/assets/features/rollback.svg",
+    title: "Rollback",
+    info: "Undo accidental swipes. See the profiles again you want to see.",
+  },
+  {
+    img: "/assets/features/speed-dating 1.svg",
+    title: "Speed Dating",
+    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+  },
+  {
+    img: "/assets/features/teleport.svg",
+    title: "Teleport",
+    info: "Teleport your profile to a different location to find potential matches.",
+  },
+  {
+    img: "/assets/features/mingle-events.svg",
+    title: "Mingle Events",
+    info: "Create your own events using MingleWise video, audio and dashboards. You can create both public and private events.",
+  },
+  {
+    img: "/assets/features/discounts.svg",
+    title: "Discounts",
+    info: "Get discounts on in-app purchases like meet, speed, gift and lime light.",
+  },
+  {
+    img: "/assets/features/badges.svg",
+    title: "Elite Badge",
+    info: "Here, by using this feature you can get discounts on in-app purchases like meet, speed, gift and lime light.",
+  },
+  {
+    img: "/assets/features/stories.svg",
+    title: "Stories",
+    info: "Post your story in the form photos or videos. Also, to make your stories more fun and interactive, you can use features like stickers, hashtags, gifs, music, etc.",
+  },
+  {
+    img: "/assets/features/advanced-filter.svg",
+    title: "Advanced Filters",
+    info: "By using this feature you choose what kind of people you want to match, using advance filters.",
+  },
+  {
+    img: "/assets/features/buzz.svg",
+    title: "Buzz",
+    info: "Send a buzz to someone in which you are really interested. Also, you can check the count of number of buzzes sent and received",
+  },
+  {
+    img: "/assets/features/speed-network.svg",
+    title: "Speed Networking",
+    info: "Speed networking sessions, where you’ll have series of short conversations lasting for 3 minutes each with 5 people.",
+  },
+  {
+    img: "/assets/features/no-timelimit.svg",
+    title: "No Time Limit",
+    info: "By using this feature, your matches and messages won’t get disappeared after a period of time.",
+  },
+  {
+    img: "/assets/features/mingle-gifts.svg",
+    title: "Mingle Gifts",
+    info: "Buy virtual gifts such as flowers, chocolate, teddy, cake, ring, necklace etc using M coins in your account.",
+  },
+  {
+    img: "/assets/features/read-receipts.svg",
+    title: "Read Receipts",
+    info: "Here, by using this feature you can know whether your messages have been read or not.",
+  },
+  {
+    img: "/assets/features/limelights.svg",
+    title: "Limelight",
+    info: "By using this feature, top profiles will be visible to you. By using this, you explore top profiles.",
+  },
+  {
+    img: "/assets/features/profile-visitors.svg",
+    title: "Profile Visitors",
+    info: "Here, by using this feature you’ll get to know about the number of people who visited your profile.",
+  },
+  {
+    img: "/assets/features/second-chance.svg",
+    title: "Second Chance",
+    info: "Buy virtual gifts such as flowers, chocolate, teddy, cake, ring, necklace etc using M coins in your account.",
+  },
+  {
+    img: "/assets/features/double-triple.svg",
+    title: "Double/ Triple Daily Profiles",
+    info: "Match more people in a day by doubling or Tripling your daily profiles.",
+  },
+  {
+    img: "/assets/features/location.svg",
+    title: "Mingle Mixer",
+    info: "See mutual connections with your matches.",
+  },
+  {
+    img: "/assets/features/mystry-likes.svg",
+    title: "Mystery Likes",
+    info: "See the Profile of person who has liked your profile.",
+  },
+  {
+    img: "/assets/features/mystery-message.svg",
+    title: "Mystery Messages",
+    info: "Send a message to a particular person in which you are interested, even before getting matched and increase your chances of getting matched with that person.",
+  },
+  {
+    img: "/assets/features/converse.svg",
+    title: "Converse",
+    info: "Have a formal chat with various professionals. You can find this feature in ‘mingle-pro’ option.",
+  },
+];
 
-export const FEATURE_DATA = [
+export const FEATURES_BOTTOM_CARD = [
   {
-    img: Dating,
-    title: "Dating",
-    info: "Find interesting & compatible people using AI. Participate in exciting speed dating sessions. Meet your matches in real or video dates. Book venues & plan your date.",
+    image: "/assets/features/LIMELIGHT CARD.svg",
   },
   {
-    img: Networking,
-    title: "Professional Networking",
-    info: "Grow your network by connecting & meeting like minded professionals. Find exciting job opportunities. Find co-founders, skilled employees & build your team.",
+    image: "/assets/features/MYSTERY CHATS.svg",
   },
   {
-    img: Event,
-    title: "Events",
-    info: "Participate in interesting events or host & live stream your events to your network. Easily connect with fellow participants during or after the event.",
+    image: "/assets/features/ROLLBACK-CARD.svg",
   },
   {
-    img: Secured,
-    title: "Verified & Compatible Matches",
-    info: "Profiles are verified by social media accounts, mobile numbers & photo verification using AI technology. Compatibility tests to match with people that are truly tailored to you.",
+    image: "/assets/features/COMPATIBILITY-CARD.svg",
+  },
+  {
+    image: "/assets/features/MYSTERY-LIKES-CARD.svg",
+  },
+  {
+    image: "/assets/features/BUZZ-CARD.svg",
+  },
+  {
+    image: "/assets/features/PROFILE-VISITORS-CARD.svg",
+  },
+  {
+    image: "/assets/features/SECOND-CHANCES-CARD.svg",
   },
 ];
