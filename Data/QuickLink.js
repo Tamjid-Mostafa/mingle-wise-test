@@ -252,3 +252,31 @@ export const SUBSCRIPTION_TIRES = [
     mingleCeleb: true,
   },
 ];
+
+export const SUPPORT_DATA = [
+  {
+    question: "How to use MingleWise?",
+    answer:
+      "In MingleWise app you can use Finder to like users and find people to chat with; Chat in Messages; See stories and share them with friends; See your matches and likes in Events; change your profile and app settings in Profile. Each section has its icon at the bottom of the screen. In general, the secret is simple: be active and you will definitely get the match you want 😉",
+  },
+  {
+    question: "Can I use MingleWise for free?",
+    answer:
+      "Yes! You can use all basic features (swipe, match, chat and share stories) free of charge. A subscription will give you an opportunity to adjust your search criteria, get more likes, matches, and chats. But still it is not obligatory and you can use MingleWise for free.",
+  },
+  {
+    question: "How to verify my profile?",
+    answer:
+      "You can verify your account by photo, email or Facebook. To do that, please, open your profile settings (bottom right icon) and tap on Verification. Then choose the option you like and follow the instructions.",
+  },
+  {
+    question: "How to get a subscription?",
+    answer:
+      "In order to become a subscribed member, please open your profile (bottom right icon), tap on “Get MingleWise Premium”, choose the package you like and tap Continue. Follow the Store instructions and enjoy the premium version of MingleWise.",
+  },
+  {
+    question: "Are users real people?",
+    answer:
+      "Safety of our users is our priority. So we use multiple verification tools to provide access to the app only for real users.",
+  },
+];
