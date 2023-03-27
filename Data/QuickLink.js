@@ -280,3 +280,41 @@ export const SUPPORT_DATA = [
       "Safety of our users is our priority. So we use multiple verification tools to provide access to the app only for real users.",
   },
 ];
+
+export const COMMUNITY_RULES_DATA = [
+  {
+    question: "Age Restrictions",
+    answer:
+      "According to the applicable legal standards as well as the Google Play and App Store policies, MingleWise app is available to 18+ users only. If you are not 18 yet, we invite you to postpone joining in. We will be happy to see you back once you turn 18.",
+  },
+  {
+    question: "Sexually Explicit Content",
+    answer:
+      "Any content shared publicly is ought to be within the common standards of morals and ethics and not to endanger others. The nudity portrayal cannot be shared in public; you can exchange it in private messages upon an explicit mutual consent only.",
+  },
+  {
+    question: "Respect The Privacy",
+    answer:
+      "If a user blocks you, don’t try to contact this person from any other account. You are expected to respect the privacy of every member of the community. Report all cases of violation of these Rules by the Report function. That will help us to keep MingleWise safe.",
+  },
+  {
+    question: "Sensitive Information",
+    answer:
+      "It is strongly advised not to share publicly your personal information such as home address or phone numbers. Moreover, any display of your financial information (bank card, PayPal, Cash-app or any other payment information details) is not allowed.",
+  },
+  {
+    question: "Messages & Spam",
+    answer:
+      "Copy-pasting messages to a great number of users is not a good way to get around. It looks like spam. Instead, it is a good idea to check the profile information before sending messages to your matches. That will certainly lead you to an engaging chat. Sending over repetitive messages may result in the suspension of the account due to a big number of complaints. Avoid unwanted repeated messages.",
+  },
+  {
+    question: "Disinformation & Illegal Content",
+    answer:
+      "Any attempts to deceive others and spread intentionally untrue information will be banned. According to our Terms of Use, any media content that contains illegal actions or goods is strictly prohibited. MingleWise is not a place to create fake accounts for abuse, deception or fraud. We recommend to Block or Report any acts of deceptive activity.",
+  },
+  {
+    question: "Illegal Actions With The Service",
+    answer:
+      "You must not be engaged in an exchange of coins or gifts for any items or services which usually has any price or value. Please do nothing that we, your bank or any third party may qualify as exchange coins or gifts for something that has any value. More details are available in MingleWise Paid Service Terms and Conditions.",
+  },
+];
