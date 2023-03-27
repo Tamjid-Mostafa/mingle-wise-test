@@ -154,7 +154,7 @@ const Features = () => {
               <p>You can buy gifts and other in-app features</p>
             </div>
           </div>
-          <div className="mx-auto grid grid-cols-1 md:grid-cols-2 w-[98%] md:w-[95%] lg:w-[80%] xl:w-[65%] gap-2 mt-14">
+          <div className="mx-auto grid grid-cols-1 md:grid-cols-2 w-[98%] md:w-[95%] lg:w-[80%] xl:w-[65%] 2xl:w-[60%] gap-2 mt-14">
             {FEATURES_BOTTOM_CARD.map((data, index) => (
               <motion.div
                 initial={{ scale: 0.5, opacity: 1, rotate: 10 }}

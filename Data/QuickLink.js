@@ -187,3 +187,108 @@ export const FEATURES_BOTTOM_CARD = [
     image: "/assets/features/SECOND-CHANCES-CARD.svg",
   },
 ];
+
+export const SUBSCRIPTION_TIRES = [
+  {
+    concept: "Mingle Date & Pro Profiles",
+    mingleWise: true,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Match & chat",
+    mingleWise: true,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Join events",
+    mingleWise: true,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Virtual Dates & Meetings",
+    mingleWise: true,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Plan Events",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "No Time Limit",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Teleport",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "See who likes you",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "No more Ads",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Profile Privacy",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Second look",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Rollback Swipes",
+    mingleWise: false,
+    mingleElite: true,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Advanced Filters",
+    mingleWise: false,
+    mingleElite: false,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Discounts on in-app purchases",
+    mingleWise: false,
+    mingleElite: false,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Priority Match",
+    mingleWise: false,
+    mingleElite: false,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Profile Insights",
+    mingleWise: false,
+    mingleElite: false,
+    mingleCeleb: true,
+  },
+  {
+    concept: "Concierge Service",
+    mingleWise: false,
+    mingleElite: false,
+    mingleCeleb: true,
+  },
+];

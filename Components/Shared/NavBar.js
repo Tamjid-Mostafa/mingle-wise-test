@@ -53,13 +53,31 @@ export default function NavBar() {
               {windowHeight >= 100 ? <Logo /> : <WhiteBackgroundLogo />}
             </div>
             <div className="hidden sm:block">
-              <p className="header-font-extra-light font-bold md:text-2xl tracking-[5px] relative text-transparent bg-clip-text bg-gradient-to-r from-[#F94969] to-[#7328D2]">
+              <p
+                className={`header-font-extra-light font-bold md:text-2xl tracking-[5px] relative ${
+                  router.pathname === "/" && windowHeight <= 100
+                    ? "text-white"
+                    : "text-transparent bg-clip-text bg-gradient-to-r from-[#F94969] to-[#7328D2]"
+                } `}
+              >
                 MingleWise
-                <span className="text-[8px] tracking-tight absolute top-[-5px] md:top-[-12px] poppins-text">
+                <span
+                  className={`text-[8px] tracking-tight absolute top-[-5px] md:top-[-12px] poppins-text ${
+                    router.pathname === "/" && windowHeight <= 100
+                      ? "text-white"
+                      : "text-transparent bg-clip-text bg-gradient-to-r from-[#F94969] to-[#7328D2]"
+                  }`}
+                >
                   TM
                 </span>
               </p>
-              <p className="header-font-extra-light text-[12px] font-bold text-center text-[#C56183]">
+              <p
+                className={`header-font-extra-light text-[12px] font-bold text-center ${
+                  router.pathname === "/" && windowHeight <= 100
+                    ? "text-white"
+                    : "text-[#C56183]"
+                } `}
+              >
                 Dating | Networking | Events
               </p>
             </div>
