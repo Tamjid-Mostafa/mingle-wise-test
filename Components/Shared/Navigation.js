@@ -31,7 +31,9 @@ export default function Navigation({ windowHeight }) {
               }}
               className={`${
                 router.pathname == nav.href ? "border-b-2 border-[#7300D5]" : ""
-              }`}
+              } ${
+                router.pathname === "/" && windowHeight <= 100 && " text-white"
+              } ${router.pathname !== "/" && "text-black"}`}
               key={nav.name}
             >
               <Link href={nav.href}>
