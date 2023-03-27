@@ -4,6 +4,7 @@ import NavBar from "@/Components/Shared/NavBar";
 import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import { createContext, useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 export const StateContext = createContext();
 
@@ -36,6 +37,7 @@ export default function App({ Component, pageProps }) {
       ) : (
         <>
           <StateContext.Provider value={stateInfo}>
+            <Toaster position="top-center" />
             <NavBar />
             <Component {...pageProps} />
             <Footer />

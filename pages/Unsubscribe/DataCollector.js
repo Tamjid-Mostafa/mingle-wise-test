@@ -4,23 +4,36 @@ import Confirmation from "./Confirmation";
 
 const DataCollector = () => {
   const [showModal, setShowModal] = useState(false);
-  const [confirmation, setConfirmation] = useState(false);
-  console.log(confirmation);
   const [info, setInfo] = useState({
     name: "",
     email: "",
   });
   const handleUserSubmission = (e) => {
     e.preventDefault();
+    setShowModal(true);
   };
   return (
     <AnimatePresence>
-      <motion.div className="py-24 min-h-[70vh]">
+      <motion.div
+        initial={{ opacity: 0, scale: 1.2 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.1,
+          scale: {
+            type: "spring",
+            damping: 50,
+            stiffness: 200,
+            restDelta: 0.001,
+          },
+        }}
+        className="py-24 min-h-[70vh]"
+      >
         <motion.div className="xl:w-[40%] mx-auto p-24 rounded mt-10 shadow-md">
           <form onSubmit={handleUserSubmission}>
             <div className="poppins-text flex flex-col">
               <label htmlFor="userName">Name</label>
               <input
+                required
                 onChange={(e) => setInfo({ ...info, name: e.target.value })}
                 id="userName"
                 type="text"
@@ -31,6 +44,7 @@ const DataCollector = () => {
             <div className="poppins-text flex flex-col">
               <label htmlFor="userEmail">Email</label>
               <input
+                required
                 onChange={(e) => setInfo({ ...info, email: e.target.value })}
                 id="userEmail"
                 type="email"
@@ -40,7 +54,6 @@ const DataCollector = () => {
             </div>
             <div className="text-center">
               <button
-                onClick={() => setShowModal(true)}
                 className="bg-transparent text-white font-semibold w-[96%] h-12 relative
           before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
           before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
@@ -59,10 +72,10 @@ const DataCollector = () => {
         </motion.div>
 
         <Confirmation
+          handleUserSubmission={handleUserSubmission}
           info={info}
+          setInfo={setInfo}
           isVisible={showModal}
-          setConfirmation={setConfirmation}
-          confirmation={confirmation}
           onClose={() => setShowModal(false)}
         />
       </motion.div>
