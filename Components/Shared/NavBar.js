@@ -14,7 +14,7 @@ export default function NavBar() {
   const router = useRouter();
   const navigation = [
     { name: "Features", href: "/QuickLinks/Features" },
-    { name: "Subscription", href: "/QuickLinks/SubscriptionTires" },
+    { name: "Subscriptions", href: "/QuickLinks/SubscriptionTires" },
     { name: "About", href: "/QuickLinks/AboutUs" },
   ];
   const handleScroll = () => {

@@ -1,3 +1,6 @@
+npm i
+npm run dev
+
 firebase login
 
 You need to login from the same company id that has access to the firebase project

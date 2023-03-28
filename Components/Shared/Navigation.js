@@ -7,7 +7,7 @@ export default function Navigation({ windowHeight }) {
   const router = useRouter();
   const navigation = [
     { name: "Features", href: "/QuickLinks/Features" },
-    { name: "Subscription", href: "/QuickLinks/SubscriptionTires" },
+    { name: "Subscriptions", href: "/QuickLinks/SubscriptionTires" },
     { name: "About", href: "/QuickLinks/AboutUs" },
   ];
 
@@ -49,7 +49,7 @@ export default function Navigation({ windowHeight }) {
               <button
                 className={`bg-transparent text-white font-bold w-28 h-10 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
-            before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
+            before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%]
             before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
             before:rounded-md
             hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2 poppins-text`}

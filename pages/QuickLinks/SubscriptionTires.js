@@ -10,7 +10,7 @@ const SubscriptionTires = () => {
   return (
     <>
       <Head>
-        <title>SUBSCRIPTION - MingleWise</title>
+        <title>SUBSCRIPTIONS - MingleWise</title>
       </Head>
       <AnimatePresence>
         <motion.div
