@@ -34,29 +34,14 @@ const Footer = () => {
                   >
                     Subscription Tires
                   </Link>
-                </div>
-                <div className="flex flex-col gap-3 mt-5 lg:mt-auto md:min-h-[200px]">
-                  <p className="text-lg text-white mb-2">Community</p>
-                  <Link
-                    href="/QuickLinks/CommunityBlog"
-                    className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
-                  >
-                    Community Blog
-                  </Link>
                   <Link
                     href="/QuickLinks/Support"
                     className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                   >
                     Support
                   </Link>
-                  <Link
-                    href="/QuickLinks/CommunityRules"
-                    className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
-                  >
-                    Community Rules
-                  </Link>
                 </div>
-                <div className="roboto flex flex-col gap-3 mt-5 lg:mt-auto md:min-h-[200px]">
+                <div className="flex flex-col gap-3 mt-5 lg:mt-auto md:min-h-[200px]">
                   <p className="text-lg text-white mb-2">Legal</p>
                   <Link
                     href="/QuickLinks/TermsOfUse"
@@ -77,10 +62,10 @@ const Footer = () => {
                     Cookie Policy
                   </Link>
                   <Link
-                    href="/QuickLinks/IntellectualProperty"
+                    href="/QuickLinks/CommunityRules"
                     className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                   >
-                    Intellectual Property
+                    Community Rules
                   </Link>
                 </div>
                 <div className="roboto flex flex-col gap-3 mt-5 lg:mt-auto md:min-h-[200px]">
