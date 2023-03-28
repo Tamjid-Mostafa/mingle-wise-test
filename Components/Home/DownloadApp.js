@@ -76,13 +76,18 @@ const DownloadApp = () => {
                 }}
                 className="flex flex-col md:flex-col lg:flex-col xl:flex-row gap-5 mt-5 lg:mt-32 justify-center items-center md:items-start"
               >
-                <Image
-                  height={100}
-                  width={200}
-                  className=""
-                  src="/assets/icons/available_on_both_stores_generated 1.svg"
-                  alt="Play store"
-                />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                  target="_blank"
+                >
+                  <Image
+                    height={100}
+                    width={200}
+                    className=""
+                    src="/assets/icons/available_on_both_stores_generated 1.svg"
+                    alt="Play store"
+                  />
+                </a>
                 <Image
                   height={100}
                   width={200}

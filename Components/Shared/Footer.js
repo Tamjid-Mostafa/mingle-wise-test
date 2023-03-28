@@ -123,12 +123,17 @@ const Footer = () => {
                     src="/assets/social-media/App Store.svg"
                     alt=""
                   />
-                  <Image
-                    height={50}
-                    width={50}
-                    src="/assets/social-media/Google Play.svg"
-                    alt=""
-                  />
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                    target="_blank"
+                  >
+                    <Image
+                      height={50}
+                      width={50}
+                      src="/assets/social-media/Google Play.svg"
+                      alt=""
+                    />
+                  </a>
                 </div>
               </div>
               <div className="flex text-gray-500 gap-6 mt-2 lg:mt-auto items-center px-5 md:px-1">
