@@ -102,12 +102,17 @@ const Footer = () => {
                   Download the app{" "}
                 </p>
                 <div className="flex gap-2">
-                  <Image
-                    height={50}
-                    width={50}
-                    src="/assets/social-media/App Store.svg"
-                    alt=""
-                  />
+                  <a
+                    href="https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+                    target="_blank"
+                  >
+                    <Image
+                      height={50}
+                      width={50}
+                      src="/assets/social-media/App Store.svg"
+                      alt=""
+                    />
+                  </a>
                   <a
                     href="https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                     target="_blank"

@@ -64,10 +64,7 @@ export default function HomeCarousel() {
                   >
                     {data.subHeading}
                   </motion.p>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-                    target="_blank"
-                  >
+                  <a href="#download-now">
                     <button
                       className="bg-transparent text-white font-semibold w-44 h-10 relative
                     before:w-full before:h-full before:scale-x-[1.04] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]

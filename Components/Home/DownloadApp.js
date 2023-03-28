@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const DownloadApp = () => {
   return (
     <AnimatePresence>
-      <div className="py-24 px-2 overflow-hidden">
+      <div id="download-now" className="py-24 px-2 overflow-hidden">
         <div className="flex md:flex-row flex-col-reverse items-center container mx-auto gap-14">
           <div className="md:w-[40%] mt-2 md:mt-0">
             <div className="text-center md:text-left">
@@ -84,17 +84,22 @@ const DownloadApp = () => {
                     height={100}
                     width={200}
                     className=""
-                    src="/assets/icons/available_on_both_stores_generated 1.svg"
+                    src="/assets/icons/available_on_both_stores_generated 1.png"
                     alt="Play store"
                   />
                 </a>
-                <Image
-                  height={100}
-                  width={200}
-                  className=""
-                  src="/assets/icons/available_on_both_stores_generated 2.svg"
-                  alt="App store"
-                />
+                <a
+                  href="https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+                  target="_blank"
+                >
+                  <Image
+                    height={100}
+                    width={200}
+                    className=""
+                    src="/assets/icons/available_on_both_stores_generated 2.png"
+                    alt="App store"
+                  />
+                </a>
               </motion.div>
             </div>
           </div>

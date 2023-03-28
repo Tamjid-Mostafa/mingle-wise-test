@@ -25,8 +25,8 @@ const Features = () => {
           }}
           className="overflow-hidden"
         >
-          <div className="bg-[#FCFCFC]">
-            <div className="w-[95%] md:w-[90%] lg:w-[70%] mx-auto flex flex-col justify-center items-center min-h-[70vh] sm:min-h-[50vh]">
+          <div className="bg-[#FCFCFC] py-24">
+            <div className="w-[95%] md:w-[90%] lg:w-[70%] mx-auto flex flex-col justify-center items-center">
               <motion.p
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}

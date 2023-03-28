@@ -17,6 +17,10 @@ export default function NavBar() {
     { name: "Subscriptions", href: "/QuickLinks/SubscriptionTires" },
     { name: "About", href: "/QuickLinks/AboutUs" },
   ];
+  const handleNavigateHome = () => {
+    router.push("/");
+    setMenu(false);
+  };
   const handleScroll = () => {
     setWindowHeight(window.scrollY);
   };
@@ -26,6 +30,7 @@ export default function NavBar() {
   }, []);
   const [menu, setMenu] = useState(false);
 
+  console.log(windowHeight);
   return (
     <>
       <motion.header
@@ -42,7 +47,7 @@ export default function NavBar() {
           },
         }}
         className={`flex w-full justify-between items-center px-5 lg:px-10 py-5 top-0 z-[101] fixed font-medium drop-shadow ${
-          windowHeight >= 100
+          windowHeight >= 110
             ? "bg-white text-black"
             : "bg-transparent text-white"
         } transition-five`}
@@ -52,7 +57,7 @@ export default function NavBar() {
           className="flex items-center gap-4 cursor-pointer"
         >
           <div className={`text-xl font-semibold cursor-pointer`}>
-            {windowHeight >= 100 ? <Logo /> : <WhiteBackgroundLogo />}
+            {windowHeight >= 110 ? <Logo /> : <WhiteBackgroundLogo />}
           </div>
           <div className="hidden sm:block">
             <p
@@ -92,11 +97,9 @@ export default function NavBar() {
             onClick={() => setMenu(true)}
             className="cursor-pointer flex lg:hidden"
           >
-            {windowHeight >= 100 ? (
-              <GiHamburgerMenu className="text-3xl" />
-            ) : (
-              <GiHamburgerMenu className="text-3xl" />
-            )}
+            <GiHamburgerMenu
+              className={`text-3xl ${router.pathname !== "/" && "text-black"}`}
+            />
           </span>
         )}
       </motion.header>
@@ -128,7 +131,10 @@ export default function NavBar() {
               </span>
             </div>
             <div className="text-container items-center">
-              <div className="flex flex-col items-center mb-5">
+              <div
+                onClick={handleNavigateHome}
+                className="flex flex-col items-center mb-5"
+              >
                 <Image
                   height={90}
                   width={90}
@@ -137,6 +143,9 @@ export default function NavBar() {
                 />
               </div>
               <ul className="text-base font-semibold flex flex-col items-center gap-10">
+                <p onClick={handleNavigateHome} className="poppins-text">
+                  Home
+                </p>
                 {navigation?.map((nav, index) => (
                   <li
                     className={`hover:bg-[#F3FAFF] w-[200px] flex items-center justify-center ${
@@ -144,11 +153,24 @@ export default function NavBar() {
                     }`}
                     key={index}
                   >
-                    <Link href={nav.href}>
+                    <Link onClick={() => setMenu(false)} href={nav.href}>
                       <span className="poppins-text">{nav.name}</span>
                     </Link>
                   </li>
                 ))}
+                <a href="#download-now">
+                  <button
+                    onClick={() => setMenu(false)}
+                    className={`bg-transparent text-white font-bold w-28 h-10 relative
+            before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
+            before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%]
+            before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
+            before:rounded-md
+            hover:bg-white hover:text-black transition-all duration-300 px-4 rounded py-2 poppins-text`}
+                  >
+                    Download
+                  </button>
+                </a>
               </ul>
             </div>
             <p className="text text-center mt-8">
