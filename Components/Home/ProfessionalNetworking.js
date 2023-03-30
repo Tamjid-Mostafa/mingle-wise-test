@@ -59,10 +59,12 @@ const ProfessionalNetworking = () => {
             }}
             className="mt-5 mb-7 poppins-text"
           >
-            Lorem ipsum dolor sit amet consectetur. Ac gravida vulputate
-            malesuada nec tellus. Nibh sit proin egestas metus condimentum
-            blandit. Elit sed interdum id egestas. At fringilla eleifend
-            molestie nunc at lacus magna placerat.
+            We offer exciting features for dating, professional networking &
+            events with an extra level of safety and peace of mind so no more
+            catfishing, just real people looking for real connections. Our
+            Mission is to bring people together, be a part of their daily lives
+            by helping them build lasting relationships in an environment of
+            trust & respect and create life-long memories along the way.
           </motion.p>
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[65%] mx-auto">
