@@ -55,10 +55,11 @@ const DownloadApp = () => {
                   }}
                   className="mt-5 poppins-text"
                 >
-                  Lorem ipsum dolor sit amet consectetur. Imperdiet elementum
-                  mattis tristique velit enim parturient. Morbi leo mi at amet
-                  tempus. Leo ante lorem cursus tristique. Nulla urna faucibus
-                  mauris tristique elementum mauris platea.
+                  MingleWise is the app for you if swiping makes your thumb hurt
+                  and you&epos;re sick of people ghosting you. With the
+                  all-in-one AI-driven app MingleWise, you can find, meet, and
+                  form genuine connections for dating or business networking, as
+                  well as take part in hybrid events.
                 </motion.p>
               </motion.div>
               <motion.div
@@ -74,32 +75,60 @@ const DownloadApp = () => {
                     restDelta: 0.001,
                   },
                 }}
-                className="flex flex-col md:flex-col lg:flex-col xl:flex-row gap-5 mt-5 lg:mt-32 justify-center items-center md:items-start"
+                className="flex flex-row md:flex-col lg:flex-col xl:flex-row gap-1 md:gap-5 mt-5 lg:mt-20 xl:mt-32 md:justify-start justify-center"
               >
-                <a
+                <motion.a
+                  initial={{ x: "-40%", opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 1 }}
+                  transition={{
+                    duration: 1.5,
+                    ease: [0, 0.71, 0.2, 1.01],
+                    scale: {
+                      type: "spring",
+                      damping: 15,
+                      stiffness: 70,
+                      restDelta: 0.001,
+                    },
+                  }}
                   href="https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                   target="_blank"
                 >
                   <Image
                     height={100}
                     width={200}
-                    className=""
-                    src="/assets/icons/available_on_both_stores_generated 1.png"
+                    className="h-12 md:h-16 w-auto"
+                    src="/assets/icons/Play_Store.png"
                     alt="Play store"
                   />
-                </a>
-                <a
+                </motion.a>
+                <motion.a
+                  initial={{ x: "40%", opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 1 }}
+                  transition={{
+                    duration: 1.5,
+                    ease: [0, 0.71, 0.2, 1.01],
+                    scale: {
+                      type: "spring",
+                      damping: 15,
+                      stiffness: 70,
+                      restDelta: 0.001,
+                    },
+                  }}
                   href="https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
                   target="_blank"
                 >
                   <Image
                     height={100}
                     width={200}
-                    className=""
-                    src="/assets/icons/available_on_both_stores_generated 2.png"
+                    className="h-12 md:h-16 w-auto"
+                    src="/assets/icons/App_Store.png"
                     alt="App store"
                   />
-                </a>
+                </motion.a>
               </motion.div>
             </div>
           </div>

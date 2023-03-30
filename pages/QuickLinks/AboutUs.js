@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { StateContext } from "../_app";
 import Map from "../../public/assets/background-image/FACTS & FIGURES SEC 1.png";
 import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
+import Head from "@/Head";
 
 const AboutUs = () => {
   const { setPageName } = useContext(StateContext);
@@ -12,9 +12,7 @@ const AboutUs = () => {
 
   return (
     <>
-      <Head>
-        <title>ABOUT US - MingleWise</title>
-      </Head>
+      <Head title={"About Us"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}

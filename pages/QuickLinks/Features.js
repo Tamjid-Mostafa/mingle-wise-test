@@ -2,14 +2,12 @@ import Image from "next/image";
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FEATURES_BOTTOM_CARD, FEATURES_DATA } from "@/Data/QuickLink";
-import Head from "next/head";
+import Head from "@/Head";
 
 const Features = () => {
   return (
     <>
-      <Head>
-        <title>FEATURES - MingleWise</title>
-      </Head>
+      <Head title={"Features"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}
@@ -42,7 +40,7 @@ const Features = () => {
                 }}
                 className="poppins-text text-2xl md:text-3xl font-semibold mb-6 text-center"
               >
-                Some feature heading
+                Some Features
               </motion.p>
               <motion.p
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -189,6 +187,12 @@ const Features = () => {
                   />
                 </motion.div>
               ))}
+            </div>
+            <div className="w-[95%] sm:w-[80%] md:w-[94%] lg:w-[80%] xl:w-[65%] 2xl:w-[59%] mx-auto text-right mt-5 poppins-text">
+              <p className="">
+                You can find more about MCoins and app-in features and <br />
+                purchases at the in-app MIngleWise store
+              </p>
             </div>
           </div>
         </motion.div>

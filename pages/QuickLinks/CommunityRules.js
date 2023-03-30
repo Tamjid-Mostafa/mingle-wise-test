@@ -1,6 +1,6 @@
 import { COMMUNITY_RULES_DATA } from "@/Data/QuickLink";
+import Head from "@/Head";
 import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
 import React, { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
@@ -15,9 +15,7 @@ const CommunityRules = () => {
 
   return (
     <>
-      <Head>
-        <title>COMMUNITY RULES - MingleWise</title>
-      </Head>
+      <Head title={"Community Rules"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}

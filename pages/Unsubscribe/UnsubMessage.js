@@ -1,14 +1,12 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import Head from "next/head";
+import Head from "@/Head";
 
 const UnsubMessage = () => {
   return (
     <>
-      <Head>
-        <title>MESSAGE - MingleWise</title>
-      </Head>
+      <Head title={"Message - Unsubscribe"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.3 }}

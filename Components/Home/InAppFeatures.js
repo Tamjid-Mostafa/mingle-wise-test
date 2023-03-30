@@ -2,6 +2,7 @@ import { IN_APP_FEATURES } from "@/Data/Home";
 import Image from "next/image";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 const InAppFeatures = () => {
   return (
@@ -78,16 +79,18 @@ const InAppFeatures = () => {
           ))}
         </div>
         <div className="text-center">
-          <button
-            className="bg-transparent text-white font-semibold w-28 h-12 relative
+          <Link href="/QuickLinks/Features">
+            <button
+              className="bg-transparent text-white font-semibold w-28 h-12 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
             before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
             before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
             before:rounded-full
             hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-full py-2 poppins-text"
-          >
-            See All
-          </button>
+            >
+              See All
+            </button>
+          </Link>
         </div>
       </div>
     </AnimatePresence>

@@ -30,7 +30,6 @@ export default function NavBar() {
   }, []);
   const [menu, setMenu] = useState(false);
 
-  console.log(windowHeight);
   return (
     <>
       <motion.header
@@ -158,7 +157,7 @@ export default function NavBar() {
                     </Link>
                   </li>
                 ))}
-                <a href="#download-now">
+                <a href="https://onelink.to/minglewise" target="_blank">
                   <button
                     onClick={() => setMenu(false)}
                     className={`bg-transparent text-white font-bold w-28 h-10 relative

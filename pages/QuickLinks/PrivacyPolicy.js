@@ -1,13 +1,11 @@
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
+import Head from "@/Head";
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Head>
-        <title>PRIVACY POLICY - MingleWise</title>
-      </Head>
+      <Head title={"Privacy Policy"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}

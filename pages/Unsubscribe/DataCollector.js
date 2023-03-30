@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Confirmation from "./Confirmation";
-import Head from "next/head";
+import Head from "@/Head";
 
 const DataCollector = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,9 +15,7 @@ const DataCollector = () => {
   };
   return (
     <>
-      <Head>
-        <title>Unsubscribe - MingleWise</title>
-      </Head>
+      <Head title={"Unsubscribe"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}

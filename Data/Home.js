@@ -5,19 +5,19 @@ import Matches from "../public/assets/card-image/image (4).png";
 
 export const HOME_CAROUSEL_DATA = [
   {
-    src: "/assets/carousel_images/giorgio-trovato-6rKkr2fh2-I-unsplash (1).jpg",
+    src: "/assets/carousel_images/01.jpg",
     heading: "Find, meet similar people and develop meaningful connections",
     subHeading:
       "World’s first all-in-one AI driven app for dating, networking and events",
   },
   {
-    src: "/assets/carousel_images/jonathan-borba-aC5_EFhq7Fs-unsplash.jpg",
+    src: "/assets/carousel_images/02.png",
     heading: "Find, meet similar people and develop meaningful connections",
     subHeading:
       "World’s first all-in-one AI driven app for dating, networking and events",
   },
   {
-    src: "/assets/carousel_images/priscilla-du-preez-g86airJZ4Gs-unsplash.jpg",
+    src: "/assets/carousel_images/03.png",
     heading: "Find, meet similar people and develop meaningful connections",
     subHeading:
       "World’s first all-in-one AI driven app for dating, networking and events",
