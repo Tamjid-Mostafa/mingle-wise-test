@@ -4,14 +4,12 @@ import React from "react";
 import Image from "next/image";
 import { BsPinAngleFill } from "react-icons/bs";
 import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
+import Head from "@/Head";
 
 const SubscriptionTires = () => {
   return (
     <>
-      <Head>
-        <title>SUBSCRIPTIONS - MingleWise</title>
-      </Head>
+      <Head title={"Subscription"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}

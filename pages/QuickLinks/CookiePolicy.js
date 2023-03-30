@@ -1,13 +1,11 @@
+import Head from "@/Head";
 import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
 import React from "react";
 
 const CookiePolicy = () => {
   return (
     <>
-      <Head>
-        <title>COOKIE POLICY - MingleWise</title>
-      </Head>
+      <Head title={"Cookie Policy"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}

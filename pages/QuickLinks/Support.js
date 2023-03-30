@@ -2,8 +2,9 @@ import { SUPPORT_DATA } from "@/Data/QuickLink";
 import React, { useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { AnimatePresence, motion } from "framer-motion";
-import Head from "next/head";
-
+import Head from "@/Head";
+import axios from "axios";
+import { toast } from "react-hot-toast";
 const Support = () => {
   const [collapse, setCollapse] = useState(null);
   const [userData, setUserData] = useState({
@@ -22,13 +23,35 @@ const Support = () => {
   const handleOnSubmit = (e) => {
     e.preventDefault();
     console.log(userData);
+    console.log({
+      name: userData?.name,
+      email: userData?.email,
+      message: userData,
+    });
+    axios
+      .post(
+        "https://us-central1-minglewise2019.cloudfunctions.net/A6_2_ContactUsWebsiteApi/contactUsWebsite",
+        {
+          name: userData?.name,
+          email: userData?.email,
+          message: userData?.message,
+        }
+      )
+      .then((res) => {
+        console.log(res);
+        toast.success("Successfully submitted");
+        setUserData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((err) => console.error(err.message));
   };
 
   return (
     <>
-      <Head>
-        <title>SUPPORT - MingleWise</title>
-      </Head>
+      <Head title={"Support"} />
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, scale: 1.2 }}

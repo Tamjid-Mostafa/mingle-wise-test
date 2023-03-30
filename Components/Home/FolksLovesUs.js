@@ -46,7 +46,10 @@ export default function FolksLovesUs() {
   };
   return (
     <AnimatePresence>
-      <div className="client-reviews py-10 min-h-[500px] overflow-hidden">
+      <div
+        id="folk-love"
+        className="client-reviews py-10 min-h-[500px] overflow-hidden"
+      >
         <div className="container mx-auto">
           <motion.p
             initial={{

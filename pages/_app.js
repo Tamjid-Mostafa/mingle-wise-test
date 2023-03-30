@@ -1,6 +1,7 @@
 import Footer from "@/Components/Shared/Footer";
 import Loader from "@/Components/Shared/Loader";
 import NavBar from "@/Components/Shared/NavBar";
+import Head from "@/Head";
 import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import { createContext, useEffect, useState } from "react";
@@ -30,6 +31,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+      <Head />
       {!loading ? (
         <>
           <Loader />

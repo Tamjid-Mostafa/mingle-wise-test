@@ -2,8 +2,10 @@ import { PROFESSIONAL_NETWORKING } from "@/Data/Home";
 import Image from "next/image";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const ProfessionalNetworking = () => {
+  const router = useRouter();
   return (
     <AnimatePresence>
       <div className="py-20 overflow-hidden">
@@ -116,6 +118,9 @@ const ProfessionalNetworking = () => {
         </div>
         <div className="text-center">
           <button
+            onClick={() =>
+              router.push("/Features/ProfessionalNetworkingFeatures")
+            }
             className="bg-transparent text-white font-semibold w-28 h-12 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
             before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
