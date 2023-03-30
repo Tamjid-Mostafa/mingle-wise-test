@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "@/Head";
+import { ColorRing } from "react-loader-spinner";
 
 const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
+  const [loading, setLoading] = useState(false);
   const Router = useRouter();
   if (!isVisible) return null;
   const handleOnClose = (e) => {
@@ -15,6 +17,7 @@ const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
   };
 
   const handleConfirm = () => {
+    setLoading(true);
     axios
       .post(
         "https://us-central1-minglewise2019.cloudfunctions.net/A6_1_UnsubscribeEmailApi/unsubscribeEmail",
@@ -30,10 +33,12 @@ const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
           setInfo({ name: "", email: "" });
           toast.success("Successfully Unsubscribe");
           Router.push("/Unsubscribe/UnsubMessage");
+          setLoading(false);
           onClose();
         },
         (err) => {
           toast.error("Failed to unsubscribe");
+          setLoading(false);
         }
       );
   };
@@ -73,17 +78,47 @@ const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
               </div>
               <div className="sm:flex justify-between px-10">
                 <div>
-                  <button
-                    onClick={handleConfirm}
-                    className="bg-gray-600 py-3 px-4 rounded text-white poppins-text w-full sm:w-auto "
-                    type="submit"
-                  >
-                    Yes, Unsubscribe
-                  </button>
+                  {loading ? (
+                    <>
+                      <button
+                        onClick={handleConfirm}
+                        className="bg-gray-600 hover:bg-gray-500 active:bg-gray-700 py-2 px-4 rounded text-white poppins-text w-full sm:w-auto"
+                        type="submit"
+                      >
+                        <div className="px-12">
+                          <ColorRing
+                            visible={true}
+                            height="40"
+                            width="40"
+                            ariaLabel="blocks-loading"
+                            wrapperStyle={{}}
+                            wrapperClass="blocks-wrapper"
+                            colors={[
+                              "#e15b64",
+                              "#f47e60",
+                              "#f8b26a",
+                              "#abbd81",
+                              "#849b87",
+                            ]}
+                          />
+                        </div>
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <button
+                        onClick={handleConfirm}
+                        className="bg-gray-600 hover:bg-gray-500 active:bg-gray-700 py-3 px-4 rounded text-white poppins-text w-full sm:w-auto"
+                        type="submit"
+                      >
+                        Yes, Unsubscribe
+                      </button>
+                    </>
+                  )}
                 </div>
                 <button
                   onClick={handleNotConfirm}
-                  className="bg-gradient-to-r from-[#9D0CD3] to-[#F95963] py-3 px-4 rounded text-white poppins-text w-full sm:w-auto mt-3 sm:mt-0"
+                  className="bg-gradient-to-r from-[#9D0CD3] to-[#F95963] hover:from-[#F95963] hover:to-[#9D0CD3] poppins-text py-3 px-4 rounded text-white poppins-text w-full sm:w-auto mt-3 sm:mt-0"
                   type="submit"
                 >
                   No, Not Yet

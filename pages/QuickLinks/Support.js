@@ -5,7 +5,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import Head from "@/Head";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import { ColorRing } from "react-loader-spinner";
 const Support = () => {
+  const [loading, setLoading] = useState(false);
   const [collapse, setCollapse] = useState(null);
   const [userData, setUserData] = useState({
     name: "",
@@ -21,6 +23,7 @@ const Support = () => {
   };
 
   const handleOnSubmit = (e) => {
+    setLoading(true);
     e.preventDefault();
     console.log(userData);
     console.log({
@@ -45,8 +48,12 @@ const Support = () => {
           email: "",
           message: "",
         });
+        setLoading(false);
       })
-      .catch((err) => console.error(err.message));
+      .catch((err) => {
+        setLoading(false);
+        console.error(err.message);
+      });
   };
 
   return (
@@ -203,6 +210,7 @@ const Support = () => {
                     Name
                   </label>
                   <input
+                    required
                     id="name"
                     className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                     type="text"
@@ -217,6 +225,7 @@ const Support = () => {
                     Email
                   </label>
                   <input
+                    required
                     id="email"
                     className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                     type="email"
@@ -255,17 +264,37 @@ const Support = () => {
                   />
                 </div>
               </motion.div>
-              <div className="text-center">
+              <div className="flex justify-center">
                 <button
                   className="bg-transparent text-white font-semibold w-44 h-12 relative
           before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
           before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
           before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
           before:rounded-md
-          hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-md py-2 poppins-text mt-5"
+          hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-md py-2 poppins-text mt-5 flex justify-center items-center"
                   type="submit"
                 >
-                  Send Message
+                  {loading ? (
+                    <>
+                      <ColorRing
+                        visible={true}
+                        height="50"
+                        width="50"
+                        ariaLabel="blocks-loading"
+                        wrapperStyle={{}}
+                        wrapperClass="blocks-wrapper"
+                        colors={[
+                          "#e15b64",
+                          "#f47e60",
+                          "#f8b26a",
+                          "#abbd81",
+                          "#849b87",
+                        ]}
+                      />
+                    </>
+                  ) : (
+                    "Send Message"
+                  )}
                 </button>
               </div>
             </form>
