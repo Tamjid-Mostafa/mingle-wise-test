@@ -127,7 +127,7 @@ const DatingProfileFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/dating_profile/events.svg"
+                    src="/assets/features/dating_profile/events.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -151,7 +151,7 @@ const DatingProfileFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/dating_profile/explore.svg"
+                    src="/assets/features/dating_profile/explore.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -240,7 +240,7 @@ const DatingProfileFeatures = () => {
                     className="md:ml-auto"
                     height={613}
                     width={304}
-                    src="/assets/features/dating_profile/mingle_instant.svg"
+                    src="/assets/features/dating_profile/mingle_instant.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -264,7 +264,7 @@ const DatingProfileFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/dating_profile/feed.svg"
+                    src="/assets/features/dating_profile/feed.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -353,7 +353,7 @@ const DatingProfileFeatures = () => {
                     className="md:ml-auto"
                     height={613.14}
                     width={304.38}
-                    src="/assets/features/dating_profile/games.svg"
+                    src="/assets/features/dating_profile/games.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -377,7 +377,7 @@ const DatingProfileFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/dating_profile/chats.svg"
+                    src="/assets/features/dating_profile/chats.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -465,7 +465,7 @@ const DatingProfileFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/dating_profile/speed_dating.svg"
+                    src="/assets/features/dating_profile/speed_dating.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -490,7 +490,7 @@ const DatingProfileFeatures = () => {
                     className="md:mx-auto"
                     height={614.58}
                     width={304.38}
-                    src="/assets/features/dating_profile/m_coins.svg"
+                    src="/assets/features/dating_profile/m_coins.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -513,7 +513,7 @@ const DatingProfileFeatures = () => {
                     <Image
                       width={47}
                       height={44}
-                      src="/assets/features/dating_profile/events_small.svg"
+                      src="/assets/features/dating_profile/m_coins_small.svg"
                       alt="Event Logo"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold">
