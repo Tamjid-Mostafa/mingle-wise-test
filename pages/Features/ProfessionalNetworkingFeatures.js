@@ -128,7 +128,7 @@ const ProfessionalNetworkingFeatures = () => {
                     className="ml-auto"
                     height={614}
                     width={300}
-                    src="/assets/features/professional_networking/events.svg"
+                    src="/assets/features/professional_networking/events.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -152,7 +152,7 @@ const ProfessionalNetworkingFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/professional_networking/explore.svg"
+                    src="/assets/features/professional_networking/explore.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -240,7 +240,7 @@ const ProfessionalNetworkingFeatures = () => {
                   <Image
                     height={600}
                     width={539.3}
-                    src="/assets/features/professional_networking/mingle_instant.svg"
+                    src="/assets/features/professional_networking/mingle_instant.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -264,7 +264,7 @@ const ProfessionalNetworkingFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/professional_networking/feed.svg"
+                    src="/assets/features/professional_networking/feed.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -352,7 +352,7 @@ const ProfessionalNetworkingFeatures = () => {
                   <Image
                     height={550}
                     width={621.19}
-                    src="/assets/features/professional_networking/speed_networking.svg"
+                    src="/assets/features/professional_networking/speed_network.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -376,7 +376,7 @@ const ProfessionalNetworkingFeatures = () => {
                   <Image
                     height={616}
                     width={550}
-                    src="/assets/features/professional_networking/chats.svg"
+                    src="/assets/features/professional_networking/chats.png"
                     alt="Events"
                   />
                 </motion.div>
@@ -463,7 +463,7 @@ const ProfessionalNetworkingFeatures = () => {
                   <Image
                     height={600}
                     width={545.67}
-                    src="/assets/features/professional_networking/freelance_work.svg"
+                    src="/assets/features/professional_networking/freelance_work.png"
                     alt="Events"
                   />
                 </motion.div>

@@ -11,8 +11,8 @@
     "images": [
       {
         "url": "/assets/logo/white_logo.png",
-        "width": "800",
-        "height": "600",
+        "width": "500",
+        "height": "500",
         "alt": "MingleWise"
       }
     ]
