@@ -205,4 +205,14 @@ export const REVIEW_DATA = [
     name: "Diksha Valecha",
     info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
   },
+  {
+    image: "/assets/review-iamge/char-1 (3).jpg",
+    name: "Diksha Valecha",
+    info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
+  },
+  {
+    image: "/assets/review-iamge/char-1 (3).jpg",
+    name: "Diksha Valecha",
+    info: "“Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.”",
+  },
 ];
