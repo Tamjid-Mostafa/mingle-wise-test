@@ -69,7 +69,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text"
+              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text text-[#4F4F4F]"
             >
               {counterOn && (
                 <CountUp start={0} end={176} duration={5} delay={0} />
@@ -88,7 +88,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
+              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-[#4F4F4F] h-[40px] flex justify-center poppins-text"
             >
               Countries Live In
             </m.p>
@@ -129,7 +129,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text"
+              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text text-[#4F4F4F]"
             >
               {counterOn && (
                 <CountUp start={0} end={39576} duration={5} delay={0} />
@@ -148,7 +148,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
+              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-[#4F4F4F] h-[40px] flex justify-center poppins-text"
             >
               Number of followers on Social Media
             </m.p>
@@ -189,7 +189,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text"
+              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text text-[#4F4F4F]"
             >
               {counterOn && (
                 <CountUp start={0} end={4526} duration={5} delay={0} />
@@ -208,7 +208,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
+              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-[#4F4F4F] h-[40px] flex justify-center poppins-text"
             >
               5 star reviews
             </m.p>
@@ -249,7 +249,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text"
+              className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text text-[#4F4F4F]"
             >
               {counterOn && (
                 <CountUp start={0} end={130957} duration={5} delay={0} />
@@ -268,7 +268,7 @@ const WhatMakesUsLove = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-gray-500 h-[40px] flex justify-center poppins-text"
+              className="text-center w-[95%] text-lg sm:text-[21px] font-semibold text-[#4F4F4F] h-[40px] flex justify-center poppins-text"
             >
               Number of app downloads
             </m.p>
