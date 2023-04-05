@@ -11,13 +11,16 @@
 }
 
 .card {
-  @apply relative bg-white mx-5 my-20;
-  height: 321px;
+  @apply relative bg-white mx-10 my-20;
+  height: 371px;
   border: 1px solid #808080;
   border-radius: 8px;
 }
 .content {
   @apply p-10 flex flex-col justify-between h-full;
+}
+.title {
+@apply flex
 }
 .reviews {
   @apply relative;
