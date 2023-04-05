@@ -4,6 +4,7 @@ import { StateContext } from "../_app";
 import Map from "../../public/assets/background-image/FACTS & FIGURES SEC 1.png";
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "@/Head";
+import { GoLinkExternal } from "react-icons/go";
 
 const AboutUs = () => {
   const { setPageName } = useContext(StateContext);
@@ -26,186 +27,248 @@ const AboutUs = () => {
               restDelta: 0.001,
             },
           }}
-          className="bg-white overflow-hidden"
+          className="overflow-hidden py-24"
         >
-          <div className="bg-[#FCFCFC]">
-            <div className="w-[95%] md:w-[90%] lg:w-[70%] mx-auto flex flex-col justify-center items-center min-h-[50vh] 2xl:min-h-[45vh] text-center pt-5 sm:pt-32 2xl:pt-20">
-              <motion.p
-                initial={{ opacity: 0, scale: 1.2 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{
-                  duration: 0.3,
-                  scale: {
-                    type: "spring",
-                    damping: 15,
-                    stiffness: 200,
-                    restDelta: 0.001,
-                  },
-                }}
-                className="text-base sm:text-2xl md:text-3xl mt-20 sm:mt-0 poppins-text font-semibold"
-              >
-                MingleWise is a modern, innovative app that cuts through the
-                noise & helps its users find, meet & develop meaningful
-                connections using AI
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, scale: 1.2, y: "100%" }}
-                whileInView={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{
-                  duration: 0.4,
-                  scale: {
-                    type: "spring",
-                    damping: 15,
-                    stiffness: 200,
-                    restDelta: 0.001,
-                  },
-                }}
-                className="mt-5 text-justify sm:text-center md:w-[80%] w-[95%] mx-auto poppins-text"
-              >
-                We offer exciting features for dating, professional networking &
-                events with an extra level of safety and peace of mind so no
-                more catfishing, just real people looking for real connections.
-                Our Mission is to bring people together, be a part of their
-                daily lives by helping them build lasting relationships in an
-                environment of trust & respect and create life-long memories
-                along the way.
-              </motion.p>
-            </div>
-          </div>
-          <div className="w-[95%] md:w-[90%] lg:w-[60%] mx-auto flex flex-col justify-center min-h-[60vh] sm:min-h-[40vh] poppins-text py-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.7 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.7,
+              scale: {
+                type: "tween",
+                damping: 50,
+                stiffness: 200,
+                restDelta: 0.001,
+              },
+            }}
+            className="flex flex-col gap-10 items-center justify-center poppins-text py-10"
+          >
+            <Image
+              width={192}
+              height={189}
+              src="/assets/logo/appsynergies.svg"
+              alt="AppSynergies Logo"
+            />
             <motion.p
-              initial={{ opacity: 0, scale: 1.2, x: "40%" }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              initial={{ x: "-60%", opacity: 0, scale: 0.7 }}
+              whileInView={{ x: 0, opacity: 1, scale: 1 }}
               transition={{
-                duration: 0.4,
+                duration: 0.7,
                 scale: {
-                  type: "spring",
-                  damping: 15,
+                  type: "tween",
+                  damping: 50,
                   stiffness: 200,
                   restDelta: 0.001,
                 },
               }}
-              className="text-[#828282]"
+              className="text-3xl md:text-5xl font-semibold"
             >
-              MingleWise is an all AI based app and is a child of APP SYNERGIES.
-              App SYNERGIES design and develop web and mobile applications for
-              our clients worldwide, focusing on outstanding user experience.
+              APPSYNERGIES
             </motion.p>
             <motion.p
-              initial={{ opacity: 0, scale: 1.2, x: "-40%" }}
-              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              initial={{ x: "60%", opacity: 0, scale: 0.7 }}
+              whileInView={{ x: 0, opacity: 1, scale: 1 }}
               transition={{
-                duration: 0.4,
+                duration: 0.7,
                 scale: {
-                  type: "spring",
-                  damping: 15,
+                  type: "tween",
+                  damping: 50,
                   stiffness: 200,
                   restDelta: 0.001,
                 },
               }}
-              className="pt-8 text-[#828282]"
+              className="w-[95%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto text-center"
             >
-              A fast-growing SaaS-based start-up with a very talented and
-              rapidly expanding team. We develop cutting-edge AI driven Apps. We
-              put value at the heart of our process & focus on what&#39;s
-              important to our users. This way, we can prove the value of our
-              app idea before we begin development. We then build on this mobile
-              strategy throughout discovery, design, development and
-              optimization.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
             </motion.p>
-            <motion.p
-              initial={{ opacity: 0, scale: 1.2, y: "40%" }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+            <motion.div
+              initial={{ y: "-60%", opacity: 0, scale: 0.7 }}
+              whileInView={{ y: 0, opacity: 1, scale: 1 }}
               transition={{
-                duration: 0.5,
+                duration: 0.7,
                 scale: {
-                  type: "spring",
-                  damping: 15,
+                  type: "tween",
+                  damping: 50,
                   stiffness: 200,
                   restDelta: 0.001,
                 },
               }}
-              className="pt-8 text-[#828282] font-semibold"
+              className="text-center"
             >
-              You can head over to App Synergies to know more about the company
-              or if you would like to work with us.
+              <a href="https://appsynergies.com/" target="_blank">
+                <button
+                  className="bg-transparent text-white font-semibold w-50 h-10 relative
+            before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
+            before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
+            before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
+            before:rounded-full
+            hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-full py-2 poppins-text"
+                >
+                  View Website
+                </button>
+              </a>
+            </motion.div>
+          </motion.div>
+          <motion.div className="text-center py-16 poppins-text">
+            <motion.p
+              initial={{ y: "-60%", x: "-10%", opacity: 0, scale: 0.7 }}
+              whileInView={{ y: 0, x: 0, opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                scale: {
+                  type: "tween",
+                  damping: 50,
+                  stiffness: 200,
+                  restDelta: 0.001,
+                },
+              }}
+              className="text-3xl md:text-4xl font-semibold mb-5"
+            >
+              Our Location
             </motion.p>
-          </div>
-          <div className="bg-[#FCFCFC] py-14">
-            <div className="xl:w-[70%] mx-auto poppins-text">
-              <div className="px-2">
-                <motion.p
-                  initial={{ opacity: 0, scale: 1.3 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    scale: {
-                      type: "spring",
-                      damping: 15,
-                      stiffness: 200,
-                      restDelta: 0.001,
-                    },
-                  }}
-                  className="text-center font-bold barlow text-2xl mt-10"
-                >
-                  Key Worldwide Locations
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, scale: 0.8, x: "30%" }}
-                  whileInView={{ opacity: 1, scale: 1, x: 0 }}
-                  transition={{
-                    duration: 0.4,
-                    scale: {
-                      type: "spring",
-                      damping: 15,
-                      stiffness: 200,
-                      restDelta: 0.001,
-                    },
-                  }}
-                  className="leading-8 mt-5 text-[#828282] text-center"
-                >
-                  More than just an app, it’s about making deeper connections
-                  and celebrating special moments with people who live in your
-                  neighborhood or across oceans.
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, scale: 1.3, x: "-30%" }}
-                  whileInView={{ opacity: 1, scale: 1, x: 0 }}
-                  transition={{
-                    duration: 0.3,
-                    scale: {
-                      type: "spring",
-                      damping: 15,
-                      stiffness: 200,
-                      restDelta: 0.001,
-                    },
-                  }}
-                  className="leading-8 text-[#828282] mt-4 text-center"
-                >
-                  We have our headquarters based in London – UK, we will be
-                  launching soon in United States, Europe & India on the Apple
-                  App Store & Google Play Store. As a platform we will
-                  continuously keep evolving & empowering people to develop
-                  truly meaningful personal & professional relationships.
-                </motion.p>
-              </div>
+            <motion.p
+              initial={{ y: "60%", x: "10%", opacity: 0, scale: 0.7 }}
+              whileInView={{ y: 0, x: 0, opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                scale: {
+                  type: "tween",
+                  damping: 50,
+                  stiffness: 200,
+                  restDelta: 0.001,
+                },
+              }}
+              className="text-lg"
+            >
+              Our presence is all over the world but we have our <br />
+              office setup in United Kingdom and India
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, scale: 1.3 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                delay: 0.2,
+                scale: {
+                  type: "tween",
+                  damping: 50,
+                  stiffness: 200,
+                  restDelta: 0.001,
+                },
+              }}
+              className="my-16"
+            >
+              <Image
+                width={1920}
+                height={789}
+                src="/assets/background-image/our-location.png"
+                alt="Location"
+                className=""
+              />
+            </motion.div>
+          </motion.div>
+          <motion.div className="poppins-text w-[95%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto">
+            <motion.p
+              initial={{ y: "-60%", opacity: 0, scale: 0.7 }}
+              whileInView={{ y: 0, opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                scale: {
+                  type: "tween",
+                  damping: 50,
+                  stiffness: 200,
+                  restDelta: 0.001,
+                },
+              }}
+              className="text-center text-2xl md:text-4xl font-semibold mb-10"
+            >
+              Visit our office in
+            </motion.p>
+            <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-5 xl:gap-24 py-20">
               <motion.div
-                initial={{ opacity: 0, scale: 1.4 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ y: "60%", x: "10%", opacity: 0, scale: 0.7 }}
+                whileInView={{ y: 0, x: 0, opacity: 1, scale: 1 }}
                 transition={{
-                  duration: 0.8,
+                  duration: 0.7,
                   scale: {
-                    type: "spring",
-                    damping: 20,
+                    type: "tween",
+                    damping: 50,
                     stiffness: 200,
                     restDelta: 0.001,
                   },
                 }}
+                className="flex flex-col md:flex-row md:text-left justify-center items-center md:items-start text-center gap-5 min-h-[200px]"
               >
-                <Image src={Map} alt="Map image" />
+                <div>
+                  <Image
+                    height={100}
+                    width={100}
+                    src="/assets/icons/UK-flag.svg"
+                    alt="UK Flag"
+                    className="min-h-[100px] min-w-[100px]"
+                  />
+                </div>
+                <div className="">
+                  <p className="text-4xl pt-5">UK Office</p>
+                  <p className="">186 Malvern Avenue, Harrow, HA2 9HD, UK</p>
+                  <div className="mt-5 flex justify-center md:justify-start">
+                    <a
+                      className="flex items-center gap-1 text-semibold text-blue-500"
+                      href=""
+                    >
+                      Locate on map <GoLinkExternal />
+                    </a>
+                  </div>
+                </div>
               </motion.div>
-            </div>
-          </div>
+              <motion.div
+                initial={{ y: "-60%", x: "-10%", opacity: 0, scale: 0.7 }}
+                whileInView={{ y: 0, x: 0, opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.7,
+                  scale: {
+                    type: "tween",
+                    damping: 50,
+                    stiffness: 200,
+                    restDelta: 0.001,
+                  },
+                }}
+                className="flex flex-col md:flex-row md:text-left justify-center items-center md:items-start text-center gap-5 min-h-[200px]"
+              >
+                <div>
+                  <Image
+                    height={100}
+                    width={100}
+                    src="/assets/icons/India-flag.svg"
+                    alt="UK Flag"
+                    className="min-h-[100px] min-w-[100px]"
+                  />
+                </div>
+                <div className="">
+                  <p className="text-4xl pt-3">India Office</p>
+                  <p className="">
+                    D/1602, OrchidSuburbia, Link Road, Kandivali West, Mumbai,
+                    400067, India
+                  </p>
+                  <div className="mt-5 flex justify-center md:justify-start">
+                    <a
+                      className="flex items-center gap-1 text-semibold text-blue-500"
+                      href=""
+                    >
+                      Locate on map <GoLinkExternal />
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
         </motion.div>
       </AnimatePresence>
     </>

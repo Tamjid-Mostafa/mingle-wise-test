@@ -23,8 +23,8 @@ const Features = () => {
           }}
           className="overflow-hidden"
         >
-          <div className="bg-[#FCFCFC] py-24">
-            <div className="w-[95%] md:w-[90%] lg:w-[70%] mx-auto flex flex-col justify-center items-center">
+          <div className=" py-24">
+            <div className="w-[95%] md:w-[90%] lg:w-[70%] xl:w-[60%] mx-auto flex flex-col justify-center items-center">
               <motion.p
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
@@ -40,40 +40,45 @@ const Features = () => {
                 }}
                 className="poppins-text text-2xl md:text-3xl font-semibold mb-6 text-center"
               >
-                FIND MEET & DEVELOP MEANINGFUL CONNECTIONS
+                Our{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C029A8] to-[#F65667]">
+                  Features
+                </span>
               </motion.p>
-              <motion.p
-                initial={{ scale: 0.8, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{
-                  duration: 0.3,
-                  ease: [0, 0.71, 0.2, 1.01],
-                  scale: {
-                    type: "spring",
-                    damping: 14,
-                    stiffness: 100,
-                    restDelta: 0.001,
-                  },
-                }}
-                className="poppins-text 2xl:w-[70%] text-center"
-              >
-                We offer exciting features for dating, professional networking &
-                events with an extra level of safety and peace of mind so no
-                more catfishing, just real people looking for real connections.
-                Our Mission is to bring people together, be a part of their
-                daily lives by helping them build lasting relationships in an
-                environment of trust & respect and create life-long memories
-                along the way.
-              </motion.p>
+              <motion.div className="flex flex-col md:flex-row justify-center items-center gap-16 bg-gradient-to-r from-[#F7F0FA] to-[#FCF4F4] px-5 sm:px-16 py-10 rounded-xl mt-10">
+                <motion.div>
+                  <Image
+                    height={100}
+                    width={100}
+                    src="/assets/features/gold.svg"
+                    alt="Coin picture"
+                    className="min-w-[150px] min-h-[157px]"
+                  />
+                </motion.div>
+                <motion.div>
+                  <motion.p className="text-2xl md:text-4xl font-bold mb-2 text-center md:text-left">
+                    M Coins
+                  </motion.p>
+                  <motion.p className="text-center md:text-left">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </motion.p>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
-          <div>
-            <p className="text-2xl md:text-3xl text-center py-14 font-semibold">
-              Features
-            </p>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[65%] mx-auto">
-              {FEATURES_DATA.map((profile, index) => (
-                <motion.div
+          <div></div>
+        </motion.div>
+      </AnimatePresence>
+    </>
+  );
+};
+
+export default Features;
+
+{
+  /* <motion.div
                   initial={{ scale: 0.5, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   transition={{
@@ -119,74 +124,5 @@ const Features = () => {
                     </p>
                     <p className="text-justify mt-1 lato">{profile?.info}</p>
                   </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-          <div className="py-16 bg-[#FCFCFC]">
-            <div className="flex justify-center">
-              <Image
-                height={100}
-                width={100}
-                src="/assets/features/gold.svg"
-                alt="Coin picture"
-              />
-            </div>
-            <div className="w-[90%] sm:w-[70%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto pt-14">
-              <div className=" poppins-text">
-                <p className="text-xl font-semibold">What are MCoins?</p>
-                <p>
-                  MCoins are MingleWise currency used to buy gifts and premium
-                  features
-                </p>
-              </div>
-              <div className="mt-5 poppins-text">
-                <p className="text-xl font-semibold">
-                  What do I do with MCoins?
-                </p>
-                <p>You can buy gifts and other in-app features</p>
-              </div>
-            </div>
-            <div className="mx-auto grid grid-cols-1 md:grid-cols-2 w-[98%] md:w-[95%] lg:w-[80%] xl:w-[65%] 2xl:w-[60%] gap-2 mt-14">
-              {FEATURES_BOTTOM_CARD.map((data, index) => (
-                <motion.div
-                  initial={{ scale: 0.5, opacity: 1, rotate: 10 }}
-                  whileInView={{ rotate: 0, scale: 1 }}
-                  whileHover={{ scale: 1.03 }}
-                  transition={{
-                    duration: 0.8,
-                    ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                      type: "spring",
-                      damping: 14,
-                      stiffness: 100,
-                      restDelta: 0.001,
-                    },
-                  }}
-                  key={index}
-                  className="mx-auto"
-                >
-                  <Image
-                    src={data?.image}
-                    alt="Card Image"
-                    height={300}
-                    width={100}
-                    className="w-[542.28px]"
-                  />
-                </motion.div>
-              ))}
-            </div>
-            <div className="w-[95%] sm:w-[80%] md:w-[94%] lg:w-[80%] xl:w-[65%] 2xl:w-[59%] mx-auto text-right mt-5 poppins-text">
-              <p className="">
-                You can find more about MCoins and app-in features and <br />
-                purchases at the in-app MIngleWise store
-              </p>
-            </div>
-          </div>
-        </motion.div>
-      </AnimatePresence>
-    </>
-  );
-};
-
-export default Features;
+                </motion.div> */
+}

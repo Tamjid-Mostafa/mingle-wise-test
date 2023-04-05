@@ -88,7 +88,7 @@ const InAppFeatures = () => {
             before:rounded-full
             hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-full py-2 poppins-text"
             >
-              See All
+              View All
             </button>
           </Link>
         </div>

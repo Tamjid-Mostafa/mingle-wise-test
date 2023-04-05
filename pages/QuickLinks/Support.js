@@ -103,7 +103,7 @@ const Support = () => {
                   restDelta: 0.001,
                 },
               }}
-              className="text-center mt-3"
+              className="text-center mt-3 "
             >
               Find answers to the most popular questions about MingleWise here.
               If you are facing any issue using the app, contact us at

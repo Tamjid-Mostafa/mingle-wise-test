@@ -66,8 +66,8 @@ const WhyMingleWise = () => {
                 DATING PROFILE
               </p>
               <p className="poppins-text">
-                Find exciting people, meet in real or video dates & try your
-                luck with speed dating!
+                New profiles daily on your feed. Instantly start your chat &
+                video dates. Participate in speed dating sessions every week.
               </p>
             </div>
             <div className="text-center md:text-left lg:w-[80%]">
@@ -75,8 +75,8 @@ const WhyMingleWise = () => {
                 PROFESSIONAL NETWORKING PROFILE
               </p>
               <p className="poppins-text">
-                Find exciting people, meet in real or video dates & try your
-                luck with speed dating!
+                Write Blogs, Apply for jobs & Internships, Start freelancing and
+                attend & livestream events. Increase your network now.
               </p>
             </div>
           </motion.div>
