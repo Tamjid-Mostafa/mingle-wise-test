@@ -22,6 +22,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import LeftQuote from "../icons/LeftQuote";
 import RightQuote from "../icons/RightQuote";
+import Star from "../icons/Star";
 
 export default function FolksLovesUs() {
   const settings = {};
@@ -34,7 +35,7 @@ export default function FolksLovesUs() {
           "client-reviews py-10 min-h-[500px] overflow-hidden"
         )}
       >
-        <div className=" mx-auto my-20">
+        <div className="container mx-auto my-20">
           <motion.p
             initial={{
               x: "80%",
@@ -81,12 +82,13 @@ export default function FolksLovesUs() {
             }}
             className="relative"
           >
-            <div className={cn(s.rectangle, "")} />
+            {/* <div className={cn(s.rectangle, "")} /> */}
             <Swiper
               // install Swiper modules
-              modules={[ Pagination, A11y, Autoplay, FreeMode]}
+              modules={[ Navigation, Pagination, A11y, Autoplay, FreeMode]}
               spaceBetween={10}
               loop={true}
+              navigation
               slidesPerView={1}
               autoplay={{
                 delay: 2500,
@@ -96,14 +98,14 @@ export default function FolksLovesUs() {
               breakpoints={{
                 640: {
                   slidesPerView: 1,
-                  spaceBetween: 20,
+                  spaceBetween: 10,
                 },
                 768: {
                   slidesPerView: 2,
-                  spaceBetween: 40,
+                  spaceBetween: 10,
                 },
                 1024: {
-                  slidesPerView: 4,
+                  slidesPerView: 3,
                   spaceBetween: 30,
                 },
               }}
@@ -137,7 +139,17 @@ export default function FolksLovesUs() {
                           />
                           <div>
                             <div className={cn(s.name, "")}>{item?.name}</div>
-                            <div className={cn(s.title, "")}>{item?.title}</div>
+                            <div className={cn(s.title, "")}>
+                              {
+                                [...Array(5)].map((item, i) => {
+                                  return (
+                                    <span key={i} className={cn(s.star, "")}>
+                                      <Star />
+                                    </span>
+                                  );
+                                })
+                              }
+                            </div>
                           </div>
                         </div>
                         <div className="my-5">

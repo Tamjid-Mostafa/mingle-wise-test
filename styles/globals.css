@@ -249,37 +249,13 @@ body {
   -webkit-filter: blur(8px);
 }
 
-.swiper-button-prev {
-  left: 0 !important;
-  position: absolute;
-  bottom: 50%;
-  transform: translateY(50%);
-  padding: 10px !important;
-  background: url("/Expand Arrow.svg");
-  rotate: 180deg;
-  opacity: 0.9;
-  width: 10px;
-  height: 20%;
+.swiper-button-next, .swiper-button-prev {
+    width: 10px !important;
+    height: 10px !important;
 }
-
-.swiper-button-next {
-  right: 0 !important;
-  position: absolute;
-  bottom: 50%;
-  transform: translateY(-50%);
-  padding: 10px !important;
-  background: url("/Expand Arrow.svg");
-  opacity: 0.9;
-  width: 10px;
-  height: 20%;
-}
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-  content: "" !important;
-}
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-  content: "" !important;
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 24px !important;
+    color: #000000;
 }
 
 .swiper-pagination-bullet-active {
