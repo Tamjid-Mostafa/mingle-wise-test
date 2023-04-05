@@ -34,26 +34,26 @@ export default function FolksLovesUs() {
           "client-reviews py-10 min-h-[500px] overflow-hidden"
         )}
       >
-        <div className="container mx-auto my-20">
+        <div className=" mx-auto my-20">
           <motion.p
-            // initial={{
-            //   x: "80%",
-            //   opacity: 0,
-            // }}
-            // whileInView={{
-            //   x: 0,
-            //   opacity: 1,
-            // }}
-            // transition={{
-            //   duration: 1.5,
-            //   ease: [0, 0.71, 0.2, 1.01],
-            //   scale: {
-            //     type: "spring",
-            //     damping: 15,
-            //     stiffness: 70,
-            //     restDelta: 0.001,
-            //   },
-            // }}
+            initial={{
+              x: "80%",
+              opacity: 0,
+            }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+            }}
+            transition={{
+              duration: 1.5,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: "spring",
+                damping: 15,
+                stiffness: 70,
+                restDelta: 0.001,
+              },
+            }}
             className="text-2xl md:text-3xl font-semibold poppins-text text-center"
           >
             Folks Love Us
@@ -89,7 +89,7 @@ export default function FolksLovesUs() {
               loop={true}
               slidesPerView={1}
               autoplay={{
-                delay: 500,
+                delay: 2500,
                 disableOnInteraction: false,
               }}
               pagination={{ clickable: true }}
@@ -99,7 +99,7 @@ export default function FolksLovesUs() {
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                   spaceBetween: 40,
                 },
                 1024: {
