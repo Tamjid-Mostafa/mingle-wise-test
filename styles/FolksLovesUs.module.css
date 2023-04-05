@@ -1,0 +1,42 @@
+.root {
+  @apply relative w-full;
+  background: linear-gradient(
+    103.34deg,
+    rgba(142, 0, 228, 0.2) 6.11%,
+    rgba(189, 39, 171, 0.2) 36.19%,
+    rgba(217, 62, 138, 0.2) 56.08%,
+    rgba(249, 89, 99, 0.2) 80.8%
+  );
+  position: relative;
+}
+
+.card {
+  @apply relative bg-white mx-5 my-20;
+  height: 321px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+}
+.content {
+  @apply p-10 flex flex-col justify-between h-full;
+}
+.reviews {
+  @apply relative;
+}
+.avatar {
+  @apply flex  items-center space-x-2 w-full h-full;
+}
+.rectangle {
+  position: absolute;
+  width: 187px;
+  height: 321px;
+  right: 0px;
+  top: 80px;
+  z-index: 2;
+  background: linear-gradient(
+    270deg,
+    #fcf4f4 0%,
+    rgba(251, 243, 245, 1) 27.84%,
+    rgba(250, 243, 246, 0.89) 67.19%,
+    rgba(217, 217, 217, 0) 100%
+  );
+}
