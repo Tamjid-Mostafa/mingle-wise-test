@@ -67,6 +67,12 @@ const Footer = () => {
                   >
                     Community Rules
                   </Link>
+                  <Link
+                    href="/QuickLinks/IntellectualProperty"
+                    className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
+                  >
+                    Intellectual Property
+                  </Link>
                 </div>
                 <div className="roboto flex flex-col gap-3 mt-5 lg:mt-auto md:min-h-[200px]">
                   <p className="text-lg text-white mb-2 poppins-text">
