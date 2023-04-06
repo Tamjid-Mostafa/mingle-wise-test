@@ -82,7 +82,7 @@ export default function NavBar() {
                 router.pathname === "/" && windowHeight <= 100
                   ? "text-white"
                   : "text-[#C56183]"
-              } `}
+              } ${router.pathname === "/" && "border-bottom-grad"} `}
             >
               Dating | Networking | Events
             </p>

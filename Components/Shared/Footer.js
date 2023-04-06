@@ -38,7 +38,7 @@ const Footer = () => {
                     href="/QuickLinks/Support"
                     className="text-gray-400 font-medium hover:text-white duration-75 ease-in poppins-text"
                   >
-                    Support
+                    FAQ
                   </Link>
                   <Link
                     href="/QuickLinks/ContactUs"
