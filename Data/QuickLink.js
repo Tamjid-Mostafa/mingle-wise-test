@@ -27,7 +27,7 @@ export const IN_APP_FEATURES = [
   {
     logo: "/assets/in-app-features/second-lock.svg",
     title: "Second Look",
-    info: "Buy virtual gifts such as flowers, chocolate, teddy, cake, ring, necklace etc using M coins in your account.",
+    info: "View the person profile who viewed you and If you like swipe back.",
   },
   {
     logo: "/assets/in-app-features/compatibility.svg",
@@ -102,7 +102,7 @@ export const IN_APP_FEATURES = [
   {
     logo: "/assets/in-app-features/mingle-mixer.svg",
     title: "Mingle Mixer",
-    info: "See mutual connections with your matches.",
+    info: "Register for various mingle mixers in the real world and meet real through app ",
   },
   {
     logo: "/assets/in-app-features/read-receipts.svg",

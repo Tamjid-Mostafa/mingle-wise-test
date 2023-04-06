@@ -119,9 +119,9 @@ const Features = () => {
                     }}
                     className="text-center md:text-left"
                   >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
+                    Buy some M coins to access popular features like Mingle
+                    Match, Mingle Meet also you can buy mystery likes ,buzzes
+                    and many more.
                   </motion.p>
                 </motion.div>
               </motion.div>

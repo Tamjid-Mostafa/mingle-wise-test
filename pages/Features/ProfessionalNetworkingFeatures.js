@@ -105,9 +105,8 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Swipe up and down for the profiles you like or dislike and
+                    talk to them.
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -184,9 +183,8 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Find amazing people all over the app which are hot active
+                    and new connect.
                   </motion.p>
                 </motion.div>
               </motion.div>
@@ -219,9 +217,9 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Participate in an exciting on the spot video-calls with
+                    other users. Connect just by selecting the gender and
+                    location.
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -297,9 +295,8 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    A series of short conversations lasting for 3 minutes each
+                    with 5 different people.
                   </motion.p>
                 </motion.div>
               </motion.div>
@@ -332,9 +329,8 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Create your own events or attend events Mingle Video or
+                    Mingle Voice
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -410,9 +406,7 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Send mystery messages and connect with like minded people
                   </motion.p>
                 </motion.div>
               </motion.div>
@@ -445,8 +439,7 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    A series of short conversations lasting for 3 minutes each
-                    with 5 different people.
+                    Find Jobs according to your field and internships as well.
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -521,8 +514,7 @@ const ProfessionalNetworkingFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    Teleport your profile to a different location to find
-                    potential matches.
+                    Create your gigs find freelance work and get started.
                   </motion.p>
                 </motion.div>
               </motion.div>

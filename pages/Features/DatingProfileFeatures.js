@@ -98,16 +98,15 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/feed_small.svg"
-                      alt="Event Logo"
+                      alt="Feed"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold header-font-semi-bold montserrat">
                       Feed
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Swipe up and down for the profiles you like or dislike and
+                    talk to them.
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -129,7 +128,7 @@ const DatingProfileFeatures = () => {
                     height={612}
                     width={304}
                     src="/assets/features/dating_profile/feed.png"
-                    alt="Events"
+                    alt="Feed"
                   />
                 </motion.div>
               </motion.div>
@@ -154,7 +153,7 @@ const DatingProfileFeatures = () => {
                     height={612}
                     width={304}
                     src="/assets/features/dating_profile/explore.png"
-                    alt="Events"
+                    alt="Explore"
                   />
                 </motion.div>
                 <motion.div
@@ -177,16 +176,15 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/explore_small.svg"
-                      alt="Event Logo"
+                      alt="Explore"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
                       Explore
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Find amazing people all over the app which are hot active
+                    and new .
                   </motion.p>
                 </motion.div>
               </motion.div>
@@ -219,9 +217,9 @@ const DatingProfileFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Participate in an exciting on the spot blind date
+                    video-calls with other users. Connect just by selecting the
+                    gender and location.
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -242,8 +240,8 @@ const DatingProfileFeatures = () => {
                     className="mx-auto"
                     height={612}
                     width={304}
-                    src="/assets/features/dating_profile/mingle_instant.png"
-                    alt="Events"
+                    src="/assets/features/dating_profile/mingle-instant.png"
+                    alt="Mingle Instant"
                   />
                 </motion.div>
               </motion.div>
@@ -267,7 +265,7 @@ const DatingProfileFeatures = () => {
                     height={654}
                     width={614}
                     src="/assets/features/dating_profile/speed-dating.png"
-                    alt="Events"
+                    alt="Speed Dating"
                   />
                 </motion.div>
                 <motion.div
@@ -297,9 +295,8 @@ const DatingProfileFeatures = () => {
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    A series of short conversations lasting for 3 minutes each
+                    with 5 different people.
                   </motion.p>
                 </motion.div>
               </motion.div>
@@ -325,16 +322,15 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/events_small.svg"
-                      alt="Event Logo"
+                      alt="Event"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
                       Events
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Create your own events or attend events Mingle Video or
+                    Mingle Voice.
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -379,7 +375,7 @@ const DatingProfileFeatures = () => {
                     height={613.14}
                     width={514}
                     src="/assets/features/dating_profile/games.png"
-                    alt="Events"
+                    alt="Games"
                   />
                 </motion.div>
                 <motion.div
@@ -402,16 +398,14 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/games_small.svg"
-                      alt="Event Logo"
+                      alt="Games"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
                       Games
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Enjoy fun games in the game room with your date.
                   </motion.p>
                 </motion.div>
               </motion.div>
@@ -437,16 +431,14 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/chats_small.svg"
-                      alt="Event Logo"
+                      alt="Chats"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold">
                       Chats
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Send mystery messages to your match and impress your date
                   </motion.p>
                 </motion.div>
                 <motion.div
@@ -467,7 +459,7 @@ const DatingProfileFeatures = () => {
                     height={600}
                     width={545.67}
                     src="/assets/features/dating_profile/chats.png"
-                    alt="Events"
+                    alt="Chats"
                   />
                 </motion.div>
               </motion.div>
@@ -491,8 +483,8 @@ const DatingProfileFeatures = () => {
                     className="md:mx-auto"
                     height={614.58}
                     width={304.38}
-                    src="/assets/features/dating_profile/m_coins.png"
-                    alt="Events"
+                    src="/assets/features/dating_profile/m-coins.png"
+                    alt="M Coins"
                   />
                 </motion.div>
                 <motion.div
@@ -515,16 +507,15 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/m_coins_small.svg"
-                      alt="Event Logo"
+                      alt="M Coins"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
-                      Events
+                      M Coins
                     </motion.p>
                   </motion.div>
                   <motion.p className="poppins-text text-justify mt-3">
-                    An improved & easier way of communication with the Parents &
-                    Students allowing to put forward the goodwill of schools at
-                    large.
+                    Buy some M coins to access popular features like Mingle
+                    Match, Mingle Meet.
                   </motion.p>
                 </motion.div>
               </motion.div>

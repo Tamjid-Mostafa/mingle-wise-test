@@ -30,7 +30,7 @@ export default function Navigation({ windowHeight }) {
                 },
               }}
               className={`${
-                router.pathname == nav.href ? "border-b-2 border-[#7300D5]" : ""
+                router.pathname == nav.href ? "border-bottom-gr" : ""
               } ${
                 router.pathname === "/" && windowHeight <= 110 && " text-white"
               } ${router.pathname !== "/" && "text-black"}`}

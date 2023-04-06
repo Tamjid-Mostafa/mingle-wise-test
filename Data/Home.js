@@ -12,15 +12,15 @@ export const HOME_CAROUSEL_DATA = [
   },
   {
     src: "/assets/carousel_images/02.png",
-    heading: "Find, meet similar people and develop meaningful connections",
+    heading: "Date  Profile",
     subHeading:
-      "World’s first all-in-one AI driven app for dating, networking and events",
+      "Hot singles are waiting for you! Cut through the noise & build happy relationships",
   },
   {
     src: "/assets/carousel_images/03.png",
-    heading: "Find, meet similar people and develop meaningful connections",
+    heading: "Professional Profile",
     subHeading:
-      "World’s first all-in-one AI driven app for dating, networking and events",
+      "Recruiters, Freelancers,Blogs and everything to increase your network.",
   },
 ];
 
@@ -51,12 +51,12 @@ export const DATING_PROFILE = [
   {
     logo: "/assets/dating-profile/schedule 1.svg",
     title: "Events",
-    info: "Get a detailed summary of how you match up with the other user.",
+    info: "Create your own events or attend events Mingle Video or Mingle Voice.",
   },
   {
     logo: "/assets/dating-profile/explore.svg",
     title: "Explore",
-    info: "Choose what you want to share with more privacy control.",
+    info: "Find amazing people all over the app which are hot active and new.",
   },
   {
     logo: "/assets/dating-profile/mingle-instant.svg",
@@ -66,22 +66,22 @@ export const DATING_PROFILE = [
   {
     logo: "/assets/dating-profile/feed.svg",
     title: "Feed",
-    info: "Undo accidental swipes. See the profiles again you want to see.",
+    info: "Swipe up and down for the profiles you like or dislike and talk to them.",
   },
   {
     logo: "/assets/dating-profile/Games.svg",
     title: "Games",
-    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+    info: "Enjoy fun games in the game room with your date.",
   },
   {
     logo: "/assets/dating-profile/chats.svg",
     title: "Chats",
-    info: "Teleport your profile to a different location to find potential matches.",
+    info: "Send mystery messages to your match and impress your date.",
   },
   {
     logo: "/assets/dating-profile/speed-dating.svg",
     title: "Speed Dating",
-    info: "Get discounts on in-app purchases like meet, speed, gift and lime light.",
+    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
   },
   {
     logo: "/assets/dating-profile/m-coins.svg",
@@ -93,12 +93,12 @@ export const PROFESSIONAL_NETWORKING = [
   {
     logo: "/assets/professional-networking/schedule 1.svg",
     title: "Events",
-    info: "Get a detailed summary of how you match up with the other user.",
+    info: "Create your own events or attend events Mingle Video or Mingle Voice.",
   },
   {
     logo: "/assets/professional-networking/explore.svg",
     title: "Explore",
-    info: "Choose what you want to share with more privacy control.",
+    info: "Find amazing people all over the app which are hot active and new.",
   },
   {
     logo: "/assets/professional-networking/mingle-instant.svg",
@@ -108,7 +108,7 @@ export const PROFESSIONAL_NETWORKING = [
   {
     logo: "/assets/professional-networking/Mask group.svg",
     title: "Feed",
-    info: "Undo accidental swipes. See the profiles again you want to see.",
+    info: "Swipe up and down for the profiles you like or dislike and talk to them.",
   },
   {
     logo: "/assets/professional-networking/globe.svg",
@@ -118,17 +118,17 @@ export const PROFESSIONAL_NETWORKING = [
   {
     logo: "/assets/professional-networking/paper-plane 1.svg",
     title: "Chats",
-    info: "Teleport your profile to a different location to find potential matches.",
+    info: "Send mystery messages and connect with like minded people.",
   },
   {
     logo: "/assets/professional-networking/briefcase 1.svg",
     title: "Jobs",
-    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+    info: "Find Jobs according to your field and internships as well.",
   },
   {
     logo: "/assets/professional-networking/freelance-work.svg",
     title: "Freelance Work",
-    info: "Teleport your profile to a different location to find potential matches.",
+    info: "Create your gigs find freelance work and get started.",
   },
 ];
 export const IN_APP_FEATURES = [
@@ -176,43 +176,48 @@ export const IN_APP_FEATURES = [
 
 export const REVIEW_DATA = [
   {
-    image: "/assets/review-iamge/char-1 (1).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture1.png",
+    name: "Mannat Jaswal",
+    info: "This is a good platform for attending events and also has a good interface. I enjoyed using this app.",
   },
   {
-    image: "/assets/review-iamge/char-1 (2).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture2.png",
+    name: "Harman",
+    info: "Helps you meet new people who are like minded. Finds great matches. Overall a good experience.",
   },
   {
-    image: "/assets/review-iamge/char-1 (3).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture3.png",
+    name: "Mamta Dhanda",
+    info: "This is the best app for dating and networking. Very satisfying.",
   },
   {
-    image: "/assets/review-iamge/char-1 (4).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture4.png",
+    name: "Anchal Verma",
+    info: "It is really good dating app. Through this app we connected really good people and we know ourselves from others.",
   },
   {
-    image: "/assets/review-iamge/char-1 (5).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture5.png",
+    name: "Disha Jain",
+    info: "Great app to organize and manage events.",
   },
   {
-    image: "/assets/review-iamge/char-1 (3).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture6.png",
+    name: "Neeru Rastogi",
+    info: "Great platform to organize and attend events . An amazing app to find social connections .",
   },
   {
-    image: "/assets/review-iamge/char-1 (3).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture7.png",
+    name: "Ch Shobha Pal",
+    info: "Great platform to organize and attend a event.",
   },
   {
-    image: "/assets/review-iamge/char-1 (3).jpg",
-    name: "Diksha Valecha",
-    info: "Amazing platform to meet like minded people. I had a great experience using the app. Would defintely recommend to other people who are searching for compatible partners.",
+    image: "/assets/review-iamge/Picture8.png",
+    name: "DIVYANSH SINGH",
+    info: "Very strong app with a very wise motive",
+  },
+  {
+    image: "/assets/review-iamge/Picture9.png",
+    name: "Kunal Jain 236",
+    info: "Overall experience and user friendly interface is pretty good Really enjoyed this app!!",
   },
 ];

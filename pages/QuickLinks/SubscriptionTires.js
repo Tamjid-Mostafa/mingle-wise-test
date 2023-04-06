@@ -51,9 +51,9 @@ const SubscriptionTires = () => {
                   Subscription
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
+                  Be a part of amazing features with our subscriptions plans of
+                  Mingle Elite and Mingle Celeb and enjoying the amazing
+                  features not for all users.
                 </p>
               </motion.div>
             </motion.div>
@@ -132,8 +132,9 @@ const SubscriptionTires = () => {
               </span>
               <p className="mb-3">Get the Elite experience!</p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
+                Experience the Mingle Elite Subscription and Get a Mingle Elite
+                badge ,No time limit,teleport,double daily profiles,rollback
+                swipes,3 Free buzzes
               </p>
             </motion.div>
             <motion.div
@@ -169,8 +170,8 @@ const SubscriptionTires = () => {
               </span>
               <p className="mb-3">Get treated like a celebrity!</p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
+                Experience the Mingle Celeb Subscription and Get a Mingle Celeb
+                badge,Message Before Matching,5 Free Buzz Per Day.
               </p>
             </motion.div>
           </motion.div>
