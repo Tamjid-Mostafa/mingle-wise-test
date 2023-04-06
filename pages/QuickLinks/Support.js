@@ -48,7 +48,7 @@ const Support = () => {
               }}
               className="text-2xl md:text-3xl text-center"
             >
-              FAQ & Support
+              FAQ
             </motion.p>
             <motion.p
               initial={{ opacity: 0, scale: 1.2, x: "60%" }}
