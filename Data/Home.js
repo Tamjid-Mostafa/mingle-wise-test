@@ -12,15 +12,15 @@ export const HOME_CAROUSEL_DATA = [
   },
   {
     src: "/assets/carousel_images/02.png",
-    heading: "Find, meet similar people and develop meaningful connections",
+    heading: "Date  Profile",
     subHeading:
-      "World’s first all-in-one AI driven app for dating, networking and events",
+      "Hot singles are waiting for you! Cut through the noise & build happy relationships",
   },
   {
     src: "/assets/carousel_images/03.png",
-    heading: "Find, meet similar people and develop meaningful connections",
+    heading: "Professional Profile",
     subHeading:
-      "World’s first all-in-one AI driven app for dating, networking and events",
+      "Recruiters, Freelancers,Blogs and everything to increase your network.",
   },
 ];
 
@@ -51,12 +51,12 @@ export const DATING_PROFILE = [
   {
     logo: "/assets/dating-profile/schedule 1.svg",
     title: "Events",
-    info: "Get a detailed summary of how you match up with the other user.",
+    info: "Create your own events or attend events Mingle Video or Mingle Voice.",
   },
   {
     logo: "/assets/dating-profile/explore.svg",
     title: "Explore",
-    info: "Choose what you want to share with more privacy control.",
+    info: "Find amazing people all over the app which are hot active and new.",
   },
   {
     logo: "/assets/dating-profile/mingle-instant.svg",
@@ -66,22 +66,22 @@ export const DATING_PROFILE = [
   {
     logo: "/assets/dating-profile/feed.svg",
     title: "Feed",
-    info: "Undo accidental swipes. See the profiles again you want to see.",
+    info: "Swipe up and down for the profiles you like or dislike and talk to them.",
   },
   {
     logo: "/assets/dating-profile/Games.svg",
     title: "Games",
-    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+    info: "Enjoy fun games in the game room with your date.",
   },
   {
     logo: "/assets/dating-profile/chats.svg",
     title: "Chats",
-    info: "Teleport your profile to a different location to find potential matches.",
+    info: "Send mystery messages to your match and impress your date.",
   },
   {
     logo: "/assets/dating-profile/speed-dating.svg",
     title: "Speed Dating",
-    info: "Get discounts on in-app purchases like meet, speed, gift and lime light.",
+    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
   },
   {
     logo: "/assets/dating-profile/m-coins.svg",
@@ -93,12 +93,12 @@ export const PROFESSIONAL_NETWORKING = [
   {
     logo: "/assets/professional-networking/schedule 1.svg",
     title: "Events",
-    info: "Get a detailed summary of how you match up with the other user.",
+    info: "Create your own events or attend events Mingle Video or Mingle Voice.",
   },
   {
     logo: "/assets/professional-networking/explore.svg",
     title: "Explore",
-    info: "Choose what you want to share with more privacy control.",
+    info: "Find amazing people all over the app which are hot active and new.",
   },
   {
     logo: "/assets/professional-networking/mingle-instant.svg",
@@ -108,7 +108,7 @@ export const PROFESSIONAL_NETWORKING = [
   {
     logo: "/assets/professional-networking/Mask group.svg",
     title: "Feed",
-    info: "Undo accidental swipes. See the profiles again you want to see.",
+    info: "Swipe up and down for the profiles you like or dislike and talk to them.",
   },
   {
     logo: "/assets/professional-networking/globe.svg",
@@ -118,17 +118,17 @@ export const PROFESSIONAL_NETWORKING = [
   {
     logo: "/assets/professional-networking/paper-plane 1.svg",
     title: "Chats",
-    info: "Teleport your profile to a different location to find potential matches.",
+    info: "Send mystery messages and connect with like minded people.",
   },
   {
     logo: "/assets/professional-networking/briefcase 1.svg",
     title: "Jobs",
-    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+    info: "Find Jobs according to your field and internships as well.",
   },
   {
     logo: "/assets/professional-networking/freelance-work.svg",
     title: "Freelance Work",
-    info: "Teleport your profile to a different location to find potential matches.",
+    info: "Create your gigs find freelance work and get started.",
   },
 ];
 export const IN_APP_FEATURES = [
