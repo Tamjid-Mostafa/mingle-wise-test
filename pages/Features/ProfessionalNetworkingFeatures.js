@@ -77,7 +77,7 @@ const ProfessionalNetworkingFeatures = () => {
 
             <motion.div className="mt-10 flex flex-col gap-24">
               {/* Panel - 1 */}
-              <motion.div className="flex flex-col-reverse md:flex-row justify-center items-center gap-10 md:gap-5 lg:gap-8 xl:gap-8 2xl:gap-12">
+              <motion.div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5 lg:gap-8 xl:gap-8 2xl:gap-12">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.6 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -246,7 +246,7 @@ const ProfessionalNetworkingFeatures = () => {
                 </motion.div>
               </motion.div>
               {/* Panel - 4 */}
-              <motion.div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-5 lg:gap-8 xl:gap-8 2xl:gap-12">
+              <motion.div className="flex flex-col-reverse md:flex-row justify-center items-center gap-10 md:gap-5 lg:gap-8 xl:gap-8 2xl:gap-12">
                 <motion.div
                   initial={{ opacity: 0, scale: 1.1, x: "50%" }}
                   whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -265,7 +265,7 @@ const ProfessionalNetworkingFeatures = () => {
                     height={550}
                     width={621.19}
                     src="/assets/features/professional_networking/speed_network.png"
-                    alt="Events"
+                    alt="Speed Networking"
                   />
                 </motion.div>
                 <motion.div
