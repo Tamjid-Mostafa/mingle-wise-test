@@ -9,11 +9,12 @@ export default function Navigation({ windowHeight }) {
     { name: "Features", href: "/QuickLinks/Features" },
     { name: "Subscriptions", href: "/QuickLinks/SubscriptionTires" },
     { name: "About", href: "/QuickLinks/AboutUs" },
+    { name: "Contact Us", href: "/QuickLinks/ContactUs" },
   ];
 
   return (
     <AnimatePresence>
-      <nav className="hidden lg:flex lg:flex-[.6] xl:flex-[.5] 2xl:flex-[.4]">
+      <nav className="hidden lg:flex lg:flex-[.7] xl:flex-[.6] 2xl:flex-[.5]">
         <ul className="flex flex-1 gap-2 items-center justify-between">
           {navigation?.map((nav) => (
             <motion.li
