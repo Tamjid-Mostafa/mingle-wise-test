@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -44,6 +44,10 @@ body {
 }
 .header-font-semi-bold {
   font-family: "Montserrat-semi-bold";
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
 .poppins-text {
@@ -249,13 +253,15 @@ body {
   -webkit-filter: blur(8px);
 }
 
-.swiper-button-next, .swiper-button-prev {
-    width: 10px !important;
-    height: 10px !important;
+.swiper-button-next,
+.swiper-button-prev {
+  width: 10px !important;
+  height: 10px !important;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 24px !important;
-    color: #000000;
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px !important;
+  color: #000000;
 }
 
 .swiper-pagination-bullet-active {

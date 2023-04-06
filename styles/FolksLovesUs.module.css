@@ -1,18 +1,11 @@
 .root {
-  @apply relative w-full;
-  background: linear-gradient(
-    103.34deg,
-    rgba(142, 0, 228, 0.2) 6.11%,
-    rgba(189, 39, 171, 0.2) 36.19%,
-    rgba(217, 62, 138, 0.2) 56.08%,
-    rgba(249, 89, 99, 0.2) 80.8%
-  );
+  @apply relative w-full bg-gradient-to-r from-[#F7F0FB] to-[#FCF4F5];
   position: relative;
 }
 
 .card {
   @apply relative bg-white mx-10 my-20;
-  height: 371px;
+  min-height: 371px;
   border: 1px solid #808080;
   border-radius: 8px;
 }

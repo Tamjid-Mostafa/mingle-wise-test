@@ -85,7 +85,7 @@ export default function FolksLovesUs() {
             {/* <div className={cn(s.rectangle, "")} /> */}
             <Swiper
               // install Swiper modules
-              modules={[ Navigation, Pagination, A11y, Autoplay, FreeMode]}
+              modules={[Navigation, Pagination, A11y, Autoplay, FreeMode]}
               spaceBetween={10}
               loop={true}
               navigation
@@ -114,7 +114,7 @@ export default function FolksLovesUs() {
                 return (
                   <SwiperSlide key={index}>
                     <motion.div
-                      initial={{  opacity: 0 }}
+                      initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{
                         duration: 1,
@@ -129,34 +129,38 @@ export default function FolksLovesUs() {
                       className={cn(s.card)}
                     >
                       <div className={cn(s.content, "")}>
-                        <div className={cn(s.avatar, "")}>
+                        <div
+                          className={cn(
+                            s.avatar,
+                            "flex flex-col sm:flex-row lg:gap-2"
+                          )}
+                        >
                           <Image
+                            style={{ objectFit: "cover" }}
                             width={64}
                             height={64}
                             src={item?.image}
                             alt={item?.name}
-                            className={cn("rounded-full")}
+                            className={cn("rounded-full w-16 h-16")}
                           />
                           <div>
                             <div className={cn(s.name, "")}>{item?.name}</div>
                             <div className={cn(s.title, "")}>
-                              {
-                                [...Array(5)].map((item, i) => {
-                                  return (
-                                    <span key={i} className={cn(s.star, "")}>
-                                      <Star />
-                                    </span>
-                                  );
-                                })
-                              }
+                              {[...Array(5)].map((item, i) => {
+                                return (
+                                  <span key={i} className={cn(s.star, "")}>
+                                    <Star />
+                                  </span>
+                                );
+                              })}
                             </div>
                           </div>
                         </div>
                         <div className="my-5">
-                          <LeftQuote className=" float-left mr-5" />
+                          <LeftQuote className=" float-left mr-2" />
                           <span className={cn(s.reviews, "")}>
                             {item?.info}
-                            <RightQuote className="absolute -right-10 bottom-0" />
+                            <RightQuote className="absolute -right-6 bottom-0" />
                           </span>
                         </div>
 
