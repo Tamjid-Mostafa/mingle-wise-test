@@ -20,7 +20,7 @@ const UnsubMessage = () => {
               restDelta: 0.001,
             },
           }}
-          className="min-h-[80vh] md:min-h-[60vh] xl:min-h-[56.5vh] flex flex-col items-center justify-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto poppins-text overflow-hidden"
+          className="min-h-[100vh] flex flex-col items-center justify-center w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto poppins-text overflow-hidden"
         >
           <p className="text-4xl font-semibold text-center">
             We’re sad to see you go

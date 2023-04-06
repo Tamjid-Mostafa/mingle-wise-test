@@ -6,7 +6,7 @@ const IntellectualProperty = () => {
   return (
     <div>
       <>
-        <Head title={"Cookie Policy"} />
+        <Head title={"Intellectual Property"} />
         <AnimatePresence>
           <motion.div
             initial={{ opacity: 0, scale: 1.2 }}

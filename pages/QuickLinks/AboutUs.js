@@ -1,10 +1,8 @@
 import Image from "next/image";
 import React, { useContext } from "react";
 import { StateContext } from "../_app";
-import Map from "../../public/assets/background-image/FACTS & FIGURES SEC 1.png";
 import { AnimatePresence, motion } from "framer-motion";
 import Head from "@/Head";
-import { GoLinkExternal } from "react-icons/go";
 
 const AboutUs = () => {
   const { setPageName } = useContext(StateContext);
@@ -79,14 +77,13 @@ const AboutUs = () => {
               }}
               className="w-[95%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto text-center"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+              A fast-growing SaaS-based start-up with a very talented and
+              rapidly expanding team. We develop cutting-edge AI driven Apps. We
+              put value at the heart of our process & focus on what&apos;s
+              important to our users. This way, we can prove the value of our
+              app idea before we begin development. We then build on this mobile
+              strategy throughout discovery, design, development and
+              optimization.
             </motion.p>
             <motion.div
               initial={{ y: "-60%", opacity: 0, scale: 0.7 }}
@@ -218,14 +215,6 @@ const AboutUs = () => {
                 <div className="">
                   <p className="text-4xl pt-5">UK Office</p>
                   <p className="">186 Malvern Avenue, Harrow, HA2 9HD, UK</p>
-                  <div className="mt-5 flex justify-center md:justify-start">
-                    <a
-                      className="flex items-center gap-1 text-semibold text-blue-500"
-                      href=""
-                    >
-                      Locate on map <GoLinkExternal />
-                    </a>
-                  </div>
                 </div>
               </motion.div>
               <motion.div
@@ -257,14 +246,6 @@ const AboutUs = () => {
                     D/1602, OrchidSuburbia, Link Road, Kandivali West, Mumbai,
                     400067, India
                   </p>
-                  <div className="mt-5 flex justify-center md:justify-start">
-                    <a
-                      className="flex items-center gap-1 text-semibold text-blue-500"
-                      href=""
-                    >
-                      Locate on map <GoLinkExternal />
-                    </a>
-                  </div>
                 </div>
               </motion.div>
             </motion.div>

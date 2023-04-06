@@ -126,7 +126,7 @@ export default function FolksLovesUs() {
                           restDelta: 0.001,
                         },
                       }}
-                      className={cn(s.card)}
+                      className={cn(s.card, "")}
                     >
                       <div className={cn(s.content, "")}>
                         <div

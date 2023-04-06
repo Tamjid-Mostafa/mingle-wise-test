@@ -98,7 +98,7 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/feed_small.svg"
-                      alt="Event Logo"
+                      alt="Feed"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold header-font-semi-bold montserrat">
                       Feed
@@ -128,7 +128,7 @@ const DatingProfileFeatures = () => {
                     height={612}
                     width={304}
                     src="/assets/features/dating_profile/feed.png"
-                    alt="Events"
+                    alt="Feed"
                   />
                 </motion.div>
               </motion.div>
@@ -153,7 +153,7 @@ const DatingProfileFeatures = () => {
                     height={612}
                     width={304}
                     src="/assets/features/dating_profile/explore.png"
-                    alt="Events"
+                    alt="Explore"
                   />
                 </motion.div>
                 <motion.div
@@ -176,7 +176,7 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/explore_small.svg"
-                      alt="Event Logo"
+                      alt="Explore"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
                       Explore
@@ -240,8 +240,8 @@ const DatingProfileFeatures = () => {
                     className="mx-auto"
                     height={612}
                     width={304}
-                    src="/assets/features/dating_profile/mingle_instant.png"
-                    alt="Events"
+                    src="/assets/features/dating_profile/mingle-instant.png"
+                    alt="Mingle Instant"
                   />
                 </motion.div>
               </motion.div>
@@ -265,7 +265,7 @@ const DatingProfileFeatures = () => {
                     height={654}
                     width={614}
                     src="/assets/features/dating_profile/speed-dating.png"
-                    alt="Events"
+                    alt="Speed Dating"
                   />
                 </motion.div>
                 <motion.div
@@ -322,7 +322,7 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/events_small.svg"
-                      alt="Event Logo"
+                      alt="Event"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
                       Events
@@ -375,7 +375,7 @@ const DatingProfileFeatures = () => {
                     height={613.14}
                     width={514}
                     src="/assets/features/dating_profile/games.png"
-                    alt="Events"
+                    alt="Games"
                   />
                 </motion.div>
                 <motion.div
@@ -398,7 +398,7 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/games_small.svg"
-                      alt="Event Logo"
+                      alt="Games"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
                       Games
@@ -431,7 +431,7 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/chats_small.svg"
-                      alt="Event Logo"
+                      alt="Chats"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold">
                       Chats
@@ -459,7 +459,7 @@ const DatingProfileFeatures = () => {
                     height={600}
                     width={545.67}
                     src="/assets/features/dating_profile/chats.png"
-                    alt="Events"
+                    alt="Chats"
                   />
                 </motion.div>
               </motion.div>
@@ -484,7 +484,7 @@ const DatingProfileFeatures = () => {
                     height={614.58}
                     width={304.38}
                     src="/assets/features/dating_profile/m-coins.png"
-                    alt="Events"
+                    alt="M Coins"
                   />
                 </motion.div>
                 <motion.div
@@ -507,7 +507,7 @@ const DatingProfileFeatures = () => {
                       width={47}
                       height={44}
                       src="/assets/features/dating_profile/m_coins_small.svg"
-                      alt="Event Logo"
+                      alt="M Coins"
                     />
                     <motion.p className="text-2xl md:text-3xl font-semibold montserrat">
                       M Coins

@@ -5,7 +5,7 @@
 
 .card {
   @apply relative bg-white mx-10 my-20;
-  min-height: 371px;
+  min-height: 280px;
   border: 1px solid #808080;
   border-radius: 8px;
 }
@@ -13,6 +13,7 @@
   @apply p-10 flex flex-col justify-between h-full;
 }
 .title {
+  margin-top: 5px;
 @apply flex
 }
 .reviews {
@@ -22,7 +23,6 @@
   @apply flex  items-center space-x-2 w-full h-full;
 }
 .rectangle {
-  position: absolute;
   width: 187px;
   height: 321px;
   right: 0px;

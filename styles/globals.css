@@ -295,3 +295,15 @@ body {
 .swiper-pagination-fraction {
   bottom: var(--swiper-pagination-bottom, 1px) !important;
 }
+
+/* Border Gradient */
+.border-bottom-gr {
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    #C22BA6,
+    #D83D8A,
+    #F4546A
+  );
+  border-image-slice: 1;
+}
