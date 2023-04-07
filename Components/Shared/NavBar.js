@@ -16,6 +16,7 @@ export default function NavBar() {
     { name: "Features", href: "/QuickLinks/Features" },
     { name: "Subscriptions", href: "/QuickLinks/SubscriptionTires" },
     { name: "About", href: "/QuickLinks/AboutUs" },
+    { name: "Contact Us", href: "/QuickLinks/ContactUs" },
   ];
   const handleNavigateHome = () => {
     router.push("/");
@@ -132,7 +133,7 @@ export default function NavBar() {
             <div className="text-container items-center">
               <div
                 onClick={handleNavigateHome}
-                className="flex flex-col items-center mb-5"
+                className="flex flex-col items-center"
               >
                 <Image
                   height={90}
@@ -140,6 +141,23 @@ export default function NavBar() {
                   src="/assets/logo/mingle.png"
                   alt="Company logo"
                 />
+              </div>
+              <div className="block sm:hidden text-center mb-10">
+                <p
+                  className={`header-font-extra-light font-bold text-xl tracking-[5px] relative text-transparent bg-clip-text bg-gradient-to-r from-[#F94969] to-[#7328D2]`}
+                >
+                  MingleWise
+                  <span
+                    className={`text-[8px] tracking-tight absolute top-[-5px] md:top-[-12px] poppins-text text-transparent bg-clip-text bg-gradient-to-r from-[#F94969] to-[#7328D2]`}
+                  >
+                    TM
+                  </span>
+                </p>
+                <p
+                  className={`header-font-extra-light text-[12px] font-bold text-center text-[#C56183]`}
+                >
+                  Dating | Networking | Events
+                </p>
               </div>
               <ul className="text-base font-semibold flex flex-col items-center gap-10">
                 <p onClick={handleNavigateHome} className="poppins-text">
@@ -173,7 +191,7 @@ export default function NavBar() {
               </ul>
             </div>
             <p className="text text-center mt-8">
-              All Rights Reserved AppSynergies © Copyright2022
+              All Rights Reserved AppSynergies <br /> © Copyright2022
             </p>
           </motion.div>
           <span
