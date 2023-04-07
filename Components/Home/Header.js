@@ -59,7 +59,7 @@ export default function HomeCarousel() {
                         restDelta: 0.001,
                       },
                     }}
-                    className="md:max-w-[700px] md:text-lg font-normal poppins-text"
+                    className="md:text-lg font-normal poppins-text w-[80%]"
                   >
                     {data.subHeading}
                   </motion.p>
