@@ -29,6 +29,27 @@ html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
+/* Custom Scroll */
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #9304DF),
+    color-stop(0.72, #D73D8C),
+    color-stop(0.86, #F95963)
+  );
+}
+/* Custom Scroll */
 body {
   scroll-behavior: smooth;
 }
@@ -299,11 +320,6 @@ body {
 /* Border Gradient */
 .border-bottom-gr {
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(
-    0.25turn,
-    #C22BA6,
-    #D83D8A,
-    #F4546A
-  );
+  border-image: linear-gradient(0.25turn, #c22ba6, #d83d8a, #f4546a);
   border-image-slice: 1;
 }
