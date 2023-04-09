@@ -68,7 +68,7 @@ export default function HomeCarousel() {
                   </motion.p>
                   <a
                     href={
-                      osName == "Android" || osName == "windows"
+                      osName == "Android" || osName == "Windows"
                         ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                         : osName == "iOS" || osName == "Apple"
                         ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
