@@ -18,6 +18,7 @@ export default function Navigation({ windowHeight }) {
         <ul className="flex flex-1 gap-2 items-center justify-between">
           {navigation?.map((nav) => (
             <motion.li
+              key={nav.name}
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.02 }}
               transition={{
@@ -35,7 +36,6 @@ export default function Navigation({ windowHeight }) {
               } ${
                 router.pathname === "/" && windowHeight <= 110 && " text-white"
               } ${router.pathname !== "/" && "text-black"}`}
-              key={nav.name}
             >
               <Link href={nav.href}>
                 <span className="poppins-text"> {nav.name}</span>

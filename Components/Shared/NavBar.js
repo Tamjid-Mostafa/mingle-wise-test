@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Navigation from "./Navigation";
 import { useRouter } from "next/router";
 import Logo from "./Logo";
@@ -8,8 +8,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { StateContext } from "@/pages/_app";
 
 export default function NavBar() {
+  const { osName } = useContext(StateContext);
   const [windowHeight, setWindowHeight] = useState("");
   const router = useRouter();
   const navigation = [
@@ -122,7 +124,7 @@ export default function NavBar() {
             }}
             className="relative bg-white z-20 w-[100vw] h-[100vh] flex flex-col"
           >
-            <div className="flex p-10 justify-between w-full">
+            <div className="flex p-5 sm:p-10 justify-between w-full">
               <span
                 onClick={() => setMenu(false)}
                 className="pt-1 cursor-pointer"
@@ -133,7 +135,7 @@ export default function NavBar() {
             <div className="text-container items-center">
               <div
                 onClick={handleNavigateHome}
-                className="flex flex-col items-center"
+                className="flex flex-col items-center sm:mb-8"
               >
                 <Image
                   height={90}
@@ -142,7 +144,7 @@ export default function NavBar() {
                   alt="Company logo"
                 />
               </div>
-              <div className="block sm:hidden text-center mb-10">
+              <div className="block sm:hidden text-center mb-7">
                 <p
                   className={`header-font-extra-light font-bold text-xl tracking-[5px] relative text-transparent bg-clip-text bg-gradient-to-r from-[#F94969] to-[#7328D2]`}
                 >
@@ -159,23 +161,32 @@ export default function NavBar() {
                   Dating | Networking | Events
                 </p>
               </div>
-              <ul className="text-base font-semibold flex flex-col items-center gap-10">
+              <ul className="text-base font-semibold flex flex-col items-center gap-6 sm:gap-10">
                 <p onClick={handleNavigateHome} className="poppins-text">
                   Home
                 </p>
                 {navigation?.map((nav, index) => (
                   <li
+                    key={index}
                     className={`hover:bg-[#F3FAFF] w-[200px] flex items-center justify-center ${
                       router.pathname == nav.href ? "bg-[#F3FAFF]" : ""
                     }`}
-                    key={index}
                   >
                     <Link onClick={() => setMenu(false)} href={nav.href}>
                       <span className="poppins-text">{nav.name}</span>
                     </Link>
                   </li>
                 ))}
-                <a href="https://onelink.to/minglewise" target="_blank">
+                <a
+                  href={
+                    osName == "Android"
+                      ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                      : osName == "iOS"
+                      ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+                      : "https://onelink.to/minglewise"
+                  }
+                  target="_blank"
+                >
                   <button
                     onClick={() => setMenu(false)}
                     className={`bg-transparent text-white font-bold w-28 h-10 relative

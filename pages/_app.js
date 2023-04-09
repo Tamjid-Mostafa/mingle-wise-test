@@ -4,12 +4,19 @@ import NavBar from "@/Components/Shared/NavBar";
 import Head from "@/Head";
 import "@/styles/globals.css";
 import { useRouter } from "next/router";
+import platform from "platform";
 import { createContext, useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
 
 export const StateContext = createContext();
 
 export default function App({ Component, pageProps }) {
+  const [osName, setOsName] = useState("");
+
+  useEffect(() => {
+    setOsName(platform.os.family);
+  }, []);
+
   const [pageName, setPageName] = useState("");
 
   const Router = useRouter();
@@ -27,6 +34,7 @@ export default function App({ Component, pageProps }) {
   const stateInfo = {
     pageName,
     setPageName,
+    osName,
   };
 
   return (
