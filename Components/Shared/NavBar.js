@@ -180,10 +180,10 @@ export default function NavBar() {
                 <a
                   href={
                     osName == "Android"
-                      ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-                      : osName == "iOS"
-                      ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
-                      : "https://onelink.to/minglewise"
+                    ? "https://onelink.to/minglewise"
+                     : osName == "iOS"
+                     ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+                     : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                   }
                   target="_blank"
                 >

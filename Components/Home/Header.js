@@ -8,6 +8,8 @@ import { StateContext } from "@/pages/_app";
 
 export default function HomeCarousel() {
   const { osName } = useContext(StateContext);
+  print("os name")
+  console.log("OS Name : ")
   console.log(osName);
   const router = useRouter();
   const settings = {
@@ -69,17 +71,17 @@ export default function HomeCarousel() {
                   <a
                     href={
                       osName == "Android"
-                        ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                       ? "https://onelink.to/minglewise" //"https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                         : osName == "iOS"
                         ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
-                        : "https://onelink.to/minglewise"
+                        : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                     }
                     target="_blank"
                   >
                     <button
                       className="bg-transparent text-white font-semibold w-44 h-10 relative
                     before:w-full before:h-full before:scale-x-[1.04] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
-                    before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
+                    before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%]
                     before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
                     before:rounded-md
                     hover:bg-white hover:text-black duration-300 px-4 rounded py-2 poppins-text"

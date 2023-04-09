@@ -43,7 +43,14 @@ export default function Navigation({ windowHeight }) {
             </motion.li>
           ))}
           <li>
-            <a href="https://onelink.to/minglewise" target="_blank">
+            <a href={
+     osName == "Android"
+     ? "https://onelink.to/minglewise" //"https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+      : osName == "iOS"
+      ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+      : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+            }
+            target="_blank">
               <button
                 className={`bg-transparent text-white font-bold w-28 h-10 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
