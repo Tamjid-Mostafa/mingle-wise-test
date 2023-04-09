@@ -50,7 +50,7 @@ export default function Navigation({ windowHeight }) {
               href={
                 osName == "Android" || osName == "Windows"
                   ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-                  : osName == "iOS" || osName == "Apple"
+                  : osName == "iOS" || osName == "Apple"|| osName == "OS X"
                   ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
                   : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
               }

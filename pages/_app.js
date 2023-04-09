@@ -22,12 +22,12 @@ export default function App({ Component, pageProps }) {
   const Router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  console.log(Router.pathname);
+  // console.log(Router.pathname);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(true);
-      console.log("Loading");
+      // console.log("Loading");
     }, 2000);
   }, []);
 

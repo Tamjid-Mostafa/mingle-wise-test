@@ -8,7 +8,7 @@ import { StateContext } from "@/pages/_app";
 
 export default function HomeCarousel() {
   const { osName } = useContext(StateContext);
-  console.log(osName);
+  // console.log(osName);
   const router = useRouter();
   const settings = {
     dots: true,
@@ -70,7 +70,7 @@ export default function HomeCarousel() {
                     href={
                       osName == "Android" || osName == "Windows"
                         ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-                        : osName == "iOS" || osName == "Apple"
+                        : osName == "iOS" || osName == "Apple" || osName == "OS X"
                         ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
                         : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                     }

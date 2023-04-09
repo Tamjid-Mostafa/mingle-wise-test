@@ -28,7 +28,7 @@ const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
       )
       .then(
         (res) => {
-          console.log(res);
+          // console.log(res);
           window.scroll({ top: 0, left: 0, behavior: "smooth" });
           setInfo({ name: "", email: "" });
           toast.success("Successfully Unsubscribe");

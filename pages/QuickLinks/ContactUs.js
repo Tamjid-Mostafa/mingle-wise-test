@@ -16,12 +16,12 @@ const ContactUs = () => {
   const handleOnSubmit = (e) => {
     setLoading(true);
     e.preventDefault();
-    console.log(userData);
-    console.log({
-      name: userData?.name,
-      email: userData?.email,
-      message: userData,
-    });
+    // console.log(userData);
+    // console.log({
+    //   name: userData?.name,
+    //   email: userData?.email,
+    //   message: userData,
+    // });
     axios
       .post(
         "https://us-central1-minglewise2019.cloudfunctions.net/A6_2_ContactUsWebsiteApi/contactUsWebsite",
@@ -32,7 +32,7 @@ const ContactUs = () => {
         }
       )
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         toast.success("Successfully submitted");
         setUserData({
           name: "",
@@ -134,7 +134,7 @@ const ContactUs = () => {
             <button
               className="bg-transparent text-white font-semibold w-44 h-12 relative
           before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
-          before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
+          before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%]
           before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
           before:rounded-md
           hover:bg-white hover:text-black transition-all duration-200 px-4 rounded-md py-2 poppins-text mt-5 flex justify-center items-center"
