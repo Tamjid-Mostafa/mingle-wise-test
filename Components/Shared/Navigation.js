@@ -1,9 +1,12 @@
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
+import { StateContext } from "@/pages/_app";
 
 export default function Navigation({ windowHeight }) {
+  const { osName } = useContext(StateContext);
+  console.log(osName);
   const router = useRouter();
   const navigation = [
     { name: "Features", href: "/QuickLinks/Features" },
@@ -43,14 +46,16 @@ export default function Navigation({ windowHeight }) {
             </motion.li>
           ))}
           <li>
-            <a href={
-     osName == "Android"
-     ? "https://onelink.to/minglewise" //"https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-      : osName == "iOS"
-      ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
-      : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-            }
-            target="_blank">
+            <a
+              href={
+                osName == "Android" || osName == "windows"
+                  ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                  : osName == "iOS" || osName == "Apple"
+                  ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+                  : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+              }
+              target="_blank"
+            >
               <button
                 className={`bg-transparent text-white font-bold w-28 h-10 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]

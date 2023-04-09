@@ -8,8 +8,6 @@ import { StateContext } from "@/pages/_app";
 
 export default function HomeCarousel() {
   const { osName } = useContext(StateContext);
-  print("os name")
-  console.log("OS Name : ")
   console.log(osName);
   const router = useRouter();
   const settings = {
@@ -70,9 +68,9 @@ export default function HomeCarousel() {
                   </motion.p>
                   <a
                     href={
-                      osName == "Android"
-                       ? "https://onelink.to/minglewise" //"https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-                        : osName == "iOS"
+                      osName == "Android" || osName == "windows"
+                        ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                        : osName == "iOS" || osName == "Apple"
                         ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
                         : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                     }
