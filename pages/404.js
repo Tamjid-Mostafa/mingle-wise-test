@@ -13,7 +13,7 @@ const Error = () => {
       </div>
       <Image src={"/404.svg"} width={1280} height={100} alt="404" />
       <button
-      onClick={router.push('/')}
+      onClick={() => router.push('/')}
       className="gradient py-3 px-5 w-[224px] hover:text-white flex items-center justify-center gap-5"><span><ReturnArrow /></span> <span>Go Home</span> </button>
     </div>
   );
