@@ -14,7 +14,7 @@ const WhatMakesUsLove = () => {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(false)}
     >
-      <AnimatePresence>
+      <>
         <motion.p
           initial={{ scale: 0.6, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -274,7 +274,7 @@ const WhatMakesUsLove = () => {
             </m.p>
           </div>
         </div>
-      </AnimatePresence>
+      </>
     </ScrollTrigger>
   );
 };
