@@ -30,7 +30,8 @@ export default function App({ Component, pageProps }) {
         ReactPixel.pageView()
 
         router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView()
+          ReactPixel.pageView();
+          ReactPixel.track(data);
         })
       })
   }, [router.events])
