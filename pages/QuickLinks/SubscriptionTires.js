@@ -193,40 +193,44 @@ const SubscriptionTires = () => {
           </motion.p>
           <div className="hidden sm:block py-20 w-[95%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[70%] mx-auto">
             <table className="container mx-auto bg-white poppins-text shadow-md">
-              <tr className="rounded-xl">
-                <th className="py-3 text-start px-4 border-2">Features</th>
-                <th className="py-3 border-2 bg-[#FCFCFC]">MingleWise</th>
-                <th className="py-3 border-2 bg-[#F5F5F5]">
-                  <div className="flex items-center justify-center md:gap-2">
-                    <span>Mingle Elite</span>
-                  </div>
-                </th>
-                <th className="bg-[#ECECEC] py-3 border-2">
-                  <div className="flex items-center justify-center md:gap-2">
-                    <span>Mingle Celeb</span>
-                  </div>
-                </th>
-              </tr>
-              {SUBSCRIPTION_TIRES.map((data, index) => (
-                <tr key={index} className="border-2">
-                  <td className=" py-3 px-4 border-2">{data?.concept}</td>
-                  <td className=" py-3 px-4 border-2 bg-[#FCFCFC]">
-                    {data?.mingleWise && (
-                      <GoPrimitiveDot className="mx-auto text-4xl text-[#BEBEBE]" />
-                    )}
-                  </td>
-                  <td className=" py-3 px-4 border-2 bg-[#F5F5F5] text-4xl text-[#7E02D8]">
-                    {data?.mingleElite && (
-                      <GoPrimitiveDot className="mx-auto" />
-                    )}
-                  </td>
-                  <td className=" py-3 px-4 border-2 bg-[#ECECEC] text-4xl text-[#4A2E2E]">
-                    {data?.mingleCeleb && (
-                      <GoPrimitiveDot className="mx-auto" />
-                    )}
-                  </td>
+              <thead className="rounded-xl">
+                <tr>
+                  <th className="py-3 text-start px-4 border-2">Features</th>
+                  <th className="py-3 border-2 bg-[#FCFCFC]">MingleWise</th>
+                  <th className="py-3 border-2 bg-[#F5F5F5]">
+                    <div className="flex items-center justify-center md:gap-2">
+                      <span>Mingle Elite</span>
+                    </div>
+                  </th>
+                  <th className="bg-[#ECECEC] py-3 border-2">
+                    <div className="flex items-center justify-center md:gap-2">
+                      <span>Mingle Celeb</span>
+                    </div>
+                  </th>
                 </tr>
-              ))}
+              </thead>
+              <tbody>
+                {SUBSCRIPTION_TIRES.map((data, index) => (
+                  <tr key={index} className="border-2">
+                    <td className=" py-3 px-4 border-2">{data?.concept}</td>
+                    <td className=" py-3 px-4 border-2 bg-[#FCFCFC]">
+                      {data?.mingleWise && (
+                        <GoPrimitiveDot className="mx-auto text-4xl text-[#BEBEBE]" />
+                      )}
+                    </td>
+                    <td className=" py-3 px-4 border-2 bg-[#F5F5F5] text-4xl text-[#7E02D8]">
+                      {data?.mingleElite && (
+                        <GoPrimitiveDot className="mx-auto" />
+                      )}
+                    </td>
+                    <td className=" py-3 px-4 border-2 bg-[#ECECEC] text-4xl text-[#4A2E2E]">
+                      {data?.mingleCeleb && (
+                        <GoPrimitiveDot className="mx-auto" />
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
             </table>
           </div>
           <div className="sm:hidden">
