@@ -19,10 +19,21 @@ export default function App({ Component, pageProps }) {
 
   const [pageName, setPageName] = useState("");
 
-  const Router = useRouter();
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  // console.log(Router.pathname);
+  useEffect(() => {
+    import('react-facebook-pixel')
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init('137039049312449') // facebookPixelId
+        ReactPixel.pageView()
+
+        router.events.on('routeChangeComplete', () => {
+          ReactPixel.pageView()
+        })
+      })
+  }, [router.events])
 
   useEffect(() => {
     setTimeout(() => {
