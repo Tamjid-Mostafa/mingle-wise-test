@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import platform from "platform";
 import { createContext, useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
-
+import * as fbq from '../lib/fbpixel'
 export const StateContext = createContext();
 
 export default function App({ Component, pageProps }) {
@@ -19,22 +19,22 @@ export default function App({ Component, pageProps }) {
 
   const [pageName, setPageName] = useState("");
 
-  const router = useRouter();
   const [loading, setLoading] = useState(false);
-
+  const router = useRouter();
+  
   useEffect(() => {
     import('react-facebook-pixel')
       .then((x) => x.default)
       .then((ReactPixel) => {
-        ReactPixel.init('137039049312449') // facebookPixelId
+        ReactPixel.init(fbq.FB_PIXEL_ID) // facebookPixelId
         ReactPixel.pageView()
 
         router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView();
-          ReactPixel.track(data);
+          ReactPixel.pageView()
         })
       })
   }, [router.events])
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -58,6 +58,7 @@ export default function App({ Component, pageProps }) {
         </>
       ) : (
         <>
+              
           <StateContext.Provider value={stateInfo}>
             <Toaster position="top-center" />
             <NavBar />
