@@ -6,7 +6,7 @@ import { StateContext } from "@/pages/_app";
 
 export default function Navigation({ windowHeight }) {
   const { osName } = useContext(StateContext);
-  console.log(osName);
+
   const router = useRouter();
   const navigation = [
     { name: "Features", href: "/QuickLinks/Features" },
