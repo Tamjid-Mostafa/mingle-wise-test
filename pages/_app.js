@@ -61,9 +61,10 @@ export default function App({ Component, pageProps }) {
               
           <StateContext.Provider value={stateInfo}>
             <Toaster position="top-center" />
-            <NavBar />
+            {router.pathname !== '/404' && <NavBar />}
             <Component {...pageProps} />
-            <Footer />
+            {router.pathname !== '/404' &&  <Footer />}
+           
           </StateContext.Provider>
         </>
       )}

@@ -323,3 +323,47 @@ body {
   border-image: linear-gradient(0.25turn, #c22ba6, #d83d8a, #f4546a);
   border-image-slice: 1;
 }
+
+.fit {
+  min-height: calc(100vh - 88px);
+}
+.gradient {
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  background: linear-gradient(164.28deg, #FB775F -0.84%, #DA3A74 28.12%, #CE2595 49.71%, #7028D9 93.38%);
+  cursor: pointer;
+}
+.gradient::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border-radius: 30px;
+  background-color: white;
+  z-index: -1;
+  transition: 300ms
+}
+.gradient::after {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(164.28deg, #FB775F -0.84%, #DA3A74 28.12%, #CE2595 49.71%, #7028D9 93.38%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 200ms
+  
+}
+.gradient:hover::before {
+  opacity: 0%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.gradient:hover::after{
+  color: white;
+}
