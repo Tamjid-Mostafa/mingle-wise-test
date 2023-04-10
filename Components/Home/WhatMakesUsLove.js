@@ -192,7 +192,7 @@ const WhatMakesUsLove = () => {
               className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text text-[#4F4F4F]"
             >
               {counterOn && (
-                <CountUp start={0} end={4526} duration={5} delay={0} />
+                <CountUp start={0} end={7524} duration={5} delay={0} />
               )}
             </m.h1>
             <m.p
@@ -252,7 +252,7 @@ const WhatMakesUsLove = () => {
               className="text-3xl lg:text-4xl font-bold flex h-[70px] items-center justify-center poppins-text text-[#4F4F4F]"
             >
               {counterOn && (
-                <CountUp start={0} end={130957} duration={5} delay={0} />
+                <CountUp start={0} end={200000} duration={5} delay={0} />
               )}
             </m.h1>
             <m.p

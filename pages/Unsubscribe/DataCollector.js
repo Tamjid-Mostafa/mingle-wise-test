@@ -41,7 +41,7 @@ const DataCollector = () => {
                   id="userName"
                   type="text"
                   value={info?.name}
-                  className="px-4 py-3 border-none bg-[#D9D9D9] rounded focus:outline-gray-400"
+                  className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                 />
               </div>
               <div className="poppins-text flex flex-col">
@@ -52,7 +52,7 @@ const DataCollector = () => {
                   id="userEmail"
                   type="email"
                   value={info?.email}
-                  className="px-4 py-3 border-none bg-[#D9D9D9] rounded focus:outline-gray-400"
+                  className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                 />
               </div>
               <div className="text-center">

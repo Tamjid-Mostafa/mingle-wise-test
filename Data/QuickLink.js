@@ -1,8 +1,128 @@
 export const IN_APP_FEATURES = [
   {
-    logo: "../",
-    title: "",
-    info: "",
+    logo: "/assets/in-app-features/mystery-message.svg",
+    title: "Mystery Messages",
+    info: "This feature allows you to message a particular person in which you are interested before getting matched.",
+  },
+  {
+    logo: "/assets/in-app-features/mystery-like.svg",
+    title: "Mystery Likes",
+    info: "This feature allows you to see the profile of person who has liked your profile.",
+  },
+  {
+    logo: "/assets/in-app-features/buzz.svg",
+    title: "Buzz",
+    info: "This feature allows you to send a buzz to someone you are interested in. ",
+  },
+  {
+    logo: "/assets/in-app-features/profile-visitors.svg",
+    title: "Profile Visitor",
+    info: "This feature allows you to know about the number of people who visited your profile.",
+  },
+  {
+    logo: "/assets/in-app-features/like-given.svg",
+    title: "Likes Given",
+    info: "This feature allows you to message a particular person in which you are interested before getting matched.",
+  },
+  {
+    logo: "/assets/in-app-features/second-lock.svg",
+    title: "Second Look",
+    info: "View the person profile who viewed you and If you like swipe back.",
+  },
+  {
+    logo: "/assets/in-app-features/compatibility.svg",
+    title: "Compatibility",
+    info: "Get a detailed summary of how you match up with the other user.",
+  },
+  {
+    logo: "/assets/in-app-features/privacy-policy.svg",
+    title: "Profile Privacy",
+    info: "Choose what you want to share with more privacy control.",
+  },
+  {
+    logo: "/assets/in-app-features/mingle-instant.svg",
+    title: "Mingle Instant",
+    info: "Participate in an exciting on the spot blind date video-calls with other users. Connect just by selecting the gender and location.",
+  },
+  {
+    logo: "/assets/in-app-features/rollback.svg",
+    title: "Roll Back",
+    info: "Undo accidental swipes. See the profiles again you want to see.",
+  },
+  {
+    logo: "/assets/in-app-features/speed-dating.svg",
+    title: "Speed Dating",
+    info: "A series of short conversations lasting for 3 minutes each with 5 different people.",
+  },
+  {
+    logo: "/assets/in-app-features/teleport.svg",
+    title: "Teleport",
+    info: "Teleport your profile to a different location to find potential matches.",
+  },
+  {
+    logo: "/assets/in-app-features/mingle-events.svg",
+    title: "Mingle Events",
+    info: "Create your own events using MingleWise video, audio and dashboards. You can create both public and private events.",
+  },
+  {
+    logo: "/assets/in-app-features/dicounts.svg",
+    title: "Discounts",
+    info: "Get discounts on in-app purchases like meet, speed, gift and lime light.",
+  },
+  {
+    logo: "/assets/in-app-features/elite-badge.svg",
+    title: "Elite Badge",
+    info: "Here, by using this feature you can get discounts on in-app purchases like meet, speed, gift and lime light.",
+  },
+  {
+    logo: "/assets/in-app-features/stories.svg",
+    title: "Stories",
+    info: "Post your story in the form photos or videos. Also, to make your stories more fun and interactive.",
+  },
+  {
+    logo: "/assets/in-app-features/advanced-filter.svg",
+    title: "Advanced Filters",
+    info: "By using this feature you choose what kind of people you want to match, using advance filters.",
+  },
+  {
+    logo: "/assets/in-app-features/mingle-gifts.svg",
+    title: "Mingle Gifts",
+    info: "Buy virtual gifts such as flowers, chocolate, teddy, cake, ring, necklace etc using M coins in your account.",
+  },
+  {
+    logo: "/assets/in-app-features/speed-networking.svg",
+    title: "Speed Networking",
+    info: "Speed networking sessions, where you’ll have series of short conversations lasting for 3 minutes each with 5 people.",
+  },
+  {
+    logo: "/assets/in-app-features/no-time-limit.svg",
+    title: "No Time Limit",
+    info: "By using this feature, your matches and messages won’t get disappeared after a period of time.",
+  },
+  {
+    logo: "/assets/in-app-features/mingle-mixer.svg",
+    title: "Mingle Mixer",
+    info: "Register for various mingle mixers in the real world and meet real through app ",
+  },
+  {
+    logo: "/assets/in-app-features/read-receipts.svg",
+    title: "Read Receipts",
+    info: "Here, by using this feature you can know whether your messages have been read or not.",
+  },
+  {
+    logo: "/assets/in-app-features/limelight.svg",
+    title: "Limelight",
+    info: "By using this feature, top profiles will be visible to you. By using this, you explore top profiles.",
+  },
+  {
+    logo: "/assets/in-app-features/converse.svg",
+    title: "Converse",
+    info: "Have a formal chat with various professionals. You can find this feature in ‘mingle-pro’ option.",
+  },
+  {
+    logo: "/assets/in-app-features/double-triple.svg",
+    title: "Double/ Triple Daily Profiles",
+    info: "Match more people in a day by doubling or Tripling your daily profiles.",
   },
 ];
 

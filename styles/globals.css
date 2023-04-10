@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,6 +29,27 @@ html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
+/* Custom Scroll */
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, #9304DF),
+    color-stop(0.72, #D73D8C),
+    color-stop(0.86, #F95963)
+  );
+}
+/* Custom Scroll */
 body {
   scroll-behavior: smooth;
 }
@@ -44,6 +65,10 @@ body {
 }
 .header-font-semi-bold {
   font-family: "Montserrat-semi-bold";
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
 .poppins-text {
@@ -249,13 +274,15 @@ body {
   -webkit-filter: blur(8px);
 }
 
-.swiper-button-next, .swiper-button-prev {
-    width: 10px !important;
-    height: 10px !important;
+.swiper-button-next,
+.swiper-button-prev {
+  width: 10px !important;
+  height: 10px !important;
 }
-.swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 24px !important;
-    color: #000000;
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px !important;
+  color: #000000;
 }
 
 .swiper-pagination-bullet-active {
@@ -288,4 +315,11 @@ body {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   bottom: var(--swiper-pagination-bottom, 1px) !important;
+}
+
+/* Border Gradient */
+.border-bottom-gr {
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(0.25turn, #c22ba6, #d83d8a, #f4546a);
+  border-image-slice: 1;
 }

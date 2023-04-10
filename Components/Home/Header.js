@@ -1,11 +1,14 @@
 import { HOME_CAROUSEL_DATA } from "@/Data/Home";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useContext } from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
+import { StateContext } from "@/pages/_app";
 
 export default function HomeCarousel() {
+  const { osName } = useContext(StateContext);
+  // console.log(osName);
   const router = useRouter();
   const settings = {
     dots: true,
@@ -42,7 +45,7 @@ export default function HomeCarousel() {
                         restDelta: 0.001,
                       },
                     }}
-                    className="md:max-w-[80%] text-[30px] lg:text-[40px] xl:text-[45px] 2xl:text-[50px] font-bold leading-tight poppins-text"
+                    className="md:max-w-[80%] text-[20px] md:text-[30px] lg:text-[36px] xl:text-[40px] 2xl:text-[45px] font-bold leading-tight poppins-text"
                   >
                     {data.heading}
                   </motion.h1>
@@ -59,15 +62,24 @@ export default function HomeCarousel() {
                         restDelta: 0.001,
                       },
                     }}
-                    className="md:max-w-[700px] md:text-lg font-normal poppins-text"
+                    className="md:text-lg font-normal poppins-text w-[80%]"
                   >
                     {data.subHeading}
                   </motion.p>
-                  <a href="https://onelink.to/minglewise" target="_blank">
+                  <a
+                    href={
+                      osName == "Android" || osName == "Windows"
+                        ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                        : osName == "iOS" || osName == "Apple" || osName == "OS X"
+                        ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+                        : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                    }
+                    target="_blank"
+                  >
                     <button
                       className="bg-transparent text-white font-semibold w-44 h-10 relative
                     before:w-full before:h-full before:scale-x-[1.04] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
-                    before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%] 
+                    before:-z-10 before:translate-x-[-50%] before:translate-y-[-50%]
                     before:from-[#7B00D6] before:to-[#FB695B] before:bg-gradient-to-br
                     before:rounded-md
                     hover:bg-white hover:text-black duration-300 px-4 rounded py-2 poppins-text"

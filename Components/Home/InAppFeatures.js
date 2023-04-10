@@ -1,8 +1,8 @@
-import { IN_APP_FEATURES } from "@/Data/Home";
 import Image from "next/image";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { IN_APP_FEATURES } from "@/Data/QuickLink";
 
 const InAppFeatures = () => {
   return (
@@ -28,7 +28,7 @@ const InAppFeatures = () => {
           </motion.p>
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[65%] mx-auto">
-          {IN_APP_FEATURES.map((profile, index) => (
+          {IN_APP_FEATURES.slice(0, 8).map((profile, index) => (
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
@@ -79,7 +79,7 @@ const InAppFeatures = () => {
           ))}
         </div>
         <div className="text-center">
-          <Link href="/QuickLinks/Features">
+          <Link href="/QuickLinks/InAppFeatures">
             <button
               className="bg-transparent text-white font-semibold w-28 h-12 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]

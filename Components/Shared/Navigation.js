@@ -1,22 +1,27 @@
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 import { useRouter } from "next/router";
 import { AnimatePresence, motion } from "framer-motion";
+import { StateContext } from "@/pages/_app";
 
 export default function Navigation({ windowHeight }) {
+  const { osName } = useContext(StateContext);
+  console.log(osName);
   const router = useRouter();
   const navigation = [
     { name: "Features", href: "/QuickLinks/Features" },
     { name: "Subscriptions", href: "/QuickLinks/SubscriptionTires" },
     { name: "About", href: "/QuickLinks/AboutUs" },
+    { name: "Contact Us", href: "/QuickLinks/ContactUs" },
   ];
 
   return (
     <AnimatePresence>
-      <nav className="hidden lg:flex lg:flex-[.6] xl:flex-[.5] 2xl:flex-[.4]">
+      <nav className="hidden lg:flex lg:flex-[.7] xl:flex-[.6] 2xl:flex-[.5]">
         <ul className="flex flex-1 gap-2 items-center justify-between">
           {navigation?.map((nav) => (
             <motion.li
+              key={nav.name}
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.02 }}
               transition={{
@@ -30,11 +35,10 @@ export default function Navigation({ windowHeight }) {
                 },
               }}
               className={`${
-                router.pathname == nav.href ? "border-b-2 border-[#7300D5]" : ""
+                router.pathname == nav.href ? "border-bottom-gr" : ""
               } ${
                 router.pathname === "/" && windowHeight <= 110 && " text-white"
               } ${router.pathname !== "/" && "text-black"}`}
-              key={nav.name}
             >
               <Link href={nav.href}>
                 <span className="poppins-text"> {nav.name}</span>
@@ -42,7 +46,16 @@ export default function Navigation({ windowHeight }) {
             </motion.li>
           ))}
           <li>
-            <a href="https://onelink.to/minglewise" target="_blank">
+            <a
+              href={
+                osName == "Android" || osName == "Windows"
+                  ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+                  : osName == "iOS" || osName == "Apple"|| osName == "OS X"
+                  ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
+                  : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
+              }
+              target="_blank"
+            >
               <button
                 className={`bg-transparent text-white font-bold w-28 h-10 relative
             before:w-full before:h-full before:scale-x-[1.05] before:scale-y-[1.1]  before:absolute before:top-[50%] before:left-[50%]
