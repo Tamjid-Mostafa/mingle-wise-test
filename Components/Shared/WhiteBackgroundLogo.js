@@ -4,7 +4,7 @@ import React from "react";
 
 const WhiteBackgroundLogo = () => {
   return (
-    <div className="bg-white rounded-full">
+    <div className="bg-white rounded-full shadow-lg drop-shadow-lg">
       <Image
         className="cursor-pointer"
         width={60}
