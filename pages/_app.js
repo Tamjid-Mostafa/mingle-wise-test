@@ -6,8 +6,8 @@ import "@/styles/globals.css";
 import { useRouter } from "next/router";
 import platform from "platform";
 import { createContext, useEffect, useState } from "react";
+import TagManager from "react-gtm-module";
 import { Toaster } from "react-hot-toast";
-import * as fbq from '../lib/fbpixel'
 export const StateContext = createContext();
 
 export default function App({ Component, pageProps }) {
@@ -21,20 +21,23 @@ export default function App({ Component, pageProps }) {
 
   const [loading, setLoading] = useState(false);
   const router = useRouter();
-  
+
   useEffect(() => {
-    import('react-facebook-pixel')
+    import("react-facebook-pixel")
       .then((x) => x.default)
       .then((ReactPixel) => {
-        ReactPixel.init(fbq.FB_PIXEL_ID) // facebookPixelId
-        ReactPixel.pageView()
+        ReactPixel.init(process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID); // facebookPixelId
+        ReactPixel.pageView();
 
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView()
-        })
-      })
-  }, [router.events])
+        router.events.on("routeChangeComplete", () => {
+          ReactPixel.pageView();
+        });
+      });
+  }, [router.events]);
 
+  useEffect(() => {
+    TagManager.initialize({ gtmId: `${process.env.NEXT_PUBLIC_GTM_ID}` });
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -58,13 +61,11 @@ export default function App({ Component, pageProps }) {
         </>
       ) : (
         <>
-              
           <StateContext.Provider value={stateInfo}>
             <Toaster position="top-center" />
-            {router.pathname !== '/404' && <NavBar />}
+            {router.pathname !== "/404" && <NavBar />}
             <Component {...pageProps} />
-            {router.pathname !== '/404' &&  <Footer />}
-           
+            {router.pathname !== "/404" && <Footer />}
           </StateContext.Provider>
         </>
       )}
