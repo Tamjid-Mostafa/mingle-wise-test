@@ -1,44 +1,33 @@
 import React, { useState } from "react";
 import { ColorRing } from "react-loader-spinner";
 import axios from "axios";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { toast } from "react-hot-toast";
-import Image from "next/image";
+import { useForm } from "react-hook-form";
 
 const ContactUs = () => {
   const [loading, setLoading] = useState(false);
-  const [userData, setUserData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
-  const handleOnSubmit = (e) => {
+  const onSubmit = (data) => {
     setLoading(true);
-    e.preventDefault();
-    // console.log(userData);
-    // console.log({
-    //   name: userData?.name,
-    //   email: userData?.email,
-    //   message: userData,
-    // });
     axios
       .post(
         "https://us-central1-minglewise2019.cloudfunctions.net/A6_2_ContactUsWebsiteApi/contactUsWebsite",
         {
-          name: userData?.name,
-          email: userData?.email,
-          message: userData?.message,
+          name: data?.name,
+          email: data?.email,
+          message: data?.message,
         }
       )
       .then((res) => {
-        // console.log(res);
         toast.success("Successfully submitted");
-        setUserData({
-          name: "",
-          email: "",
-          message: "",
-        });
+        reset();
         setLoading(false);
       })
       .catch((err) => {
@@ -56,7 +45,7 @@ const ContactUs = () => {
           </span>
           <span> Get in touch 👋</span>
         </p>
-        <form onSubmit={handleOnSubmit}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <motion.div
             initial={{ opacity: 0, scale: 1.4 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -73,33 +62,48 @@ const ContactUs = () => {
           >
             <div className="flex flex-col w-full">
               <label htmlFor="name" className="poppins-text m-1">
-                Name
+                Name*
               </label>
               <input
-                required
+                {...register("name", {
+                  required: "Name is required",
+                  maxLength: {
+                    value: 15,
+                    message: "must be max 10 characters",
+                  },
+                })}
                 id="name"
                 className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                 type="text"
-                onChange={(e) =>
-                  setUserData({ ...userData, name: e.target.value })
-                }
-                value={userData?.name}
               />
+              {errors.name && (
+                <p className="text-red-500" role="alert">
+                  {errors.name?.message}
+                </p>
+              )}
             </div>
             <div className="flex flex-col w-full">
               <label htmlFor="email" className="poppins-text m-1">
-                Email
+                Email*
               </label>
               <input
-                required
+                {...register("email", {
+                  required: "Email Address is required",
+                  pattern: {
+                    value:
+                      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                    message: "Please enter a valid email",
+                  },
+                })}
                 id="email"
                 className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                 type="email"
-                onChange={(e) =>
-                  setUserData({ ...userData, email: e.target.value })
-                }
-                value={userData?.email}
               />
+              {errors.email && (
+                <p className="text-red-500" role="alert">
+                  {errors.email?.message}
+                </p>
+              )}
             </div>
           </motion.div>
           <motion.div
@@ -120,13 +124,11 @@ const ContactUs = () => {
                 Your Message
               </label>
               <textarea
+                {...register("message")}
+                name="message"
                 id="message"
                 className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text h-36"
                 type="text"
-                onChange={(e) =>
-                  setUserData({ ...userData, message: e.target.value })
-                }
-                value={userData?.message}
               />
             </div>
           </motion.div>
