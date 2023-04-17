@@ -124,12 +124,19 @@ const ContactUs = () => {
                 Your Message
               </label>
               <textarea
-                {...register("message")}
+                {...register("message", {
+                  required: "Message is required",
+                })}
                 name="message"
                 id="message"
                 className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text h-36"
                 type="text"
               />
+              {errors.message && (
+                <p className="text-red-500" role="alert">
+                  {errors.message?.message}
+                </p>
+              )}
             </div>
           </motion.div>
           <div className="flex justify-center">
