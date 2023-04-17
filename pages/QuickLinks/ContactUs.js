@@ -121,7 +121,7 @@ const ContactUs = () => {
           >
             <div className="flex flex-col w-full">
               <label htmlFor="message" className="poppins-text m-1">
-                Your Message
+                Your Message*
               </label>
               <textarea
                 {...register("message", {
