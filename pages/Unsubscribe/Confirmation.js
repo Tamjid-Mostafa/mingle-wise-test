@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Head from "@/Head";
 import { ColorRing } from "react-loader-spinner";
 
-const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
+const Confirmation = ({ isVisible, onClose, reset, info, setInfo }) => {
   const [loading, setLoading] = useState(false);
   const Router = useRouter();
   if (!isVisible) return null;
@@ -17,6 +17,7 @@ const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
   };
 
   const handleConfirm = () => {
+    console.log(info);
     setLoading(true);
     axios
       .post(
@@ -28,10 +29,10 @@ const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
       )
       .then(
         (res) => {
-          // console.log(res);
           window.scroll({ top: 0, left: 0, behavior: "smooth" });
-          setInfo({ name: "", email: "" });
           toast.success("Successfully Unsubscribe");
+          setInfo({});
+          reset();
           Router.push("/Unsubscribe/UnsubMessage");
           setLoading(false);
           onClose();
@@ -39,6 +40,8 @@ const Confirmation = ({ isVisible, onClose, info, setInfo }) => {
         (err) => {
           toast.error("Failed to unsubscribe");
           setLoading(false);
+          setInfo({});
+          reset();
         }
       );
   };

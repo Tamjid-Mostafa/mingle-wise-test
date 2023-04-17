@@ -2,15 +2,19 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Confirmation from "./Confirmation";
 import Head from "@/Head";
+import { useForm } from "react-hook-form";
 
 const DataCollector = () => {
   const [showModal, setShowModal] = useState(false);
-  const [info, setInfo] = useState({
-    name: "",
-    email: "",
-  });
-  const handleUserSubmission = (e) => {
-    e.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
+  const [info, setInfo] = useState({});
+  const onSubmit = (data) => {
+    setInfo(data);
     setShowModal(true);
   };
   return (
@@ -32,28 +36,47 @@ const DataCollector = () => {
           className="py-24 min-h-[70vh]"
         >
           <motion.div className="xl:w-[40%] mx-auto p-24 rounded mt-10 shadow-md">
-            <form onSubmit={handleUserSubmission}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="poppins-text flex flex-col">
-                <label htmlFor="userName">Name</label>
+                <label htmlFor="userName">Name*</label>
                 <input
-                  required
-                  onChange={(e) => setInfo({ ...info, name: e.target.value })}
+                  {...register("name", {
+                    required: "Name is required",
+                    maxLength: {
+                      value: 15,
+                      message: "must be max 10 characters",
+                    },
+                  })}
                   id="userName"
                   type="text"
-                  value={info?.name}
                   className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                 />
+                {errors.name && (
+                  <p className="text-red-500" role="alert">
+                    {errors.name?.message}
+                  </p>
+                )}
               </div>
               <div className="poppins-text flex flex-col">
-                <label htmlFor="userEmail">Email</label>
+                <label htmlFor="userEmail">Email*</label>
                 <input
-                  required
-                  onChange={(e) => setInfo({ ...info, email: e.target.value })}
+                  {...register("email", {
+                    required: "Email Address is required",
+                    pattern: {
+                      value:
+                        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                      message: "Please enter a valid email",
+                    },
+                  })}
                   id="userEmail"
                   type="email"
-                  value={info?.email}
                   className="border-2 focus:outline-gray-400 px-2 py-2 rounded-md w-full poppins-text"
                 />
+                {errors.email && (
+                  <p className="text-red-500" role="alert">
+                    {errors.email?.message}
+                  </p>
+                )}
               </div>
               <div className="text-center">
                 <button
@@ -75,9 +98,9 @@ const DataCollector = () => {
           </motion.div>
 
           <Confirmation
-            handleUserSubmission={handleUserSubmission}
             info={info}
             setInfo={setInfo}
+            reset={reset}
             isVisible={showModal}
             onClose={() => setShowModal(false)}
           />
