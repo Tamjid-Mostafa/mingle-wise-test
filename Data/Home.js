@@ -56,12 +56,12 @@ export const DATING_PROFILE = [
   {
     logo: "/assets/dating-profile/explore.svg",
     title: "Explore",
-    info: "Find amazing people all over the app which are hot active and new.",
+    info: "Find amazing people all over the app which are hot, active and new.",
   },
   {
     logo: "/assets/dating-profile/mingle-instant.svg",
     title: "Mingle Instant",
-    info: "Participate in an exciting on the spot blind date video-calls with other users. Connect just by selecting the gender and location.",
+    info: "Participate in an exciting on the spot blind date video and chat calls with other users. Connect just by selecting the gender and location.",
   },
   {
     logo: "/assets/dating-profile/feed.svg",
