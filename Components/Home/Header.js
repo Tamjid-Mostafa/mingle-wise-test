@@ -45,7 +45,7 @@ export default function HomeCarousel() {
                         restDelta: 0.001,
                       },
                     }}
-                    className="md:max-w-[80%] text-[20px] md:text-[30px] lg:text-[36px] xl:text-[40px] 2xl:text-[45px] font-bold leading-tight poppins-text"
+                    className="sm:max-w-[80%] text-[20px] md:text-[30px] lg:text-[36px] xl:text-[40px] 2xl:text-[45px] font-bold leading-tight poppins-text"
                   >
                     {data.heading}
                   </motion.h1>
@@ -70,7 +70,9 @@ export default function HomeCarousel() {
                     href={
                       osName == "Android" || osName == "Windows"
                         ? "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
-                        : osName == "iOS" || osName == "Apple" || osName == "OS X"
+                        : osName == "iOS" ||
+                          osName == "Apple" ||
+                          osName == "OS X"
                         ? "https://apps.apple.com/in/app/minglewise-dating-pro-events/id1574084760"
                         : "https://play.google.com/store/apps/details?id=com.appsynergies.minglewise"
                     }

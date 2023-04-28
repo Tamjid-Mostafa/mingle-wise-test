@@ -65,7 +65,7 @@ const WhyMingleWise = () => {
               <p className="text-xl font-semibold poppins-text">
                 DATING PROFILE
               </p>
-              <p className="poppins-text">
+              <p className="poppins-text mt-2">
                 New profiles daily on your feed. Instantly start your chat &
                 video dates. Participate in speed dating sessions every week.
               </p>
@@ -74,7 +74,7 @@ const WhyMingleWise = () => {
               <p className="text-xl font-semibold mt-10 poppins-text">
                 PROFESSIONAL NETWORKING PROFILE
               </p>
-              <p className="poppins-text">
+              <p className="poppins-text mt-2">
                 Write Blogs, Apply for jobs & Internships, Start freelancing and
                 attend & livestream events. Increase your network now.
               </p>

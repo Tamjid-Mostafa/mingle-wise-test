@@ -42,7 +42,7 @@ const ProfessionalNetworking = () => {
             }}
             className="text-2xl md:text-3xl font-semibold poppins-text"
           >
-            NETWORKING
+            NETWORKING FEATURES
           </motion.p>
           <motion.p
             initial={{ scale: 0.6, opacity: 0.2 }}
@@ -67,7 +67,7 @@ const ProfessionalNetworking = () => {
             trust & respect and create life-long memories along the way.
           </motion.p>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[65%] mx-auto">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4 w-[90%] md:w-[90%] lg:w-[95%] xl:w-[70%] 2xl:w-[65%] py-20 mx-auto">
           {PROFESSIONAL_NETWORKING.map((profile, index) => (
             <motion.div
               initial={{ scale: 0.5, opacity: 0 }}
@@ -102,7 +102,7 @@ const ProfessionalNetworking = () => {
                 }}
               >
                 <Image
-                  className="w-20 h-20"
+                  className="w-20 h-20 mb-6"
                   height={30}
                   width={30}
                   src={profile?.logo}
@@ -110,7 +110,7 @@ const ProfessionalNetworking = () => {
                 />
               </motion.div>
               <div className="mt-3">
-                <p className="text-[18px] font-semibold poppins-text">
+                <p className="text-[18px] font-semibold poppins-text mb-[6px]">
                   {profile?.title}
                 </p>
                 <p className="text-justify mt-1 lato">{profile?.info}</p>
